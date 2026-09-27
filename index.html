@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="group/app" data-view="planner">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TransferPath SEP Planner</title>
+
+  <!-- Apply saved theme before paint to avoid a flash; likewise open straight onto the result page when it is
+       refreshed and a saved plan exists (ui.js then restores the plan, or redirects to the form). -->
+  <script>
+    try {
+      if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+    } catch (e) {}
+    try {
+      if (location.hash === '#/planner/result' && sessionStorage.getItem('transferpath.plan')) {
+        document.documentElement.dataset.view = 'result';
+      }
+    } catch (e) {}
+  </script>
+
+  <!-- Styles: prebuilt Tailwind + self-hosted fonts/icons, so the page is fully styled
+       offline, behind CDN-blocking networks, and in editor preview panes.
+       Tailwind goes after Font Awesome so utilities like `hidden` override Font Awesome's display rules.
+       theme.css (backdrop, frosted surfaces, color tokens) builds on both. -->
+  <link rel="stylesheet" href="assets/vendor/inter/inter.css" />
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="assets/tailwind.css" />
+  <link rel="stylesheet" href="assets/theme.css" />
+
+  <!-- Tailwind (CDN): optional live compiler, so classes added during development work before the
+       next `npx tailwindcss` rebuild. The page does not depend on it. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    if (window.tailwind) tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'sans-serif'] } } }
+    };
+  </script>
+
+  <!-- PDF export (html2pdf.js = html2canvas + jsPDF). Deferred: only needed when "Export to PDF" is clicked.
+       If the CDN is blocked, ui.js loads the identical local copy from assets/vendor/html2pdf/. -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+  <style>
+    body, header, section, .card, input, button { transition: background-color .25s, color .25s, border-color .25s; }
+    .fade-in { animation: fade .35s ease both; }
+    @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+    /* Result page entrance: the plan header, then the semester cards left to right (120ms apart) rise into
+       place while fading in; under 1s in total for 4 semesters. `both` keeps items hidden until their turn.
+       In-place updates (GE check-offs) re-render the plan with #resultView.no-reveal, so nothing replays;
+       entering the result page clears it (ui.js). */
+    @keyframes rise { from { opacity: 0; transform: translateY(var(--rise, 24px)); } }
+    @keyframes appear { from { opacity: 0; } }
+    .plan-enter { animation: appear .3s ease-out var(--enter-after, 0ms) both; }
+    .plan-header, .plan-note, .plan-semesters > * {
+      animation: rise .4s cubic-bezier(.2, .7, .3, 1) both;
+      animation-delay: calc(var(--enter-after, 0ms) + var(--delay, 0ms) + var(--i, 0) * var(--stagger, 0ms));
+    }
+    .plan-header    { --rise: 16px; }
+    .plan-note      { --rise: 12px; --delay: 80ms; }
+    .plan-semesters { --delay: 150ms; --stagger: 120ms; }
+    .plan-semesters > :nth-child(2) { --i: 1; }
+    .plan-semesters > :nth-child(3) { --i: 2; }
+    .plan-semesters > :nth-child(4) { --i: 3; }
+    .plan-semesters > :nth-child(5) { --i: 4; }
+    .plan-semesters > :nth-child(6) { --i: 5; }
+    .plan-semesters > :nth-child(n+7) { --i: 6; }
+    @media (prefers-reduced-motion: reduce) {
+      /* no movement or stagger: a quick fade only */
+      .fade-in, .plan-enter, .plan-header, .plan-note, .plan-semesters > * {
+        animation: appear .15s ease-out both;
+      }
+    }
+    .no-reveal :is(.fade-in, .plan-enter, .plan-header, .plan-note, .plan-semesters > *) {
+      animation: none;
+    }
+
+    /* Form -> result page (View Transitions API, ui.js openResultPage), in two steps:
+         1. dive (0-750ms): the form zooms all the way in (6x) from the centre of the screen, slowly at first,
+            then faster, blurring as it goes; it stays opaque until it is a blur, then fades;
+         2. from 680ms the result page comes into focus: from blurred and slightly smaller to sharp; its
+            entrance (above) waits for it (.zoom-enter).
+       The header is its own layer above both pages (the zoomed form passes under it, as when scrolling) and
+       the background stays in the root, so neither zooms. The header changes when the pages swap: the brand
+       and the theme button slide to their result-page places, and Export to PDF fades in after the theme
+       button has passed it. ui.js sets the zoom origins (the screen centre in each page's box) and puts
+       .page-zoom on <html> only while the transition runs, so the names never affect the page otherwise. */
+    .page-zoom #plannerView { view-transition-name: planner-view; }
+    .page-zoom #resultView { view-transition-name: result-view; }
+    .page-zoom #appHeader { view-transition-name: app-header; }
+    .page-zoom .app-brand { view-transition-name: app-brand; }
+    .page-zoom #themeToggle { view-transition-name: theme-toggle; }
+    .page-zoom #exportPdfBtn { view-transition-name: export-pdf; }
+    .zoom-enter { --enter-after: .68s; }
+    ::view-transition-old(planner-view) {
+      animation: page-zoom-out .75s cubic-bezier(.32, 0, .67, 0) both, page-blur-out .75s linear both;
+      transform-origin: var(--zoom-from, 50% 50%);
+    }
+    ::view-transition-new(result-view) {
+      animation: page-zoom-in .5s cubic-bezier(0, .55, .45, 1) .68s both, page-focus-in .45s ease-out .68s both;
+      transform-origin: var(--zoom-to, 50% 50%);
+    }
+    ::view-transition-old(root), ::view-transition-new(root),
+    ::view-transition-old(app-header), ::view-transition-new(app-header) { animation-delay: .6s; }
+    ::view-transition-group(app-brand),
+    ::view-transition-group(theme-toggle) {
+      animation-duration: .45s;
+      animation-delay: .6s;
+      animation-timing-function: cubic-bezier(.65, 0, .35, 1);
+    }
+    ::view-transition-new(export-pdf) { animation: page-fade-in .25s ease-out .92s both; }
+    @keyframes page-zoom-out { to { transform: scale(6); } }
+    /* The blur is scaled with the zoom, so a few px here end as a heavy blur on screen */
+    @keyframes page-blur-out {
+      0%  { filter: blur(0); opacity: 1; }
+      40% { filter: blur(.6px); }
+      80% { filter: blur(3px); opacity: 1; }
+      to  { filter: blur(6px); opacity: 0; }
+    }
+    @keyframes page-zoom-in { from { transform: scale(.92); } }
+    @keyframes page-focus-in { from { opacity: 0; filter: blur(10px); } }
+    @keyframes page-fade-in { from { opacity: 0; } }
+
+    /* GE side panel (slide-over) */
+    .ge-panel { visibility: hidden; pointer-events: none; transition: visibility 0s .3s; }
+    .ge-panel.open { visibility: visible; pointer-events: auto; transition-delay: 0s; }
+    .ge-backdrop { opacity: 0; transition: opacity .25s ease; }
+    .ge-panel.open .ge-backdrop { opacity: 1; }
+    .ge-drawer { transform: translateX(100%); transition: transform .3s cubic-bezier(.2, .8, .2, 1); }
+    .ge-panel.open .ge-drawer { transform: none; }
+    details > summary::-webkit-details-marker { display: none; }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col text-slate-900 dark:text-slate-100 font-sans antialiased">
+
+  <!-- Ambient backdrop: rose glow at the top, sky blue through the middle (light mode), mint/aqua at the bottom,
+       drifting slowly. Light mode turns from pink-based to blue-based as the page scrolls (assets/theme.css) -->
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient-pink">
+      <span class="ambient-glow is-rose"></span>
+      <span class="ambient-glow is-magenta"></span>
+    </div>
+    <span class="ambient-glow is-sky"></span>
+    <span class="ambient-glow is-mint"></span>
+    <span class="ambient-glow is-aqua"></span>
+  </div>
+
+  <!-- ============ Header (compact app bar; its width follows the current view) ============ -->
+  <header id="appHeader" class="surface-bar sticky top-0 z-20 shrink-0 border-b">
+    <div class="w-[calc(100%-2rem)] max-w-6xl group-data-[view=result]/app:max-w-[1900px] xl:group-data-[view=result]/app:w-[calc(100%-3rem)] mx-auto h-14 flex items-center gap-3">
+      <!-- Result page: back to the form, with every input kept -->
+      <a id="editPlanBtn" href="#/planner"
+        class="hidden group-data-[view=result]/app:inline-flex shrink-0 items-center gap-2 rounded-lg px-3 py-1.5 text-sm font-medium border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <i class="fa-solid fa-arrow-left"></i> Edit Plan
+      </a>
+      <div class="app-brand flex items-center gap-3 min-w-0">
+        <div class="brand-mark w-9 h-9 shrink-0 rounded-lg text-white grid place-items-center">
+          <i class="fa-solid fa-route"></i>
+        </div>
+        <span class="font-semibold text-lg tracking-tight truncate group-data-[view=result]/app:hidden sm:group-data-[view=result]/app:inline">TransferPath <span class="brand-accent">SEP Planner</span></span>
+      </div>
+      <div class="ml-auto flex items-center gap-3">
+        <span id="exportPdfStatus" role="status" aria-live="polite" class="sr-only lg:not-sr-only text-sm text-slate-500 dark:text-slate-400"></span>
+        <button id="exportPdfBtn" type="button" aria-label="Export to PDF"
+          class="hidden group-data-[view=result]/app:flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold py-2 px-3 sm:px-4 rounded-lg shadow-sm transition focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900 disabled:opacity-60 disabled:cursor-wait">
+          <i class="fa-solid fa-file-arrow-down"></i><span class="hidden sm:inline">Export to PDF</span>
+        </button>
+        <button id="themeToggle" aria-label="Toggle theme"
+          class="w-9 h-9 shrink-0 rounded-lg grid place-items-center border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-amber-300 hover:bg-slate-100 dark:hover:bg-slate-800">
+          <i class="fa-solid fa-moon dark:hidden"></i>
+          <i class="fa-solid fa-sun hidden dark:inline"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ Planner page (#/planner): the form ============ -->
+  <main id="plannerView" class="py-8 space-y-8 group-data-[view=result]/app:hidden">
+
+    <!-- ============ Input section ============ -->
+    <section class="w-[calc(100%-2rem)] max-w-6xl mx-auto card surface surface-feature rounded-2xl border p-6 sm:p-8">
+      <h1 class="text-2xl font-bold tracking-tight">Build your transfer plan</h1>
+      <p class="mt-1 text-slate-600 dark:text-slate-300">Pick where you are and where you're headed, add what you've finished, and we'll map the fastest path to transfer.</p>
+
+      <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <!-- College search -->
+        <div>
+          <label for="collegeInput" class="block text-sm font-medium mb-2">Community college</label>
+          <div class="relative">
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+            <input id="collegeInput" type="text" placeholder="Chabot College" autocomplete="off"
+              class="field w-full pl-10 pr-3 py-2.5 rounded-lg border" />
+            <ul id="collegeList"
+              class="menu hidden absolute z-10 mt-1 w-full max-h-56 overflow-auto rounded-lg border"></ul>
+            <!-- Default college (`selected`). The lists themselves come from the loaded data (GET /institutions). -->
+            <select id="collegeOptions" hidden aria-hidden="true" tabindex="-1">
+              <option selected>Chabot College</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Target university search -->
+        <div>
+          <label for="targetInput" class="block text-sm font-medium mb-2">Target university</label>
+          <div class="relative">
+            <i class="fa-solid fa-building-columns absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+            <input id="targetInput" type="text" placeholder="UC Berkeley" autocomplete="off"
+              class="field w-full pl-10 pr-3 py-2.5 rounded-lg border" />
+            <ul id="targetList"
+              class="menu hidden absolute z-10 mt-1 w-full max-h-72 overflow-auto rounded-lg border"></ul>
+            <!-- Universities come from the loaded data (GET /institutions), grouped UC / CSU. -->
+            <select id="targetOptions" hidden aria-hidden="true" tabindex="-1"></select>
+          </div>
+          <p class="mt-1.5 text-xs text-slate-500 dark:text-slate-400">UC and CSU campuses</p>
+        </div>
+
+        <!-- Intended major search -->
+        <div>
+          <label for="majorInput" class="block text-sm font-medium mb-2">Intended major</label>
+          <div class="relative">
+            <i class="fa-solid fa-graduation-cap absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+            <input id="majorInput" type="text" placeholder="Computer Science" autocomplete="off"
+              class="field w-full pl-10 pr-3 py-2.5 rounded-lg border" />
+            <ul id="majorList"
+              class="menu hidden absolute z-10 mt-1 w-full max-h-72 overflow-auto rounded-lg border"></ul>
+          </div>
+          <!-- Majors with articulation data for the chosen college + university (GET /majors; ui.js renderMajorHint) -->
+          <p id="majorHint" class="mt-1.5 text-xs text-slate-500 dark:text-slate-400">Majors with transfer data appear after you pick a college and university</p>
+        </div>
+
+        <!-- TAG university (optional, independent of the target university). The campuses come from the TAG
+             dataset via GET /tag/campuses (ui.js renderTagOptions); the backend evaluates TAG per plan. Once a
+             major is chosen too, #tagHint shows whether TAG is open to that major (ui.js refreshTagStatus). -->
+        <div>
+          <label for="tagSelect" class="block text-sm font-medium mb-2">TAG University <span class="font-normal text-slate-500 dark:text-slate-400">(Optional)</span></label>
+          <div class="relative">
+            <i class="fa-solid fa-handshake absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"></i>
+            <select id="tagSelect" aria-describedby="tagHint"
+              class="field w-full appearance-none pl-10 pr-9 py-2.5 rounded-lg border cursor-pointer">
+              <option value="" selected>None</option>
+            </select>
+            <i class="fa-solid fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-xs text-slate-400 pointer-events-none"></i>
+          </div>
+          <div id="tagHint" aria-live="polite" class="mt-1.5 text-xs text-slate-500 dark:text-slate-400">Transfer Admission Guarantee</div>
+        </div>
+      </div>
+
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+
+        <!-- Completed courses (tags) -->
+        <div>
+          <label for="courseInput" class="block text-sm font-medium mb-2">Completed courses</label>
+          <div id="tagBox"
+            class="field relative flex flex-wrap items-center gap-2 min-h-[54px] px-2 py-1.5 rounded-lg border cursor-text">
+            <input id="courseInput" type="text" placeholder="Type e.g. CS 1, press Enter" autocomplete="off"
+              class="flex-1 min-w-[140px] bg-transparent py-1 px-1 focus:outline-none" />
+            <ul id="courseList"
+              class="menu hidden absolute left-0 top-full z-10 mt-1 w-full max-h-56 overflow-auto rounded-lg border"></ul>
+          </div>
+          <p class="mt-1.5 text-xs text-slate-500 dark:text-slate-400">Enter or comma to add · Backspace to remove last</p>
+        </div>
+
+        <!-- AP scores (subject + score + Add, tags below) -->
+        <div>
+          <label for="apSubjectSelect" class="block text-sm font-medium mb-2">AP scores</label>
+          <div class="flex gap-2">
+            <div class="relative flex-1 min-w-0">
+              <select id="apSubjectSelect"
+                class="field w-full appearance-none pl-3 pr-9 py-2.5 rounded-lg border cursor-pointer">
+                <option value="">Select AP subject…</option>
+                <option>AP Calculus AB</option>
+                <option>AP Calculus BC</option>
+                <option>AP Computer Science A</option>
+                <option>AP Physics C: Mechanics</option>
+                <option>AP Physics C: Electricity and Magnetism</option>
+                <option>AP Statistics</option>
+                <option>AP Macroeconomics</option>
+                <option>AP Microeconomics</option>
+                <option>AP English Language and Composition</option>
+                <option>AP Psychology</option>
+              </select>
+              <i class="fa-solid fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-xs text-slate-400 pointer-events-none"></i>
+            </div>
+            <div class="relative w-24 shrink-0">
+              <select id="apScoreSelect" aria-label="AP score"
+                class="field w-full appearance-none pl-3 pr-8 py-2.5 rounded-lg border cursor-pointer">
+                <option value="">Score</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+              </select>
+              <i class="fa-solid fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-xs text-slate-400 pointer-events-none"></i>
+            </div>
+            <button id="apAddBtn" type="button" disabled
+              class="btn-tonal shrink-0 inline-flex items-center gap-1.5 px-4 rounded-lg text-sm font-semibold disabled:opacity-50 disabled:cursor-not-allowed">
+              <i class="fa-solid fa-plus text-xs"></i> Add
+            </button>
+          </div>
+          <div id="apTags" class="mt-2 flex flex-wrap gap-2 empty:hidden"></div>
+          <!-- One compact line per exam from POST /ap/evaluate: college waiver · GE area · target campus (ui.js apSummary) -->
+          <ul id="apDetails" class="mt-1.5 space-y-0.5 text-xs text-slate-500 dark:text-slate-400 empty:hidden"></ul>
+          <p class="mt-1.5 text-xs text-slate-500 dark:text-slate-400">Your college's AP chart decides course and GE credit · Adding a subject again updates its score</p>
+        </div>
+      </div>
+
+      <div class="mt-6 grid gap-6 md:grid-cols-3">
+        <!-- GE pathway (segmented control) -->
+        <fieldset>
+          <legend class="block text-sm font-medium mb-2">GE pathway</legend>
+          <div class="field-track grid grid-cols-2 gap-1 p-1 rounded-lg border">
+            <label class="cursor-pointer">
+              <input type="radio" name="gePathway" value="CAL-GETC" class="peer sr-only" checked />
+              <span class="block rounded-md px-3 py-1.5 text-center text-slate-600 dark:text-slate-300 transition peer-checked:bg-white dark:peer-checked:bg-slate-700 peer-checked:text-slate-900 dark:peer-checked:text-white peer-checked:shadow-sm">
+                <span class="block text-sm font-semibold">CAL-GETC</span>
+                <span class="block text-[11px] text-slate-600 dark:text-slate-300">UC + CSU · 34 units</span>
+              </span>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="gePathway" value="7-Course Pattern" class="peer sr-only" />
+              <span class="block rounded-md px-3 py-1.5 text-center text-slate-600 dark:text-slate-300 transition peer-checked:bg-white dark:peer-checked:bg-slate-700 peer-checked:text-slate-900 dark:peer-checked:text-white peer-checked:shadow-sm">
+                <span class="block text-sm font-semibold">7-Course Pattern</span>
+                <span class="block text-[11px] text-slate-600 dark:text-slate-300">Campus breadth</span>
+              </span>
+            </label>
+          </div>
+          <p id="geHint" class="mt-1.5 text-xs text-slate-500 dark:text-slate-400">GE shows up in each semester as GE rows you can open.</p>
+        </fieldset>
+
+        <!-- Starting semester -->
+        <div>
+          <label for="startTermSelect" class="block text-sm font-medium mb-2">Starting semester</label>
+          <div class="relative">
+            <i class="fa-regular fa-calendar absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"></i>
+            <select id="startTermSelect"
+              class="field w-full appearance-none pl-10 pr-9 py-2.5 rounded-lg border cursor-pointer"></select>
+            <i class="fa-solid fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-xs text-slate-400 pointer-events-none"></i>
+          </div>
+          <p class="mt-1.5 text-xs text-slate-500 dark:text-slate-400">Plans always end in a Spring term, ready for Fall transfer admission.</p>
+        </div>
+
+        <!-- Summer toggle -->
+        <div>
+          <span class="block text-sm font-medium mb-2">Summer classes</span>
+          <label for="summerToggle"
+            class="field flex items-center justify-between gap-4 px-3 py-2 rounded-lg border cursor-pointer">
+            <span class="flex items-center gap-3 min-w-0">
+              <i class="fa-solid fa-sun text-amber-500"></i>
+              <span class="min-w-0">
+                <span class="block text-sm font-medium">Include summer classes</span>
+                <span class="block text-xs text-slate-500 dark:text-slate-400">Up to 9 units per summer · GE courses go there first</span>
+              </span>
+            </span>
+            <input id="summerToggle" type="checkbox" class="peer sr-only" />
+            <span aria-hidden="true"
+              class="switch relative w-10 h-6 shrink-0 rounded-full after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:w-5 after:h-5 after:rounded-full after:bg-white after:shadow after:transition-transform peer-checked:after:translate-x-4"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Shown when the backend can't be reached (filled by ui.js) -->
+      <div id="apiStatus" class="hidden mt-6 rounded-lg border border-amber-200 dark:border-amber-500/30 bg-amber-50 dark:bg-amber-500/10 text-amber-900 dark:text-amber-200 px-4 py-3 text-sm"></div>
+
+      <div class="mt-8 flex flex-col sm:flex-row sm:items-center gap-4">
+        <button id="generateBtn" disabled
+          class="btn-primary shrink-0 w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Generate SEP Plans
+        </button>
+        <!-- Dev-only mock data injector for demos (filled by ui.js) -->
+        <div id="devTools" class="sm:ml-auto flex flex-wrap items-center gap-2 text-xs"></div>
+      </div>
+    </section>
+
+    <!-- N/A or error from the last Generate (ui.js renderUnavailable) -->
+    <div id="plannerNotice" class="empty:hidden w-[calc(100%-2rem)] max-w-6xl mx-auto"></div>
+  </main>
+
+  <!-- ============ Result page (#/planner/result): the plan as a full-width workspace ============
+       ~97% of the screen (max 1900px). From xl it fills the height under the header and the semester cards
+       stretch to the bottom; below xl it is normal page flow. -->
+  <main id="resultView" class="hidden group-data-[view=result]/app:flex xl:flex-1 flex-col">
+    <h1 class="sr-only">Your transfer plan</h1>
+    <div class="flex-1 flex flex-col gap-4 w-[calc(100%-2rem)] xl:w-[calc(100%-3rem)] max-w-[1900px] mx-auto py-4 xl:py-5">
+      <!-- Pathway summary, workload, warnings and TAG status (ui.js renderPlans) -->
+      <div id="resultsNotes" class="space-y-3"></div>
+      <!-- One card per plan (ui.js cardHTML) -->
+      <div id="resultsBody" class="flex-1 flex flex-col gap-6"></div>
+    </div>
+  </main>
+
+  <!-- ============ GE requirements side panel ============ -->
+  <div id="gePanel" class="ge-panel fixed inset-0 z-40" aria-hidden="true">
+    <div id="geBackdrop" class="ge-backdrop scrim absolute inset-0"></div>
+    <aside role="dialog" aria-modal="true" aria-labelledby="geTitle"
+      class="ge-drawer surface-panel absolute right-0 top-0 h-full w-full sm:max-w-md flex flex-col border-l shadow-2xl dark:shadow-black/60">
+      <header class="flex items-start gap-3 p-5 border-b border-slate-200 dark:border-slate-800">
+        <div class="w-10 h-10 shrink-0 rounded-lg grid place-items-center bg-teal-100 text-teal-700 dark:bg-teal-500/15 dark:text-teal-300">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <div class="flex-1 min-w-0">
+          <h2 id="geTitle" class="font-semibold text-lg leading-tight">GE requirements</h2>
+          <p id="geSubtitle" class="text-sm text-slate-500 dark:text-slate-400 truncate"></p>
+        </div>
+        <button id="geClose" aria-label="Close panel"
+          class="w-9 h-9 rounded-lg grid place-items-center text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </header>
+      <div id="geBody" class="flex-1 overflow-y-auto p-5 space-y-6"></div>
+      <footer class="px-5 py-3 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400">
+        <i class="fa-regular fa-square-check mr-1"></i> Check a GE course to mark it completed. Both plans are rescheduled immediately.
+      </footer>
+    </aside>
+  </div>
+
+  <!-- ============ TAG requirements side panel (same slide-over as the GE panel; ui.js renderTagPanel) ============ -->
+  <div id="tagPanel" class="ge-panel fixed inset-0 z-40" aria-hidden="true">
+    <div id="tagBackdrop" class="ge-backdrop scrim absolute inset-0"></div>
+    <aside role="dialog" aria-modal="true" aria-labelledby="tagTitle"
+      class="ge-drawer surface-panel absolute right-0 top-0 h-full w-full sm:max-w-md flex flex-col border-l shadow-2xl dark:shadow-black/60">
+      <header class="flex items-start gap-3 p-5 border-b border-slate-200 dark:border-slate-800">
+        <div id="tagIcon" class="w-10 h-10 shrink-0 rounded-lg grid place-items-center bg-blue-100 text-blue-700 dark:bg-blue-500/15 dark:text-blue-300">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <div class="flex-1 min-w-0">
+          <h2 id="tagTitle" class="font-semibold text-lg leading-tight">TAG requirements</h2>
+          <p id="tagSubtitle" class="text-sm text-slate-500 dark:text-slate-400 truncate"></p>
+        </div>
+        <button id="tagClose" aria-label="Close panel"
+          class="w-9 h-9 rounded-lg grid place-items-center text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </header>
+      <div id="tagBody" class="flex-1 overflow-y-auto p-5 space-y-6"></div>
+      <footer id="tagFooter" class="px-5 py-3 border-t border-slate-200 dark:border-slate-800 text-xs leading-relaxed text-slate-500 dark:text-slate-400"></footer>
+    </aside>
+  </div>
+
+  <script src="api.js"></script>
+  <script src="focus_card.js"></script>
+  <script src="plan_graph.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>

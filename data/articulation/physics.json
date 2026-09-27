@@ -1,0 +1,2361 @@
+{
+  "schema_version": "1.2.0",
+  "dataset_id": "chabot_csueb_physics_ba_2026_2027",
+  "source": {
+    "publisher": "ASSIST",
+    "document_title": "2026-2027 Physics, B.A. Agreement",
+    "filename": "2026-2027 Physics, B.A. Agreement.pdf",
+    "sha256": "f8892798efa43384d01b400a81949307f1f111db6fa955eb40063bc28e68de55",
+    "page_count": 5,
+    "date_published": "2026-07-29",
+    "date_published_as_printed": "7/29/26"
+  },
+  "agreement": {
+    "type": "Major Articulation Agreement",
+    "academic_year": "2026-2027",
+    "from_institution_id": "chabot",
+    "to_institution_id": "csueb",
+    "major": "Physics",
+    "degree": "B.A.",
+    "program_total_units": 120,
+    "extracted_requirement_scope": "lower_division_core_and_lower_division_electives",
+    "complete_degree_requirements_in_source": false,
+    "admission_requirements_status": "not_specified_in_source",
+    "source_pages": [
+      1
+    ],
+    "concentration": null,
+    "root_requirement_group_id": "all_listed_requirements"
+  },
+  "institutions": [
+    {
+      "id": "chabot",
+      "name": "Chabot College",
+      "role": "sending",
+      "catalog": "2026-2027 General Catalog",
+      "calendar": "semester",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "id": "csueb",
+      "name": "California State University, East Bay",
+      "role": "receiving",
+      "catalog": "2026-2027 General Catalog",
+      "calendar": "semester",
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "csueb:MATH130",
+      "institution_id": "csueb",
+      "code": "MATH 130",
+      "title": "CALCULUS I",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:MATH131",
+      "institution_id": "csueb",
+      "code": "MATH 131",
+      "title": "CALCULUS II",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:MATH215",
+      "institution_id": "csueb",
+      "code": "MATH 215",
+      "title": "INTRODUCTION TO LINEAR ALGEBRA",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:PHYS230",
+      "institution_id": "csueb",
+      "code": "PHYS 230",
+      "title": "Physical Reasoning",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:PHYS125",
+      "institution_id": "csueb",
+      "code": "PHYS 125",
+      "title": "Principles of Physics I",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:PHYS126",
+      "institution_id": "csueb",
+      "code": "PHYS 126",
+      "title": "Principles of Physics II",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:PHYS135",
+      "institution_id": "csueb",
+      "code": "PHYS 135",
+      "title": "Physics for Scientists and Engineers I",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "csueb:PHYS136",
+      "institution_id": "csueb",
+      "code": "PHYS 136",
+      "title": "Physics for Scientists and Engineers II",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "csueb:PHYS137",
+      "institution_id": "csueb",
+      "code": "PHYS 137",
+      "title": "Physics for Scientists and Engineers III",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "csueb:CHEM100",
+      "institution_id": "csueb",
+      "code": "CHEM 100",
+      "title": "INTRODUCTION TO COLLEGE CHEMISTRY",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "csueb:CHEM110",
+      "institution_id": "csueb",
+      "code": "CHEM 110",
+      "title": "General Chemistry Engineering",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "csueb:CHEM111",
+      "institution_id": "csueb",
+      "code": "CHEM 111",
+      "title": "GENERAL CHEMISTRY I",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "csueb:CHEM112",
+      "institution_id": "csueb",
+      "code": "CHEM 112",
+      "title": "GENERAL CHEMISTRY II",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "csueb:CHEM112L",
+      "institution_id": "csueb",
+      "code": "CHEM 112L",
+      "title": "GENERAL CHEMISTRY LABORATORY II",
+      "units": 2.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "csueb:CS100",
+      "institution_id": "csueb",
+      "code": "CS 100",
+      "title": "Programming for Everyone",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "csueb:CS101",
+      "institution_id": "csueb",
+      "code": "CS 101",
+      "title": "Computer Science I",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "csueb:PHYS104",
+      "institution_id": "csueb",
+      "code": "PHYS 104",
+      "title": "Musical Acoustics",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "csueb:PHYS106",
+      "institution_id": "csueb",
+      "code": "PHYS 106",
+      "title": "Physics for Future Leaders",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "csueb:PHYS115",
+      "institution_id": "csueb",
+      "code": "PHYS 115",
+      "title": "ELEMENTARY PHYSICS",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "csueb:ASTR108",
+      "institution_id": "csueb",
+      "code": "ASTR 108",
+      "title": "ASTRONOMY OF INDIGENOUS CULTURES",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "csueb:ASTR138",
+      "institution_id": "csueb",
+      "code": "ASTR 138",
+      "title": "Descriptive Astronomy",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "csueb:ASTR139",
+      "institution_id": "csueb",
+      "code": "ASTR 139",
+      "title": "ASTRONOMY LABORATORY",
+      "units": 1.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "chabot:MTH1",
+      "institution_id": "chabot",
+      "code": "MTH 1",
+      "title": "Calculus I",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "chabot:MTH2",
+      "institution_id": "chabot",
+      "code": "MTH 2",
+      "title": "Calculus II",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "chabot:MTH6",
+      "institution_id": "chabot",
+      "code": "MTH 6",
+      "title": "Elementary Linear Algebra",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "chabot:PHYS3A",
+      "institution_id": "chabot",
+      "code": "PHYS 3A",
+      "title": "College Physics A",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "chabot:PHYS3B",
+      "institution_id": "chabot",
+      "code": "PHYS 3B",
+      "title": "College Physics B",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "chabot:PHYS7A",
+      "institution_id": "chabot",
+      "code": "PHYS 7A",
+      "title": "Physics for Scientists and Engineers: Classical Mechanics",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "chabot:PHYS7C",
+      "institution_id": "chabot",
+      "code": "PHYS 7C",
+      "title": "Physics for Scientists and Engineers: Electromagnetism",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "chabot:PHYS7B",
+      "institution_id": "chabot",
+      "code": "PHYS 7B",
+      "title": "Physics for Scientists and Engineers: Fluid mechanics, Wave phenomena, Thermodynamics, Optics",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "chabot:PHYS4A",
+      "institution_id": "chabot",
+      "code": "PHYS 4A",
+      "title": "General Physics I",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "chabot:PHYS4B",
+      "institution_id": "chabot",
+      "code": "PHYS 4B",
+      "title": "General Physics II",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "chabot:PHYS4C",
+      "institution_id": "chabot",
+      "code": "PHYS 4C",
+      "title": "General Physics III",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "chabot:PHYS5",
+      "institution_id": "chabot",
+      "code": "PHYS 5",
+      "title": "Modern Physics",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "chabot:CHEM10",
+      "institution_id": "chabot",
+      "code": "CHEM 10",
+      "title": "Introduction to Chemistry",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "chabot:CHEM31",
+      "institution_id": "chabot",
+      "code": "CHEM 31",
+      "title": "Introduction to College Chemistry",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "chabot:CHEM30A",
+      "institution_id": "chabot",
+      "code": "CHEM 30A",
+      "title": "Introductory and Applied Chemistry I",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "chabot:CHEM1A",
+      "institution_id": "chabot",
+      "code": "CHEM 1A",
+      "title": "General College Chemistry I",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "chabot:CHEM1B",
+      "institution_id": "chabot",
+      "code": "CHEM 1B",
+      "title": "General College Chemistry II",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "chabot:CSCI10",
+      "institution_id": "chabot",
+      "code": "CSCI 10",
+      "title": "Introduction to Programming Using Visual BASIC.Net",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "chabot:CSCI14",
+      "institution_id": "chabot",
+      "code": "CSCI 14",
+      "title": "Introduction to Structured Programming in C++",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "chabot:CSCI15",
+      "institution_id": "chabot",
+      "code": "CSCI 15",
+      "title": "Object-Oriented Programming Methods",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "chabot:CSCI19A",
+      "institution_id": "chabot",
+      "code": "CSCI 19A",
+      "title": "Object-Oriented Programming Methods in JAVA",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "chabot:PHYS11",
+      "institution_id": "chabot",
+      "code": "PHYS 11",
+      "title": "Descriptive Physics",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "chabot:ASTR20",
+      "institution_id": "chabot",
+      "code": "ASTR 20",
+      "title": "Introduction to Astronomy: Stars and the Universe",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "chabot:ASTR30",
+      "institution_id": "chabot",
+      "code": "ASTR 30",
+      "title": "Introduction to Astronomy Lab",
+      "units": 1.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        5
+      ]
+    }
+  ],
+  "requirement_groups": [
+    {
+      "id": "core_required",
+      "title": "LOWER DIVISION CORE - Required courses",
+      "source_group_label": "1",
+      "source_subgroup_label": "A",
+      "operator": "AND",
+      "requirement_ids": [
+        "requirement:MATH130",
+        "requirement:MATH131",
+        "requirement:MATH215",
+        "requirement:PHYS230"
+      ],
+      "group_ids": [],
+      "source_instruction": "Complete the following",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "physics_a_individual_mappings",
+      "title": "Option A - Individual mappings",
+      "source_group_label": "2",
+      "source_subgroup_label": "A",
+      "operator": "AND",
+      "requirement_ids": [
+        "requirement:PHYS125",
+        "requirement:PHYS126"
+      ],
+      "group_ids": [],
+      "source_instruction": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "physics_option_a",
+      "title": "LOWER DIVISION CORE - Option A",
+      "source_group_label": "2",
+      "source_subgroup_label": "A",
+      "operator": "OR",
+      "requirement_ids": [
+        "requirement:PHYS125_PHYS126"
+      ],
+      "group_ids": [
+        "physics_a_individual_mappings"
+      ],
+      "source_instruction": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "physics_b_individual_mappings",
+      "title": "Option B - Individual mappings",
+      "source_group_label": "2",
+      "source_subgroup_label": "B",
+      "operator": "AND",
+      "requirement_ids": [
+        "requirement:PHYS135",
+        "requirement:PHYS136",
+        "requirement:PHYS137"
+      ],
+      "group_ids": [],
+      "source_instruction": null,
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "physics_option_b",
+      "title": "LOWER DIVISION CORE - Option B",
+      "source_group_label": "2",
+      "source_subgroup_label": "B",
+      "operator": "OR",
+      "requirement_ids": [
+        "requirement:PHYS135_PHYS136_PHYS137"
+      ],
+      "group_ids": [
+        "physics_b_individual_mappings"
+      ],
+      "source_instruction": null,
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "physics_sequence_choice",
+      "title": "LOWER DIVISION CORE - Physics sequence",
+      "source_group_label": "2",
+      "source_subgroup_label": null,
+      "operator": "OR",
+      "requirement_ids": [],
+      "group_ids": [
+        "physics_option_a",
+        "physics_option_b"
+      ],
+      "source_instruction": "Select A or B",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "lower_division_core",
+      "title": "LOWER DIVISION CORE",
+      "source_group_label": null,
+      "source_subgroup_label": null,
+      "operator": "AND",
+      "requirement_ids": [],
+      "group_ids": [
+        "core_required",
+        "physics_sequence_choice"
+      ],
+      "source_instruction": null,
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "lower_division_electives",
+      "title": "ELECTIVES (LOWER DIVISION)",
+      "source_group_label": "3",
+      "source_subgroup_label": "A",
+      "operator": "MINIMUM",
+      "requirement_ids": [
+        "requirement:CHEM100",
+        "requirement:CHEM110",
+        "requirement:CHEM111",
+        "requirement:CHEM112_CHEM112L",
+        "requirement:CS100",
+        "requirement:CS101",
+        "requirement:PHYS104",
+        "requirement:PHYS106",
+        "requirement:PHYS115",
+        "requirement:ASTR108",
+        "requirement:ASTR138_ASTR139"
+      ],
+      "group_ids": [],
+      "source_instruction": "Complete at least 6.00 units from at least 2 of the following",
+      "source_pages": [
+        3,
+        4,
+        5
+      ],
+      "selection_constraints": {
+        "minimum_units": 6.0,
+        "minimum_items": 2,
+        "unit_basis": "unique_receiving_course_units",
+        "item_basis": "listed_requirement_entries",
+        "bundle_counting_note": "Each listed AND bundle is kept as one selection entry. The source does not explicitly define whether its components count separately toward the item minimum; here every entry is below 6 units, so at least two entries are needed to reach 6 units regardless."
+      }
+    },
+    {
+      "id": "all_listed_requirements",
+      "title": "All listed requirements",
+      "source_group_label": null,
+      "source_subgroup_label": null,
+      "operator": "AND",
+      "requirement_ids": [],
+      "group_ids": [
+        "lower_division_core",
+        "lower_division_electives"
+      ],
+      "source_instruction": null,
+      "source_pages": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "requirement:MATH130",
+      "target_course_id": "csueb:MATH130",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:MATH130"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:MTH1"
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:MATH131",
+      "target_course_id": "csueb:MATH131",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:MATH131"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:MTH2"
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:MATH215",
+      "target_course_id": "csueb:MATH215",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:MATH215"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:MTH6"
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:PHYS230",
+      "target_course_id": "csueb:PHYS230",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:PHYS230"
+      },
+      "articulation_status": "no_course_articulated",
+      "source_requirement": null,
+      "source_note": "No Course Articulated",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:PHYS125",
+      "target_course_id": "csueb:PHYS125",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:PHYS125"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:PHYS3A"
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:PHYS126",
+      "target_course_id": "csueb:PHYS126",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:PHYS126"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:PHYS3B"
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:PHYS125_PHYS126",
+      "target_course_id": null,
+      "target_requirement": {
+        "operator": "AND",
+        "operands": [
+          {
+            "operator": "COURSE",
+            "course_id": "csueb:PHYS125"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "csueb:PHYS126"
+          }
+        ]
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "AND",
+        "operands": [
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:PHYS3A"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:PHYS3B"
+          }
+        ]
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:PHYS135",
+      "target_course_id": "csueb:PHYS135",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:PHYS135"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:PHYS7A"
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:PHYS136",
+      "target_course_id": "csueb:PHYS136",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:PHYS136"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:PHYS7C"
+      },
+      "source_note": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "requirement:PHYS137",
+      "target_course_id": "csueb:PHYS137",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:PHYS137"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:PHYS7B"
+      },
+      "source_note": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "requirement:PHYS135_PHYS136_PHYS137",
+      "target_course_id": null,
+      "target_requirement": {
+        "operator": "AND",
+        "operands": [
+          {
+            "operator": "COURSE",
+            "course_id": "csueb:PHYS135"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "csueb:PHYS136"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "csueb:PHYS137"
+          }
+        ]
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "OR",
+        "operands": [
+          {
+            "operator": "AND",
+            "operands": [
+              {
+                "operator": "COURSE",
+                "course_id": "chabot:PHYS4A"
+              },
+              {
+                "operator": "COURSE",
+                "course_id": "chabot:PHYS4B"
+              },
+              {
+                "operator": "COURSE",
+                "course_id": "chabot:PHYS4C"
+              },
+              {
+                "operator": "COURSE",
+                "course_id": "chabot:PHYS5"
+              }
+            ]
+          },
+          {
+            "operator": "AND",
+            "operands": [
+              {
+                "operator": "COURSE",
+                "course_id": "chabot:PHYS7A"
+              },
+              {
+                "operator": "COURSE",
+                "course_id": "chabot:PHYS7C"
+              },
+              {
+                "operator": "COURSE",
+                "course_id": "chabot:PHYS7B"
+              }
+            ]
+          }
+        ]
+      },
+      "source_note": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "requirement:CHEM100",
+      "target_course_id": "csueb:CHEM100",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:CHEM100"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "OR",
+        "operands": [
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:CHEM10"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:CHEM31"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:CHEM30A"
+          }
+        ]
+      },
+      "source_note": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "requirement:CHEM110",
+      "target_course_id": "csueb:CHEM110",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:CHEM110"
+      },
+      "articulation_status": "no_course_articulated",
+      "source_requirement": null,
+      "source_note": "No Course Articulated",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "requirement:CHEM111",
+      "target_course_id": "csueb:CHEM111",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:CHEM111"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:CHEM1A"
+      },
+      "source_note": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "requirement:CHEM112_CHEM112L",
+      "target_course_id": null,
+      "target_requirement": {
+        "operator": "AND",
+        "operands": [
+          {
+            "operator": "COURSE",
+            "course_id": "csueb:CHEM112"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "csueb:CHEM112L"
+          }
+        ]
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:CHEM1B"
+      },
+      "source_note": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "requirement:CS100",
+      "target_course_id": "csueb:CS100",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:CS100"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "OR",
+        "operands": [
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:CSCI10"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:CSCI14"
+          }
+        ]
+      },
+      "source_note": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "requirement:CS101",
+      "target_course_id": "csueb:CS101",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:CS101"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "OR",
+        "operands": [
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:CSCI15"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:CSCI19A"
+          }
+        ]
+      },
+      "source_note": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "requirement:PHYS104",
+      "target_course_id": "csueb:PHYS104",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:PHYS104"
+      },
+      "articulation_status": "no_course_articulated",
+      "source_requirement": null,
+      "source_note": "No Course Articulated",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "requirement:PHYS106",
+      "target_course_id": "csueb:PHYS106",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:PHYS106"
+      },
+      "articulation_status": "no_course_articulated",
+      "source_requirement": null,
+      "source_note": "No Course Articulated",
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "requirement:PHYS115",
+      "target_course_id": "csueb:PHYS115",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:PHYS115"
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:PHYS11"
+      },
+      "source_note": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "requirement:ASTR108",
+      "target_course_id": "csueb:ASTR108",
+      "target_requirement": {
+        "operator": "COURSE",
+        "course_id": "csueb:ASTR108"
+      },
+      "articulation_status": "no_course_articulated",
+      "source_requirement": null,
+      "source_note": "No Course Articulated",
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "requirement:ASTR138_ASTR139",
+      "target_course_id": null,
+      "target_requirement": {
+        "operator": "AND",
+        "operands": [
+          {
+            "operator": "COURSE",
+            "course_id": "csueb:ASTR138"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "csueb:ASTR139"
+          }
+        ]
+      },
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "AND",
+        "operands": [
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:ASTR20"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:ASTR30"
+          }
+        ]
+      },
+      "source_note": null,
+      "source_pages": [
+        5
+      ]
+    }
+  ],
+  "transfer_policies": [
+    {
+      "id": "in_person_labs",
+      "title": "NO ONLINE LABS FOR TRANSFER",
+      "scope": "Transfer students within CSU East Bay College of Science majors",
+      "online_labs_accepted_as_equivalent_to_csueb_labs": false,
+      "required_lab_format": "in_person",
+      "required_lab_setting": "college_laboratory",
+      "in_person_lab_equivalence": "eligible_for_consideration",
+      "online_lab_requires_in_person_retake_for_major_credit": true,
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "general_education_before_enrollment",
+      "strength": "encouraged",
+      "scope": "California community college transfer students",
+      "action": "Complete CSU General Education Breadth or CALGETC at the community college before enrollment at CSU East Bay.",
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "prerequisite_data": {
+    "status": "researched_with_source_and_policy_caveats",
+    "reviewed_on": "2026-09-24",
+    "institution_id": "chabot",
+    "registry_file": "chabot_prerequisites.json",
+    "edges": null,
+    "records": {
+      "chabot:MTH1": {
+        "course_id": "chabot:MTH1",
+        "code": "MTH 1",
+        "reviewed_on": "2026-09-24",
+        "status": "policy_dependent",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "CONDITION",
+              "description": "Complete Chabot Math Course Selection",
+              "requires_external_confirmation": true
+            },
+            {
+              "type": "OR",
+              "items": [
+                {
+                  "type": "OR",
+                  "items": [
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH20",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH22",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "AND",
+                      "items": [
+                        {
+                          "type": "OR",
+                          "items": [
+                            {
+                              "type": "COURSE",
+                              "course_id": "chabot:MTH21",
+                              "timing": "before"
+                            },
+                            {
+                              "type": "COURSE",
+                              "course_id": "chabot:MTH31",
+                              "timing": "before"
+                            },
+                            {
+                              "type": "COURSE",
+                              "course_id": "chabot:MTH31S",
+                              "timing": "before"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "OR",
+                          "items": [
+                            {
+                              "type": "COURSE",
+                              "course_id": "chabot:MTH36",
+                              "timing": "before"
+                            },
+                            {
+                              "type": "COURSE",
+                              "course_id": "chabot:MTH36S",
+                              "timing": "before"
+                            },
+                            {
+                              "type": "COURSE",
+                              "course_id": "chabot:MTH37",
+                              "timing": "before"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "CONDITION",
+                      "description": "Appropriate mathematics assessment/placement",
+                      "requires_external_confirmation": true
+                    }
+                  ]
+                },
+                {
+                  "type": "AND",
+                  "items": [
+                    {
+                      "type": "CONDITION",
+                      "description": "Use the open-access linked support section",
+                      "requires_external_confirmation": true
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH201W",
+                      "timing": "same_term"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "summary": "Open access from Fall 2025; complete Math Course Selection. If the stated preparation is not met, enroll in a linked MTH 201W support section.",
+        "advisory": [],
+        "source_ids": [
+          "math",
+          "open_calculus"
+        ],
+        "notes": [
+          "Do not force a remedial/precalculus chain. Section eligibility and linked enrollment require confirmation."
+        ],
+        "source_location": null,
+        "published_course_prerequisite": {
+          "type": "OR",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH20",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH22",
+              "timing": "before"
+            },
+            {
+              "type": "AND",
+              "items": [
+                {
+                  "type": "OR",
+                  "items": [
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH21",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH31",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH31S",
+                      "timing": "before"
+                    }
+                  ]
+                },
+                {
+                  "type": "OR",
+                  "items": [
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH36",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH36S",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH37",
+                      "timing": "before"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "CONDITION",
+              "description": "Appropriate mathematics assessment/placement",
+              "requires_external_confirmation": true
+            }
+          ]
+        },
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:MTH2": {
+        "course_id": "chabot:MTH2",
+        "code": "MTH 2",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "COURSE",
+          "course_id": "chabot:MTH1",
+          "timing": "before",
+          "minimum_grade": "C"
+        },
+        "summary": "MTH 1 (C or better).",
+        "advisory": [],
+        "source_ids": [
+          "math"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:MTH6": {
+        "course_id": "chabot:MTH6",
+        "code": "MTH 6",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "COURSE",
+          "course_id": "chabot:MTH2",
+          "timing": "before",
+          "minimum_grade": "C"
+        },
+        "summary": "MTH 2 (C or better).",
+        "advisory": [],
+        "source_ids": [
+          "math"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:PHYS3A": {
+        "course_id": "chabot:PHYS3A",
+        "code": "PHYS 3A",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "OR",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH1",
+              "timing": "before_or_concurrent"
+            },
+            {
+              "type": "AND",
+              "items": [
+                {
+                  "type": "COURSE",
+                  "course_id": "chabot:MTH22",
+                  "timing": "before"
+                },
+                {
+                  "type": "COURSE",
+                  "course_id": "chabot:MTH15",
+                  "timing": "before_or_concurrent"
+                }
+              ]
+            }
+          ]
+        },
+        "summary": "MTH 1 (may overlap), OR [MTH 22 before AND MTH 15 (may overlap)].",
+        "advisory": [],
+        "source_ids": [
+          "physics"
+        ],
+        "notes": [
+          "Math alternatives grouped by the calculus pathway; PHYS 3B catalog wording explicitly corroborates these two math options."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:PHYS3B": {
+        "course_id": "chabot:PHYS3B",
+        "code": "PHYS 3B",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:PHYS3A",
+              "timing": "before"
+            },
+            {
+              "type": "OR",
+              "items": [
+                {
+                  "type": "COURSE",
+                  "course_id": "chabot:MTH1",
+                  "timing": "before"
+                },
+                {
+                  "type": "AND",
+                  "items": [
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH15",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH22",
+                      "timing": "before"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "summary": "PHYS 3A AND [MTH 1 OR (MTH 15 AND MTH 22)], all before.",
+        "advisory": [],
+        "source_ids": [
+          "physics",
+          "catalog2025"
+        ],
+        "notes": [],
+        "source_location": "2025 catalog printed page 345 (PDF page 347) explicitly separates math options.",
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:PHYS7A": {
+        "course_id": "chabot:PHYS7A",
+        "code": "PHYS 7A",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH1",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH2",
+              "timing": "before_or_concurrent"
+            }
+          ]
+        },
+        "summary": "MTH 1 before; MTH 2 before or concurrently.",
+        "advisory": [
+          "PHYS 18 OR high-school physics recommended."
+        ],
+        "source_ids": [
+          "PHYS 7A"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:PHYS7C": {
+        "course_id": "chabot:PHYS7C",
+        "code": "PHYS 7C",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:PHYS7A",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH3",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH4",
+              "timing": "before_or_concurrent"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH6",
+              "timing": "before_or_concurrent"
+            }
+          ]
+        },
+        "summary": "PHYS 7A AND MTH 3 before; MTH 4 AND MTH 6 before or concurrently.",
+        "advisory": [],
+        "source_ids": [
+          "PHYS 7C"
+        ],
+        "notes": [
+          "PHYS 7B is not a prerequisite. The 7-series and 4-series have different ordering; do not rename their prerequisites by analogy.",
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:PHYS7B": {
+        "course_id": "chabot:PHYS7B",
+        "code": "PHYS 7B",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:PHYS7A",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH2",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH3",
+              "timing": "before_or_concurrent"
+            }
+          ]
+        },
+        "summary": "PHYS 7A AND MTH 2 before; MTH 3 before or concurrently.",
+        "advisory": [],
+        "source_ids": [
+          "catalog2025"
+        ],
+        "notes": [
+          "2025-2026 catalog evidence; 7-series absent from the retrieved 2026 CLASS-Web listing.",
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": "Printed page 346 (PDF page 348)",
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:PHYS4A": {
+        "course_id": "chabot:PHYS4A",
+        "code": "PHYS 4A",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH1",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH2",
+              "timing": "before_or_concurrent"
+            }
+          ]
+        },
+        "summary": "MTH 1 before; MTH 2 before or concurrently.",
+        "advisory": [
+          "PHYS 18 OR high-school physics recommended."
+        ],
+        "source_ids": [
+          "physics"
+        ],
+        "notes": [],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:PHYS4B": {
+        "course_id": "chabot:PHYS4B",
+        "code": "PHYS 4B",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:PHYS4A",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH2",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH3",
+              "timing": "before_or_concurrent"
+            }
+          ]
+        },
+        "summary": "PHYS 4A AND MTH 2 before; MTH 3 before or concurrently.",
+        "advisory": [],
+        "source_ids": [
+          "physics"
+        ],
+        "notes": [],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:PHYS4C": {
+        "course_id": "chabot:PHYS4C",
+        "code": "PHYS 4C",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:PHYS4B",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH3",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH4",
+              "timing": "before_or_concurrent"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH6",
+              "timing": "before_or_concurrent"
+            }
+          ]
+        },
+        "summary": "PHYS 4B AND MTH 3 before; MTH 4 AND MTH 6 before or concurrently.",
+        "advisory": [],
+        "source_ids": [
+          "physics"
+        ],
+        "notes": [],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:PHYS5": {
+        "course_id": "chabot:PHYS5",
+        "code": "PHYS 5",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:PHYS4B",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH3",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH4",
+              "timing": "before_or_concurrent"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH6",
+              "timing": "before_or_concurrent"
+            }
+          ]
+        },
+        "summary": "PHYS 4B AND MTH 3 before; MTH 4 AND MTH 6 before or concurrently.",
+        "advisory": [],
+        "source_ids": [
+          "physics"
+        ],
+        "notes": [],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:CHEM10": {
+        "course_id": "chabot:CHEM10",
+        "code": "CHEM 10",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "NONE"
+        },
+        "summary": "No mandatory prerequisite listed.",
+        "advisory": [],
+        "source_ids": [
+          "chem"
+        ],
+        "notes": [],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:CHEM31": {
+        "course_id": "chabot:CHEM31",
+        "code": "CHEM 31",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "OR",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH55",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH55B",
+              "timing": "before"
+            }
+          ]
+        },
+        "summary": "MTH 55 OR MTH 55B.",
+        "advisory": [],
+        "source_ids": [
+          "chem"
+        ],
+        "notes": [],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:CHEM30A": {
+        "course_id": "chabot:CHEM30A",
+        "code": "CHEM 30A",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "OR",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH65",
+              "timing": "before",
+              "minimum_grade": "C"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH65B",
+              "timing": "before",
+              "minimum_grade": "C"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH65L",
+              "timing": "before",
+              "minimum_grade": "C"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH53",
+              "timing": "before",
+              "minimum_grade": "C"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH53B",
+              "timing": "before",
+              "minimum_grade": "C"
+            }
+          ]
+        },
+        "summary": "One of MTH 65, 65B, 65L, 53, 53B (C or better).",
+        "advisory": [],
+        "source_ids": [
+          "chem"
+        ],
+        "notes": [],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:CHEM1A": {
+        "course_id": "chabot:CHEM1A",
+        "code": "CHEM 1A",
+        "reviewed_on": "2026-09-24",
+        "status": "user_clarified",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "OR",
+              "items": [
+                {
+                  "type": "COURSE",
+                  "course_id": "chabot:MTH55",
+                  "timing": "before"
+                },
+                {
+                  "type": "COURSE",
+                  "course_id": "chabot:MTH55B",
+                  "timing": "before"
+                },
+                {
+                  "type": "CONDITION",
+                  "description": "Approved intermediate-algebra equivalent",
+                  "requires_external_confirmation": true
+                }
+              ]
+            },
+            {
+              "type": "OR",
+              "items": [
+                {
+                  "type": "COURSE",
+                  "course_id": "chabot:CHEM31",
+                  "timing": "before"
+                },
+                {
+                  "type": "CONDITION",
+                  "description": "Approved Chemistry Placement Process",
+                  "requires_external_confirmation": true
+                }
+              ]
+            }
+          ]
+        },
+        "summary": "(MTH 55 OR MTH 55B OR approved equivalent) AND (CHEM 31 OR approved chemistry placement).",
+        "advisory": [],
+        "source_ids": [
+          "chem",
+          "noncredit",
+          "user_screenshot_CHEM_1A"
+        ],
+        "notes": [
+          "AND/OR grouping supplied by the user in an attached screenshot. The screenshot is a secondary summary; its underlying linked source was not newly verified.",
+          "CHEM 201 entry route noted in earlier official research remains a separate policy-review item; this screenshot does not resolve it."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true,
+        "prior_review": {
+          "status": "needs_review",
+          "notes": [
+            "CLASS-Web omits an explicit AND between math and chemistry clauses. The noncredit page describes CHEM 201 as a prerequisite route, but does not specify whether it replaces all or part of the older requirement. Do not mark automated eligibility as confirmed."
+          ],
+          "proposed_requirement": {
+            "type": "AND",
+            "items": [
+              {
+                "type": "OR",
+                "items": [
+                  {
+                    "type": "COURSE",
+                    "course_id": "chabot:MTH55",
+                    "timing": "before"
+                  },
+                  {
+                    "type": "COURSE",
+                    "course_id": "chabot:MTH55B",
+                    "timing": "before"
+                  }
+                ]
+              },
+              {
+                "type": "OR",
+                "items": [
+                  {
+                    "type": "COURSE",
+                    "course_id": "chabot:CHEM31",
+                    "timing": "before"
+                  },
+                  {
+                    "type": "CONDITION",
+                    "description": "Approved Chemistry Placement Process",
+                    "requires_external_confirmation": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "verification_status": "user_supplied_clarification_not_independently_verified"
+      },
+      "chabot:CHEM1B": {
+        "course_id": "chabot:CHEM1B",
+        "code": "CHEM 1B",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "COURSE",
+          "course_id": "chabot:CHEM1A",
+          "timing": "before",
+          "minimum_grade": "C"
+        },
+        "summary": "CHEM 1A (C or better).",
+        "advisory": [],
+        "source_ids": [
+          "chem"
+        ],
+        "notes": [],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:CSCI10": {
+        "course_id": "chabot:CSCI10",
+        "code": "CSCI 10",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "NONE"
+        },
+        "summary": "No mandatory prerequisite listed.",
+        "advisory": [
+          "CSCI 7 OR CSCI 8 OR CAS 8 recommended."
+        ],
+        "source_ids": [
+          "catalog2025"
+        ],
+        "notes": [
+          "2025-2026 catalog evidence; current-year offering and prerequisite revision not established.",
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": "Printed page 202 (PDF page 204)",
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:CSCI14": {
+        "course_id": "chabot:CSCI14",
+        "code": "CSCI 14",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "COURSE",
+          "course_id": "chabot:MTH55",
+          "timing": "before"
+        },
+        "summary": "MTH 55.",
+        "advisory": [
+          "CSCI 7 OR ENGL C1000 recommended."
+        ],
+        "source_ids": [
+          "cs"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:CSCI15": {
+        "course_id": "chabot:CSCI15",
+        "code": "CSCI 15",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "COURSE",
+          "course_id": "chabot:CSCI14",
+          "timing": "before",
+          "minimum_grade": "C"
+        },
+        "summary": "CSCI 14 (C or better).",
+        "advisory": [
+          "MTH 20 (C or better) recommended."
+        ],
+        "source_ids": [
+          "cs"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:CSCI19A": {
+        "course_id": "chabot:CSCI19A",
+        "code": "CSCI 19A",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "NONE"
+        },
+        "summary": "No mandatory prerequisite listed.",
+        "advisory": [
+          "CSCI 14 AND MTH 20 (C or better) recommended."
+        ],
+        "source_ids": [
+          "cs"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:PHYS11": {
+        "course_id": "chabot:PHYS11",
+        "code": "PHYS 11",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "NONE"
+        },
+        "summary": "No mandatory prerequisite listed.",
+        "advisory": [
+          "2025 catalog recommends MTH 104; this advisory is absent from the retrieved 2026 CLASS-Web entry."
+        ],
+        "source_ids": [
+          "physics",
+          "catalog2025"
+        ],
+        "notes": [],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:ASTR20": {
+        "course_id": "chabot:ASTR20",
+        "code": "ASTR 20",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "NONE"
+        },
+        "summary": "No mandatory prerequisite listed.",
+        "advisory": [],
+        "source_ids": [
+          "astr"
+        ],
+        "notes": [],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:ASTR30": {
+        "course_id": "chabot:ASTR30",
+        "code": "ASTR 30",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "OR",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:ASTR10",
+              "timing": "before_or_concurrent"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:ASTR20",
+              "timing": "before_or_concurrent"
+            }
+          ]
+        },
+        "summary": "ASTR 10 OR ASTR 20; either may be concurrent.",
+        "advisory": [],
+        "source_ids": [
+          "astr"
+        ],
+        "notes": [],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      }
+    },
+    "sources": {
+      "math": {
+        "url": "https://banssprod.clpccd.cc.ca.us/clpccd/2025/cat_mth.htm",
+        "title": "CLASS-Web 2025-2026: mth; Chabot entries only",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2025-2026"
+      },
+      "cs": {
+        "url": "https://banssprod.clpccd.cc.ca.us/clpccd/2025/cat_csci.htm",
+        "title": "CLASS-Web 2025-2026: csci; Chabot entries only",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2025-2026"
+      },
+      "physics": {
+        "url": "https://banssprod.clpccd.cc.ca.us/clpccd/2026/cat_phys.htm",
+        "title": "CLASS-Web 2026-2027: phys; Chabot entries only",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2026-2027"
+      },
+      "chem": {
+        "url": "https://banssprod.clpccd.cc.ca.us/clpccd/2026/cat_chem.htm",
+        "title": "CLASS-Web 2026-2027: chem; Chabot entries only",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2026-2027"
+      },
+      "engr": {
+        "url": "https://banssprod.clpccd.cc.ca.us/clpccd/2026/cat_engr.htm",
+        "title": "CLASS-Web 2026-2027: engr; Chabot entries only",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2026-2027"
+      },
+      "astr": {
+        "url": "https://banssprod.clpccd.cc.ca.us/clpccd/2026/cat_astr.htm",
+        "title": "CLASS-Web 2026-2027: astr; Chabot entries only",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2026-2027"
+      },
+      "catalog2025": {
+        "url": "https://www.chabotcollege.edu/academics/docs/catalogs/2025-2026%20Catalog.pdf",
+        "title": "Chabot College 2025-2026 catalog",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2025-2026"
+      },
+      "bio": {
+        "url": "https://www.chabotcollege.edu/academics/science-math/life-sciences/course-descriptions.php",
+        "title": "Chabot Life Sciences course descriptions",
+        "accessed_on": "2026-09-24",
+        "catalog_year": null
+      },
+      "open_calculus": {
+        "url": "https://www.chabotcollege.edu/academics/science-math/mathematics/open-access-calculus.php",
+        "title": "Chabot Open Access to Calculus",
+        "accessed_on": "2026-09-24",
+        "catalog_year": null
+      },
+      "noncredit": {
+        "url": "https://www.chabotcollege.edu/academics/noncredit/courses.php",
+        "title": "Chabot noncredit courses: CHEM 201",
+        "accessed_on": "2026-09-24",
+        "catalog_year": null
+      },
+      "PHYS 7A": {
+        "url": "https://chabot.curriqunet.com/DynamicReports/AllFieldsReportByEntity/4995?entityType=Course&reportId=347",
+        "title": "PHYS 7A course outline, effective Fall 2024",
+        "accessed_on": "2026-09-24",
+        "catalog_year": null
+      },
+      "PHYS 7C": {
+        "url": "https://chabot.curriqunet.com/DynamicReports/AllFieldsReportByEntity/4997?entityType=Course&reportId=347",
+        "title": "PHYS 7C course outline, effective Fall 2024",
+        "accessed_on": "2026-09-24",
+        "catalog_year": null
+      },
+      "MTH 8": {
+        "url": "https://chabot.curriqunet.com/DynamicReports/AllFieldsReportByEntity/8476?entityType=Course&reportId=347",
+        "title": "MTH 8 course outline, effective Fall 2024",
+        "accessed_on": "2026-09-24",
+        "catalog_year": null
+      },
+      "user_screenshot_CHEM_1A": {
+        "title": "CHEM 1A prerequisite clarification supplied by user",
+        "uploaded_filename": "69067c48-8ede-4750-a803-86ffc022549e.png",
+        "source_type": "user_supplied_screenshot",
+        "url": null,
+        "catalog_year": null,
+        "accessed_on": null
+      },
+      "user_screenshot_BIOS_21B": {
+        "title": "BIOS 21B prerequisite clarification supplied by user",
+        "uploaded_filename": "42412db0-d96c-4596-a725-bf455d8d8f07.png",
+        "source_type": "user_supplied_screenshot",
+        "url": null,
+        "catalog_year": null,
+        "accessed_on": null
+      },
+      "user_screenshot_BIOS_21C": {
+        "title": "BIOS 21C prerequisite clarification supplied by user",
+        "uploaded_filename": "79415d17-4fc0-4805-b616-2b19f1ad2989.png",
+        "source_type": "user_supplied_screenshot",
+        "url": null,
+        "catalog_year": null,
+        "accessed_on": null
+      }
+    },
+    "unresolved_course_ids": [],
+    "notes": [
+      "Source ASSIST PDF contains articulation, not these prerequisites. Added from the separately cited sources.",
+      "See shared registry for supporting courses, aliases, semantics and external references.",
+      "Receiving-course prerequisites remain unresearched. Do not feed rich prerequisite records directly into graph.js."
+    ],
+    "user_clarified_course_ids": [
+      "chabot:CHEM1A"
+    ]
+  },
+  "schema_notes": {
+    "schema_origin": "Uses the prior custom schema, extended to version 1.2.0 with a MINIMUM group operator and selection_constraints for elective unit and item thresholds.",
+    "local_ids": "Institution, course, requirement, and group IDs are local identifiers, not official institution or ASSIST identifiers. Requirement and group IDs are scoped to dataset_id; keep articulation rules scoped to this agreement when combining datasets.",
+    "source_pages": "Page numbers are one-based positions in the supplied PDF.",
+    "course_units": "Units belong to the institution listing the course. Source and target units are retained separately; articulation does not make their unit values equal.",
+    "course_operator": "COURSE refers to one canonical course record.",
+    "or_operator": "OR requires at least one complete operand, referenced requirement, or child group. Never flatten an OR of AND bundles into independent per-course alternatives.",
+    "and_operator": "AND requires every operand, referenced requirement, and child group. It encodes fulfillment, not prerequisite order.",
+    "cross_listed_codes": "No cross-listed course codes are stated in this agreement.",
+    "no_course_articulated": "A null source_requirement with this status means the agreement lists no Chabot equivalent. The target requirement still exists; null does not mean the requirement is waived, already satisfied, or globally impossible to fulfill.",
+    "dag_direction": "Connect source course expressions through articulation rules to receiving-course expressions and then requirement groups. Whole-sequence and individual mappings may fulfill the same target courses. The resulting edges describe fulfillment, not prerequisites.",
+    "prerequisites": "Null prerequisite edges mean the PDF does not provide prerequisite data; no prerequisite relationships or course order have been inferred.",
+    "scope": "Includes all lower division core rows, both physics sequence options, and all 11 lower division elective entries. Repeated individual and bundled physics mappings refer to the same receiving courses. This is not the full 120-unit degree plan or a statement of pre-admission requirements.",
+    "policy_application": "Apply the in-person lab policy to lab equivalence. CHEM 112L and ASTR 139 are explicitly listed as laboratory courses.",
+    "target_requirement": "Version 1.1.0 adds target_requirement to every articulation record. It is a COURSE expression for a single receiving course or an AND expression for a receiving-course bundle. target_course_id is retained for single targets and is null for bundles; that null does not mean the target is unknown.",
+    "nested_groups": "Evaluate AND or OR across the combined requirement_ids and group_ids. Empty lists provide no inputs. MINIMUM uses selection_constraints instead. agreement.root_requirement_group_id identifies the synthesized root.",
+    "minimum_operator": "MINIMUM selects entries from requirement_ids while meeting both minimum_units and minimum_items. Count each fulfilled entry once and sum unique receiving-course units. It does not require all listed electives.",
+    "physics_repeated_rows": "The PDF prints individual mappings and whole-sequence mappings for the same receiving physics courses. All rows are preserved. The synthesized OR between individual-mapping groups and whole-sequence rows represents alternative articulation coverage, not additional degree requirements. Receiving-course units must be deduplicated.",
+    "physics_option_a": "Option A requires PHYS 125 AND PHYS 126. Both the individual mappings and the bundled mapping use Chabot PHYS 3A AND PHYS 3B.",
+    "physics_option_b": "Option B requires PHYS 135 AND PHYS 136 AND PHYS 137. The PDF lists individual PHYS 7A, PHYS 7C, PHYS 7B mappings and a bundle mapped from either (PHYS 4A AND PHYS 4B AND PHYS 4C AND PHYS 5) OR (PHYS 7A AND PHYS 7C AND PHYS 7B). No individual equivalency from a PHYS 4-series course is inferred.",
+    "chemistry_bundles": "The elective CHEM 111 maps alone to Chabot CHEM 1A in this agreement; no CHEM 111L is listed. CHEM 112 AND CHEM 112L maps to Chabot CHEM 1B.",
+    "astronomy_bundle": "ASTR 138 AND ASTR 139 maps to Chabot ASTR 20 AND ASTR 30. Both source courses are required for this listed bundle."
+  }
+}

@@ -1,0 +1,1605 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "uc_tag_matrix_2027_2028",
+  "dataset_type": "transfer_admission_guarantee_requirements",
+  "extracted_on": "2026-09-26",
+  "source": {
+    "filename": "202728-tag-matrix_ada.pdf",
+    "library_file_id": "libfile_356fdcd1f2108191a74ed6b218556139",
+    "title": "UC Transfer Admission Guarantee (TAG) for students applying for fall 2027 or spring 2028 admission",
+    "publisher": "University of California",
+    "accurate_as_of": "2026-06-09",
+    "page_count": 5,
+    "page_numbering": "one_based_PDF_pages",
+    "sha256": "7bee4fd57f331c5d4db928861beec50527d1e5f02acc850c65dfc07e061acd09",
+    "subject_to_change": true,
+    "extraction_scope": "uploaded_PDF_only",
+    "linked_websites_fetched_for_this_conversion": false
+  },
+  "coverage": {
+    "entry_terms": [
+      "fall_2027",
+      "spring_2028"
+    ],
+    "participating_campus_count": 6,
+    "spring_2028_campus_ids": [
+      "merced"
+    ],
+    "includes_individual_major_preparation_course_numbers": false,
+    "future_change_notice_for": "UC Irvine fall 2028"
+  },
+  "semantics": {
+    "null": "Not specified or unresolved in the uploaded PDF; never treat as no requirement.",
+    "term_deadlines": "Academic term boundaries are preserved; no exact term-end dates are invented.",
+    "requirements_combination": "Shared eligibility and the applicable campus requirements must both be satisfied.",
+    "major_GPA_exceptions": "A named-major exception overrides its parent college/school GPA.",
+    "shared_fall_dates": "The 12 dated shared criteria explicitly cover fall 2027. Do not copy these dates to Merced spring 2028.",
+    "GE_requirement": "Cal-GETC/IGETC completion is distinct from admission-course and major-preparation requirements.",
+    "future_exclusions": "Irvine fall 2028 exclusions are not fall 2027 exclusions.",
+    "prerequisite_graph": "Admission criteria are not course-to-course prerequisite edges."
+  },
+  "program_notes": {
+    "eligible_origin": "California community colleges",
+    "TAG_required_for_general_transfer_admission": false,
+    "approximate_share_of_admitted_transfers_without_TAG_as_printed": "two-thirds",
+    "accurate_reporting_of_all_college_coursework_required": true,
+    "pathways_plus_uses_TAG": true,
+    "pathways_plus_url": "https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/pathways-plus.html",
+    "source_pages": [
+      1
+    ]
+  },
+  "shared_requirements": {
+    "scope": "fall_2027",
+    "operator": "AND",
+    "items": [
+      {
+        "id": "units_at_tag_submission",
+        "source_item_number": 1,
+        "category": "units",
+        "requirement": "Complete at least 30 semester or 45 quarter UC-transferable units by TAG submission.",
+        "minimum_units": {
+          "semester": 30,
+          "quarter": 45
+        },
+        "deadline": {
+          "season": "summer",
+          "year": 2026,
+          "boundary": "end"
+        },
+        "deadline_event": "TAG submission",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "first_english_and_math",
+        "source_item_number": 2,
+        "category": "course_completion",
+        "requirement": "Complete at least one UC-E English course and one UC-M math course by fall 2026.",
+        "course_requirements": {
+          "operator": "AND",
+          "items": [
+            {
+              "uc_subject_area": "UC-E",
+              "minimum_course_count": 1
+            },
+            {
+              "uc_subject_area": "UC-M",
+              "minimum_course_count": 1
+            }
+          ]
+        },
+        "deadline": {
+          "season": "fall",
+          "year": 2026,
+          "boundary": "by_term"
+        },
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "remaining_seven_course_pattern",
+        "source_item_number": 3,
+        "category": "course_completion",
+        "requirement": "Must complete the remaining 7-course pattern by spring 2026.",
+        "requirement_as_printed": "Must complete the remaining 7-course pattern by spring 2026;",
+        "pattern": "UC seven-course transfer admission pattern",
+        "deadline_as_printed": {
+          "season": "spring",
+          "year": 2026,
+          "boundary": "by_term"
+        },
+        "effective_deadline": null,
+        "review_status": "possible_source_date_error",
+        "automatic_deadline_evaluation_allowed": false,
+        "review_issue_ids": [
+          "seven_course_deadline_year"
+        ],
+        "external_details_url": "https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/preparing-to-transfer/basic-requirements.html",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "junior_standing_units",
+        "source_item_number": 4,
+        "category": "units",
+        "requirement": "Complete at least 60 semester or 90 quarter UC-transferable units by the end of spring 2027.",
+        "minimum_units": {
+          "semester": 60,
+          "quarter": 90
+        },
+        "deadline": {
+          "season": "spring",
+          "year": 2027,
+          "boundary": "end"
+        },
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "ccc_units_and_last_attendance",
+        "source_item_number": 5,
+        "category": "community_college_attendance",
+        "requirement": "Complete at least 30 semester or 45 quarter UC-transferable units at one or more California community colleges by spring 2027; the last regular-session institution must be a CCC.",
+        "minimum_ccc_units": {
+          "semester": 30,
+          "quarter": 45
+        },
+        "deadline": {
+          "season": "spring",
+          "year": 2027,
+          "boundary": "by_term"
+        },
+        "last_regular_session_institution_type": "California community college",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "last_regular_term_units_needed",
+        "source_item_number": 6,
+        "category": "units",
+        "requirement": "Need no more than 19 UC-transferable units in spring 2027 or the last regular term to reach junior standing.",
+        "maximum_units_still_needed": {
+          "semester": 19,
+          "quarter": 19
+        },
+        "applies_to": "units_needed_to_reach_junior_standing_not_total_units_enrolled",
+        "term": {
+          "season": "spring",
+          "year": 2027,
+          "boundary": "during"
+        },
+        "alternative_term": "last regular term",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "maximum_transfer_units",
+        "source_item_number": 7,
+        "category": "units",
+        "requirement": "Do not exceed 80 semester or 120 quarter UC-transferable units after lower-division unit limits are applied.",
+        "maximum_units": {
+          "semester": 80,
+          "quarter": 120
+        },
+        "apply_lower_division_unit_limits_before_comparison": true,
+        "source_note": "Students with only CCC coursework and AP/IB/A level credits will not exceed this limit.",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "minimum_grades_and_standing",
+        "source_item_number": 8,
+        "category": "academic_standing",
+        "requirement": "Earn no grade below C in the current fall, winter and/or spring terms and remain in good academic standing.",
+        "minimum_letter_grade": "C",
+        "terms_as_printed": [
+          "current fall",
+          "winter",
+          "spring"
+        ],
+        "good_academic_standing_required": true,
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "tag_application",
+        "source_item_number": 9,
+        "category": "application",
+        "requirement": "Submit the TAG application through UC TAP.",
+        "filing_window": {
+          "start": "2026-09-01",
+          "end": "2026-09-30",
+          "inclusive": true
+        },
+        "application_url": "https://uctap.universityofcalifornia.edu/students/",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "uc_application_and_major_match",
+        "source_item_number": 10,
+        "category": "application",
+        "requirement": "Submit the UC application; the TAG major and UC application major for the TAG campus must match.",
+        "filing_window": {
+          "start": "2026-10-01",
+          "end": "2026-11-30",
+          "inclusive": true
+        },
+        "major_match_required": true,
+        "application_url": "https://apply.universityofcalifornia.edu/my-application/login",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "transfer_academic_update",
+        "source_item_number": 11,
+        "category": "application",
+        "requirement": "Submit a Transfer Academic Update (TAU) by January 31, 2027.",
+        "deadline_date": "2027-01-31",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "campus_specific_criteria",
+        "source_item_number": 12,
+        "category": "campus_requirements",
+        "requirement": "Meet all campus-specific TAG criteria in the matrix.",
+        "requirements_reference": "campuses",
+        "source_pages": [
+          1
+        ]
+      }
+    ]
+  },
+  "ineligibility_rules": {
+    "scope": "all_TAG_campuses",
+    "operator": "ANY_DISQUALIFIES",
+    "items": [
+      {
+        "id": "degree_already_earned",
+        "condition": "Already earned a bachelor degree or higher.",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "return_to_same_uc",
+        "condition": "Previously enrolled at a UC campus and intends to return to that same UC campus.",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "left_uc_not_in_good_standing",
+        "condition": "Previously enrolled at a UC campus and was not in good standing when leaving that UC.",
+        "source_pages": [
+          1
+        ]
+      },
+      {
+        "id": "concurrent_high_school",
+        "condition": "Concurrently enrolled in high school when submitting TAG.",
+        "source_pages": [
+          1
+        ]
+      }
+    ]
+  },
+  "campuses": [
+    {
+      "id": "davis",
+      "name": "UC Davis",
+      "entry_terms": [
+        {
+          "season": "fall",
+          "year": 2027,
+          "calendar_term_label": "fall quarter"
+        }
+      ],
+      "coursework_pre_evaluation": {
+        "provided": true,
+        "wait_for_TAG_decision_before_UC_application": true,
+        "decision_release_dates": [],
+        "source_pages": [
+          2
+        ]
+      },
+      "tag_filing_windows": [
+        {
+          "entry_term": {
+            "season": "fall",
+            "year": 2027
+          },
+          "start": "2026-09-01",
+          "end": "2026-09-30",
+          "date_year_source": "shared_criterion_9",
+          "source_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "major_guarantee": {
+        "status": "yes_if_all_TAG_requirements_met",
+        "exceptions": [
+          {
+            "major": "Landscape Architecture",
+            "guarantee": "pre_major_only",
+            "full_major_guaranteed": false
+          }
+        ],
+        "source_pages": [
+          2
+        ]
+      },
+      "excluded_majors": {
+        "applies_to_entry_term": {
+          "season": "fall",
+          "year": 2027
+        },
+        "rules": [
+          {
+            "scope_type": "program_category",
+            "name": "Undeclared programs"
+          },
+          {
+            "scope_type": "major",
+            "name": "Business"
+          },
+          {
+            "scope_type": "major",
+            "name": "Computer Science"
+          },
+          {
+            "scope_type": "major",
+            "name": "Data Science"
+          },
+          {
+            "scope_type": "major",
+            "name": "Landscape Architecture",
+            "exclusion_scope": "full_major_guarantee",
+            "pre_major_TAG_available": true,
+            "pre_major_name": "pre-Landscape Architecture"
+          }
+        ],
+        "all_majors_open_as_printed": false,
+        "source_pages": [
+          2
+        ]
+      },
+      "minimum_uc_transferable_gpa": {
+        "rules": [
+          {
+            "scope_type": "college",
+            "minimum_gpa": 3.2,
+            "scope_name": "College of Agricultural and Environmental Sciences"
+          },
+          {
+            "scope_type": "college",
+            "minimum_gpa": 3.2,
+            "scope_name": "College of Biological Sciences"
+          },
+          {
+            "scope_type": "college",
+            "minimum_gpa": 3.2,
+            "scope_name": "College of Letters and Science"
+          },
+          {
+            "scope_type": "college",
+            "minimum_gpa": 3.5,
+            "scope_name": "College of Engineering"
+          }
+        ],
+        "deadline": {
+          "season": "summer",
+          "year": 2026,
+          "boundary": "end"
+        },
+        "deadline_scope": "fall_2027_entry",
+        "major_exception_overrides_parent_rule": true,
+        "source_pages": [
+          3
+        ]
+      },
+      "general_education": {
+        "patterns": [
+          "Cal-GETC",
+          "IGETC"
+        ],
+        "completion_required_by_default": false,
+        "required_exceptions": [],
+        "recommendations": [],
+        "source_pages": [
+          3
+        ]
+      },
+      "major_preparation": {
+        "required_for": [
+          {
+            "scope_type": "selective_majors",
+            "requirement": "Complete the required course series/groups."
+          }
+        ],
+        "individual_courses": null,
+        "individual_course_details_status": "not_enumerated_in_matrix",
+        "separate_major_preparation_gpa": {
+          "required_for": "each selective major",
+          "numeric_thresholds": null
+        },
+        "details_urls": [
+          "https://www.ucdavis.edu/admissions/undergraduate/transfer/transfer-admission-guarantee/criteria/",
+          "https://tag.ucdavis.edu/"
+        ],
+        "source_pages": [
+          3
+        ]
+      },
+      "contact": {
+        "tag_url": "https://www.ucdavis.edu/admissions/undergraduate/transfer/transfer-admission-guarantee",
+        "advisor_url": "https://ua.ucdavis.edu/portal/find-my-advisor",
+        "phone": "(530) 752-2971",
+        "source_pages": [
+          4
+        ]
+      }
+    },
+    {
+      "id": "irvine",
+      "name": "UC Irvine",
+      "entry_terms": [
+        {
+          "season": "fall",
+          "year": 2027,
+          "calendar_term_label": "fall quarter"
+        }
+      ],
+      "coursework_pre_evaluation": {
+        "provided": false,
+        "wait_for_TAG_decision_before_UC_application": null,
+        "decision_release_dates": [],
+        "source_pages": [
+          2
+        ]
+      },
+      "tag_filing_windows": [
+        {
+          "entry_term": {
+            "season": "fall",
+            "year": 2027
+          },
+          "start": "2026-09-01",
+          "end": "2026-09-30",
+          "date_year_source": "shared_criterion_9",
+          "source_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "major_guarantee": {
+        "status": "yes_if_all_TAG_requirements_met",
+        "exceptions": [],
+        "source_pages": [
+          2
+        ]
+      },
+      "excluded_majors": {
+        "applies_to_entry_term": {
+          "season": "fall",
+          "year": 2027
+        },
+        "rules": [
+          {
+            "scope_type": "major",
+            "name": "Art",
+            "note": "Portfolio required for the Art major; Art is nevertheless excluded from TAG."
+          },
+          {
+            "scope_type": "major",
+            "name": "Business Administration"
+          },
+          {
+            "scope_type": "major",
+            "name": "Dance"
+          },
+          {
+            "scope_type": "major",
+            "name": "Music"
+          },
+          {
+            "scope_type": "major",
+            "name": "Nursing Science"
+          },
+          {
+            "scope_type": "all_majors_in_school",
+            "name": "Donald Bren School of Information and Computer Sciences"
+          }
+        ],
+        "all_majors_open_as_printed": false,
+        "source_pages": [
+          2
+        ]
+      },
+      "minimum_uc_transferable_gpa": {
+        "rules": [
+          {
+            "scope_type": "campus",
+            "minimum_gpa": 3.4
+          }
+        ],
+        "deadline": {
+          "season": "fall",
+          "year": 2026,
+          "boundary": "end"
+        },
+        "deadline_scope": "fall_2027_entry",
+        "major_exception_overrides_parent_rule": true,
+        "source_pages": [
+          3
+        ]
+      },
+      "general_education": {
+        "patterns": [
+          "Cal-GETC",
+          "IGETC"
+        ],
+        "completion_required_by_default": false,
+        "required_exceptions": [],
+        "recommendations": [],
+        "source_pages": [
+          3
+        ]
+      },
+      "major_preparation": {
+        "required_for": [
+          {
+            "scope_type": "specific_majors",
+            "requirement": "Complete major prerequisites; consult campus requirements."
+          }
+        ],
+        "individual_courses": null,
+        "individual_course_details_status": "not_enumerated_in_matrix",
+        "separate_major_preparation_gpa": {
+          "required_for": null,
+          "numeric_thresholds": null
+        },
+        "details_urls": [
+          "https://admissions.uci.edu/transfer",
+          "https://admissions.uci.edu/tag"
+        ],
+        "source_pages": [
+          3
+        ]
+      },
+      "contact": {
+        "tag_url": "https://admissions.uci.edu/tag",
+        "phone": "(949) 824-6703",
+        "source_pages": [
+          4
+        ]
+      },
+      "future_exclusions": {
+        "effective_entry_term": {
+          "season": "fall",
+          "year": 2028
+        },
+        "in_addition_to_existing_exclusions": true,
+        "apply_to_fall_2027": false,
+        "rules": [
+          {
+            "scope_type": "major",
+            "name": "Aerospace Engineering"
+          },
+          {
+            "scope_type": "major",
+            "name": "Biological Sciences"
+          },
+          {
+            "scope_type": "major",
+            "name": "Biology/Education"
+          },
+          {
+            "scope_type": "major",
+            "name": "Business Economics"
+          },
+          {
+            "scope_type": "major",
+            "name": "Cognitive Sciences"
+          },
+          {
+            "scope_type": "major",
+            "name": "Computer Engineering"
+          },
+          {
+            "scope_type": "major",
+            "name": "Ecology & Evolutionary Biology"
+          },
+          {
+            "scope_type": "major",
+            "name": "Economics"
+          },
+          {
+            "scope_type": "major",
+            "name": "Electrical Engineering"
+          },
+          {
+            "scope_type": "major",
+            "name": "Mechanical Engineering"
+          },
+          {
+            "scope_type": "major",
+            "name": "Quantitative Economics"
+          },
+          {
+            "scope_type": "major",
+            "name": "Psychology",
+            "degrees": [
+              "B.A.",
+              "B.S."
+            ]
+          }
+        ],
+        "source_pages": [
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "id": "merced",
+      "name": "UC Merced",
+      "entry_terms": [
+        {
+          "season": "fall",
+          "year": 2027,
+          "calendar_term_label": "fall"
+        },
+        {
+          "season": "spring",
+          "year": 2028,
+          "calendar_term_label": "spring"
+        }
+      ],
+      "coursework_pre_evaluation": {
+        "provided": true,
+        "wait_for_TAG_decision_before_UC_application": true,
+        "decision_release_dates": [
+          {
+            "entry_term": "fall_2027",
+            "month_day": "11-15",
+            "year_explicit_in_source": null,
+            "inferred_calendar_year": 2026
+          },
+          {
+            "entry_term": "spring_2028",
+            "month_day": "07-01",
+            "year_explicit_in_source": null,
+            "inferred_calendar_year": 2027
+          }
+        ],
+        "source_pages": [
+          2
+        ]
+      },
+      "tag_filing_windows": [
+        {
+          "entry_term": {
+            "season": "fall",
+            "year": 2027
+          },
+          "start": "2026-09-01",
+          "end": "2026-09-30",
+          "date_year_source": "shared_criterion_9",
+          "source_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "entry_term": {
+            "season": "spring",
+            "year": 2028
+          },
+          "start_month_day": "05-01",
+          "end_month_day": "05-31",
+          "year_explicit_in_source": null,
+          "inferred_calendar_year": 2027,
+          "year_inference_basis": "Spring 2028 admission cycle",
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "major_guarantee": {
+        "status": "yes_if_all_TAG_requirements_met",
+        "exceptions": [],
+        "source_pages": [
+          2
+        ]
+      },
+      "excluded_majors": {
+        "applies_to_entry_term": null,
+        "rules": [],
+        "all_majors_open_as_printed": true,
+        "source_pages": [
+          2
+        ],
+        "applies_to_entry_terms": [
+          "fall_2027",
+          "spring_2028"
+        ],
+        "subject_to_change": true
+      },
+      "minimum_uc_transferable_gpa": {
+        "rules": [
+          {
+            "scope_type": "school",
+            "minimum_gpa": 3.0,
+            "scope_name": "School of Engineering"
+          },
+          {
+            "scope_type": "school",
+            "minimum_gpa": 2.9,
+            "scope_name": "School of Natural Science"
+          },
+          {
+            "scope_type": "school",
+            "minimum_gpa": 2.8,
+            "scope_name": "School of Social Sciences, Humanities and Arts",
+            "major_exceptions": [
+              {
+                "major": "Psychology",
+                "minimum_gpa": 3.0
+              },
+              {
+                "major": "Public Health",
+                "minimum_gpa": 3.0
+              }
+            ]
+          }
+        ],
+        "deadline": {
+          "season": "summer",
+          "year": 2026,
+          "boundary": "end"
+        },
+        "deadline_scope": "fall_2027_entry",
+        "major_exception_overrides_parent_rule": true,
+        "source_pages": [
+          3
+        ]
+      },
+      "general_education": {
+        "patterns": [
+          "Cal-GETC",
+          "IGETC"
+        ],
+        "completion_required_by_default": false,
+        "required_exceptions": [
+          {
+            "major": "Public Health",
+            "completion_required": true,
+            "acceptable_patterns": {
+              "operator": "OR",
+              "items": [
+                "Cal-GETC",
+                "IGETC"
+              ]
+            }
+          }
+        ],
+        "recommendations": [],
+        "source_pages": [
+          3
+        ]
+      },
+      "major_preparation": {
+        "required_for": [
+          {
+            "scope_type": "specific_majors",
+            "requirement": "Complete minimum course prerequisites."
+          }
+        ],
+        "individual_courses": null,
+        "individual_course_details_status": "not_enumerated_in_matrix",
+        "separate_major_preparation_gpa": {
+          "required_for": null,
+          "numeric_thresholds": null
+        },
+        "details_urls": [
+          "https://admissions.ucmerced.edu/tag"
+        ],
+        "source_pages": [
+          3
+        ]
+      },
+      "contact": {
+        "tag_url": "https://admissions.ucmerced.edu/transfer/tag",
+        "phone": "(209) 228-7178",
+        "email": "transfer@ucmerced.edu",
+        "source_pages": [
+          4
+        ]
+      },
+      "spring_2028_requirements": {
+        "course_deadlines": [
+          {
+            "uc_subject_area": "UC-E",
+            "course_ordinal": 1,
+            "deadline": {
+              "season": "spring",
+              "year": 2027,
+              "boundary": "end"
+            }
+          },
+          {
+            "uc_subject_area": "UC-E",
+            "course_ordinal": 2,
+            "deadline": {
+              "season": "summer",
+              "year": 2027,
+              "boundary": "end"
+            }
+          },
+          {
+            "uc_subject_area": "UC-M",
+            "minimum_course_count": 1,
+            "deadline": {
+              "season": "fall",
+              "year": 2027,
+              "boundary": "end"
+            }
+          }
+        ],
+        "all_other_TAG_qualifications_deadline": {
+          "season": "fall",
+          "year": 2027,
+          "boundary": "end"
+        },
+        "application_and_TAU_dates": null,
+        "do_not_copy_fall_2027_application_dates": true,
+        "source_pages": [
+          4
+        ],
+        "review_issue_ids": [
+          "spring_2028_unenumerated_application_details"
+        ]
+      }
+    },
+    {
+      "id": "riverside",
+      "name": "UC Riverside",
+      "entry_terms": [
+        {
+          "season": "fall",
+          "year": 2027,
+          "calendar_term_label": "fall"
+        }
+      ],
+      "coursework_pre_evaluation": {
+        "provided": true,
+        "wait_for_TAG_decision_before_UC_application": true,
+        "decision_release_dates": [],
+        "source_pages": [
+          2
+        ]
+      },
+      "tag_filing_windows": [
+        {
+          "entry_term": {
+            "season": "fall",
+            "year": 2027
+          },
+          "start": "2026-09-01",
+          "end": "2026-09-30",
+          "date_year_source": "shared_criterion_9",
+          "source_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "major_guarantee": {
+        "status": "yes_if_all_TAG_requirements_met",
+        "exceptions": [],
+        "source_pages": [
+          2
+        ]
+      },
+      "excluded_majors": {
+        "applies_to_entry_term": {
+          "season": "fall",
+          "year": 2027
+        },
+        "rules": [
+          {
+            "scope_type": "major",
+            "name": "Art Studio"
+          }
+        ],
+        "all_majors_open_as_printed": false,
+        "source_pages": [
+          2
+        ]
+      },
+      "minimum_uc_transferable_gpa": {
+        "rules": [
+          {
+            "scope_type": "college",
+            "minimum_gpa": 2.8,
+            "scope_name": "College of Humanities, Arts, and Social Sciences (CHASS)",
+            "major_exceptions": [
+              {
+                "major": "Psychology",
+                "minimum_gpa": 3.3
+              },
+              {
+                "major": "Theater, Film & Digital Production",
+                "minimum_gpa": 3.3
+              }
+            ]
+          },
+          {
+            "scope_type": "college",
+            "minimum_gpa": 3.0,
+            "scope_name": "Marlan and Rosemary Bourns College of Engineering (BCOE)",
+            "major_exceptions": [
+              {
+                "major": "Computer Science",
+                "minimum_gpa": 3.6
+              },
+              {
+                "major": "Computer Science w/ Business Applications",
+                "minimum_gpa": 3.3
+              },
+              {
+                "major": "Computer Engineering",
+                "minimum_gpa": 3.3
+              },
+              {
+                "major": "Mechanical Engineering",
+                "minimum_gpa": 3.1
+              }
+            ]
+          },
+          {
+            "scope_type": "college",
+            "minimum_gpa": 2.8,
+            "scope_name": "College of Natural and Agricultural Sciences (CNAS)",
+            "major_exceptions": [
+              {
+                "major": "Data Science",
+                "minimum_gpa": 3.0
+              }
+            ]
+          },
+          {
+            "scope_type": "school",
+            "minimum_gpa": 2.8,
+            "scope_name": "School of Business"
+          },
+          {
+            "scope_type": "school",
+            "minimum_gpa": 2.7,
+            "scope_name": "School of Education"
+          },
+          {
+            "scope_type": "school",
+            "minimum_gpa": 2.7,
+            "scope_name": "School of Public Policy"
+          }
+        ],
+        "deadline": {
+          "season": "summer",
+          "year": 2026,
+          "boundary": "end"
+        },
+        "deadline_scope": "fall_2027_entry",
+        "major_exception_overrides_parent_rule": true,
+        "source_pages": [
+          3
+        ]
+      },
+      "general_education": {
+        "patterns": [
+          "Cal-GETC",
+          "IGETC"
+        ],
+        "completion_required_by_default": false,
+        "required_exceptions": [],
+        "recommendations": [
+          {
+            "scope_type": "school",
+            "name_as_printed": "School of Business Administration",
+            "normalized_name": "School of Business",
+            "recommendation_strength": "highly_recommended",
+            "completion_required": false
+          }
+        ],
+        "source_pages": [
+          3
+        ]
+      },
+      "major_preparation": {
+        "required_for": [
+          {
+            "scope_type": "all_majors_in_college",
+            "name": "Bourns College of Engineering (BCOE)"
+          },
+          {
+            "scope_type": "all_majors_in_college",
+            "name": "College of Natural & Agricultural Sciences (CNAS)"
+          },
+          {
+            "scope_type": "all_majors_in_school",
+            "name_as_printed": "School of Business Administration",
+            "normalized_name": "School of Business"
+          },
+          {
+            "scope_type": "named_majors_in_college",
+            "college": "College of Humanities, Arts & Social Sciences (CHASS)",
+            "majors": [
+              "Business Economics",
+              "Economics",
+              "Psychology",
+              "Neuroscience"
+            ]
+          }
+        ],
+        "individual_courses": null,
+        "individual_course_details_status": "not_enumerated_in_matrix",
+        "separate_major_preparation_gpa": {
+          "required_for": null,
+          "numeric_thresholds": null
+        },
+        "details_urls": [
+          "https://admissions.ucr.edu/transfer/majors-preparation-guide",
+          "https://admissions.ucr.edu/transfer",
+          "https://admissions.ucr.edu/tag"
+        ],
+        "source_pages": [
+          3
+        ]
+      },
+      "contact": {
+        "tag_url": "https://admissions.ucr.edu/transfer/transfer-admission-guarantee",
+        "phone": "(951) 827-3411",
+        "contact_url": "https://admissions.ucr.edu/ask",
+        "source_pages": [
+          4
+        ]
+      }
+    },
+    {
+      "id": "santa_barbara",
+      "name": "UC Santa Barbara",
+      "entry_terms": [
+        {
+          "season": "fall",
+          "year": 2027,
+          "calendar_term_label": "fall quarter"
+        }
+      ],
+      "coursework_pre_evaluation": {
+        "provided": false,
+        "wait_for_TAG_decision_before_UC_application": null,
+        "decision_release_dates": [],
+        "source_pages": [
+          2
+        ]
+      },
+      "tag_filing_windows": [
+        {
+          "entry_term": {
+            "season": "fall",
+            "year": 2027
+          },
+          "start": "2026-09-01",
+          "end": "2026-09-30",
+          "date_year_source": "shared_criterion_9",
+          "source_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "major_guarantee": {
+        "status": "depends_on_pre_major",
+        "rules": [
+          {
+            "college": "College of Letters & Science",
+            "has_pre_major": false,
+            "guarantee": "full_major"
+          },
+          {
+            "college": "College of Letters & Science",
+            "has_pre_major": true,
+            "guarantee": "pre_major_only",
+            "additional_requirements_after_transfer_for_full_major": true
+          }
+        ],
+        "source_pages": [
+          2
+        ]
+      },
+      "excluded_majors": {
+        "applies_to_entry_term": {
+          "season": "fall",
+          "year": 2027
+        },
+        "rules": [
+          {
+            "scope_type": "all_majors_in_college",
+            "name": "College of Creative Studies"
+          },
+          {
+            "scope_type": "all_majors_in_college",
+            "name": "College of Engineering"
+          },
+          {
+            "scope_type": "major",
+            "name": "Dance",
+            "degree": "B.A.",
+            "college": "College of Letters & Science"
+          },
+          {
+            "scope_type": "major",
+            "name": "Dance",
+            "degree": "B.F.A.",
+            "college": "College of Letters & Science"
+          },
+          {
+            "scope_type": "major",
+            "name": "Music",
+            "degree": "B.M.",
+            "college": "College of Letters & Science"
+          },
+          {
+            "scope_type": "major",
+            "name": "Theater",
+            "degree": "B.A.",
+            "emphasis": "Theater Design",
+            "college": "College of Letters & Science"
+          },
+          {
+            "scope_type": "major",
+            "name": "Theater",
+            "degree": "B.F.A.",
+            "emphasis": "Acting",
+            "college": "College of Letters & Science"
+          }
+        ],
+        "all_majors_open_as_printed": false,
+        "source_pages": [
+          2
+        ]
+      },
+      "minimum_uc_transferable_gpa": {
+        "rules": [
+          {
+            "scope_type": "all_majors",
+            "minimum_gpa": 3.4
+          }
+        ],
+        "deadline": {
+          "season": "fall",
+          "year": 2026,
+          "boundary": "end"
+        },
+        "deadline_scope": "fall_2027_entry",
+        "major_exception_overrides_parent_rule": true,
+        "source_pages": [
+          3
+        ]
+      },
+      "general_education": {
+        "patterns": [
+          "Cal-GETC",
+          "IGETC"
+        ],
+        "completion_required_by_default": false,
+        "required_exceptions": [],
+        "recommendations": [],
+        "source_pages": [
+          3
+        ]
+      },
+      "major_preparation": {
+        "required_for": [
+          {
+            "scope_type": "major_groups_in_college",
+            "college": "College of Letters and Science",
+            "major_groups": [
+              "Biological Sciences",
+              "Chemistry and Biochemistry",
+              "Economics",
+              "Mathematics",
+              "Physics",
+              "Statistics and Applied Probability"
+            ]
+          }
+        ],
+        "individual_courses": null,
+        "individual_course_details_status": "not_enumerated_in_matrix",
+        "separate_major_preparation_gpa": {
+          "required_for": [
+            "Biological Sciences",
+            "Chemistry and Biochemistry",
+            "Economics",
+            "Mathematics",
+            "Physics",
+            "Statistics and Applied Probability"
+          ],
+          "numeric_thresholds": null,
+          "details": "Use By Major articulation agreements at ASSIST for numeric thresholds."
+        },
+        "details_urls": [
+          "https://admissions.ucsb.edu/selective-majors",
+          "https://assist.org/"
+        ],
+        "source_pages": [
+          3
+        ]
+      },
+      "contact": {
+        "tag_url": "https://admissions.sa.ucsb.edu/tag",
+        "phone": "(805) 893-2881",
+        "source_pages": [
+          4
+        ]
+      }
+    },
+    {
+      "id": "santa_cruz",
+      "name": "UC Santa Cruz",
+      "entry_terms": [
+        {
+          "season": "fall",
+          "year": 2027,
+          "calendar_term_label": "fall quarter"
+        }
+      ],
+      "coursework_pre_evaluation": {
+        "provided": true,
+        "wait_for_TAG_decision_before_UC_application": true,
+        "decision_release_dates": [],
+        "source_pages": [
+          2
+        ]
+      },
+      "tag_filing_windows": [
+        {
+          "entry_term": {
+            "season": "fall",
+            "year": 2027
+          },
+          "start": "2026-09-01",
+          "end": "2026-09-30",
+          "date_year_source": "shared_criterion_9",
+          "source_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "major_guarantee": {
+        "status": "yes_for_all_screening_majors_as_printed",
+        "screening_major_names": null,
+        "screening_major_details_url": "https://admissions.ucsc.edu/tag",
+        "non_screening_major_guarantee_not_separately_described": true,
+        "source_pages": [
+          2
+        ]
+      },
+      "excluded_majors": {
+        "applies_to_entry_term": {
+          "season": "fall",
+          "year": 2027
+        },
+        "rules": [],
+        "all_majors_open_as_printed": true,
+        "source_pages": [
+          2
+        ]
+      },
+      "minimum_uc_transferable_gpa": {
+        "rules": [
+          {
+            "scope_type": "all_majors",
+            "minimum_gpa": 3.0
+          }
+        ],
+        "deadline": {
+          "season": "summer",
+          "year": 2026,
+          "boundary": "end"
+        },
+        "deadline_scope": "fall_2027_entry",
+        "major_exception_overrides_parent_rule": true,
+        "source_pages": [
+          3
+        ]
+      },
+      "general_education": {
+        "patterns": [
+          "Cal-GETC",
+          "IGETC"
+        ],
+        "completion_required_by_default": false,
+        "required_exceptions": [],
+        "recommendations": [],
+        "source_pages": [
+          3
+        ]
+      },
+      "major_preparation": {
+        "required_for": [
+          {
+            "scope_type": "all_screening_majors"
+          }
+        ],
+        "individual_courses": null,
+        "individual_course_details_status": "not_enumerated_in_matrix",
+        "separate_major_preparation_gpa": {
+          "required_for": "some majors",
+          "numeric_thresholds": null
+        },
+        "details_urls": [
+          "https://admissions.ucsc.edu/tag"
+        ],
+        "source_pages": [
+          3
+        ]
+      },
+      "contact": {
+        "tag_url": "https://admissions.ucsc.edu/transfer-admission-guarantee-tag",
+        "phone": "(831) 459-4008",
+        "email": "tag@ucsc.edu",
+        "source_pages": [
+          4
+        ]
+      }
+    }
+  ],
+  "source_change_summary": [
+    {
+      "scope": "shared_criterion_8",
+      "change": "No grade below C in current fall, winter and/or spring terms; remain in good academic standing."
+    },
+    {
+      "campus_id": "merced",
+      "change": "Guidance added for spring 2028 TAG applicants."
+    },
+    {
+      "campus_id": "riverside",
+      "change": "Several academic school names updated."
+    },
+    {
+      "campus_id": "davis",
+      "change": "Business excluded from TAG."
+    },
+    {
+      "campus_id": "santa_barbara",
+      "change": "Statistics and Applied Probability requires major preparation and a specified major-preparation GPA."
+    },
+    {
+      "campus_id": "santa_barbara",
+      "change": "Theater B.A., Theater Design emphasis excluded from TAG."
+    },
+    {
+      "campus_id": "santa_cruz",
+      "change": "TAG currently available for all majors."
+    },
+    {
+      "campus_id": "irvine",
+      "change": "Additional major exclusions begin with fall 2028 admission.",
+      "details_reference": "campuses.irvine.future_exclusions"
+    }
+  ],
+  "source_change_summary_pages": [
+    5
+  ],
+  "source_review_issues": [
+    {
+      "id": "seven_course_deadline_year",
+      "severity": "requires_review",
+      "source_pages": [
+        1
+      ],
+      "source_item_number": 3,
+      "as_printed": "spring 2026",
+      "issue": "The remaining seven-course-pattern deadline precedes the fall 2026 first-English/math deadline and appears inconsistent with the fall 2027 admission cycle.",
+      "corrected_deadline": null,
+      "resolution": "Preserve the source; obtain official clarification before automatic eligibility decisions."
+    },
+    {
+      "id": "spring_2028_unenumerated_application_details",
+      "severity": "coverage_gap",
+      "source_pages": [
+        2,
+        4
+      ],
+      "issue": "Merced spring filing and decision month/day are provided, but calendar years and UC-application/TAU dates are not explicitly enumerated. Spring course deadlines are explicitly provided.",
+      "resolution": "Label inferred years and retain unknown dates as null."
+    },
+    {
+      "id": "major_preparation_details_external",
+      "severity": "coverage_gap",
+      "source_pages": [
+        3
+      ],
+      "issue": "Major course numbers, many course-group rules, and numeric major-preparation GPAs are referenced but not listed.",
+      "resolution": "Retain external URLs; do not manufacture missing courses or thresholds."
+    }
+  ],
+  "automation": {
+    "ready_for_display_and_filtering": true,
+    "sufficient_for_final_automated_TAG_eligibility": false,
+    "blocking_issue_ids": [
+      "seven_course_deadline_year",
+      "major_preparation_details_external"
+    ],
+    "unresolved_rule_result": "needs_review",
+    "convert_missing_major_course_details_to_empty_requirements": false
+  },
+  "links_extracted_from_pdf": [
+    {
+      "url": "https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/pathways-plus.html",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "url": "https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/preparing-to-transfer/basic-requirements.html",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "url": "https://uctap.universityofcalifornia.edu/students/",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "url": "https://apply.universityofcalifornia.edu/my-application/login",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "url": "https://admissions.ucsc.edu/tag",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "url": "https://tag.ucdavis.edu/",
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "url": "https://www.ucdavis.edu/admissions/undergraduate/transfer/transfer-admission-guarantee/criteria/",
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "url": "https://admissions.uci.edu/tag",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "url": "https://admissions.uci.edu/transfer",
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "url": "https://admissions.ucmerced.edu/tag",
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "url": "https://admissions.ucr.edu/tag",
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "url": "https://admissions.ucr.edu/transfer/majors-preparation-guide",
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "url": "https://admissions.ucr.edu/transfer",
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "url": "https://assist.org/",
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "url": "https://admissions.ucsb.edu/selective-majors",
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "url": "https://www.ucdavis.edu/admissions/undergraduate/transfer/transfer-admission-guarantee",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "url": "https://ua.ucdavis.edu/portal/find-my-advisor",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "url": "https://admissions.ucmerced.edu/transfer/tag",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "url": "mailto:transfer@ucmerced.edu",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "url": "https://admissions.ucr.edu/transfer/transfer-admission-guarantee",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "url": "https://admissions.ucr.edu/ask",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "url": "https://admissions.sa.ucsb.edu/tag",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "url": "https://admissions.ucsc.edu/transfer-admission-guarantee-tag",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "url": "mailto:tag@ucsc.edu",
+      "source_pages": [
+        4
+      ]
+    }
+  ]
+}

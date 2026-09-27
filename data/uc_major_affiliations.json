@@ -1,0 +1,831 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "uc_major_affiliations",
+  "title": "UC major affiliations: campus -> school/college -> major -> degree",
+  "description": "Which school or college offers each undergraduate major at the UC TAG campuses, from the campuses' own catalogs and admissions pages. The TAG matrix excludes some majors by school or college (every major in UC Irvine's Donald Bren School of Information and Computer Sciences; UC Santa Barbara's College of Creative Studies and College of Engineering) and sets some minimum GPAs by college or school; the TAG engine joins this file with it to decide those rules. It holds no TAG rules itself.",
+  "compiled_on": "2026-09-26",
+  "notes": [
+    "Campus ids are the TAG matrix's campus ids.",
+    "An organization's `name` is its official name; `aliases` are other official spellings or abbreviations, and the TAG matrix's spelling where it differs, each with its source.",
+    "A major name listed under two organizations of one campus (e.g. UC Santa Barbara Mathematics, in Letters and Science and in Creative Studies) resolves to both: rules that hold for one only need review.",
+    "`unresolved` lists majors whose school/college the sources don't settle (e.g. majors run jointly by two schools). A major not listed at all is unknown too. Neither is ever read as \"not in an excluded unit\".",
+    "`degrees` lists the bachelor's degrees the source prints; empty means the source doesn't state them.",
+    "UC Santa Cruz is not included: no TAG rule refers to a UC Santa Cruz school, college or division."
+  ],
+  "sources": {
+    "uci_catalogue_majors": {
+      "title": "UC Irvine General Catalogue 2026-2027: Undergraduate Majors and Minors",
+      "url": "https://catalogue.uci.edu/undergraduatedegrees/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26",
+      "note": "Each degree's page sits in its school's section of the catalogue (catalogue.uci.edu/<school>/...); the school is read from that section and the school's own catalogue page."
+    },
+    "uci_catalogue_donald_bren_ics": {
+      "title": "UC Irvine General Catalogue 2026-2027: Donald Bren School of Information and Computer Sciences",
+      "url": "https://catalogue.uci.edu/donaldbrenschoolofinformationandcomputersciences/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "uci_catalogue_henry_samueli_engineering": {
+      "title": "UC Irvine General Catalogue 2026-2027: The Henry Samueli School of Engineering",
+      "url": "https://catalogue.uci.edu/thehenrysamuelischoolofengineering/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "uci_catalogue_physical_sciences": {
+      "title": "UC Irvine General Catalogue 2026-2027: School of Physical Sciences",
+      "url": "https://catalogue.uci.edu/schoolofphysicalsciences/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "uci_catalogue_social_sciences": {
+      "title": "UC Irvine General Catalogue 2026-2027: School of Social Sciences",
+      "url": "https://catalogue.uci.edu/schoolofsocialsciences/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "uci_catalogue_social_ecology": {
+      "title": "UC Irvine General Catalogue 2026-2027: School of Social Ecology",
+      "url": "https://catalogue.uci.edu/schoolofsocialecology/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "uci_catalogue_paul_merage_business": {
+      "title": "UC Irvine General Catalogue 2026-2027: The Paul Merage School of Business",
+      "url": "https://catalogue.uci.edu/thepaulmerageschoolofbusiness/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "uci_catalogue_claire_trevor_arts": {
+      "title": "UC Irvine General Catalogue 2026-2027: Claire Trevor School of the Arts",
+      "url": "https://catalogue.uci.edu/clairetrevorschoolofthearts/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "uci_catalogue_charlie_dunlop_biological_sciences": {
+      "title": "UC Irvine General Catalogue 2026-2027: Charlie Dunlop School of Biological Sciences",
+      "url": "https://catalogue.uci.edu/charliedunlopschoolofbiologicalsciences/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "uci_catalogue_humanities": {
+      "title": "UC Irvine General Catalogue 2026-2027: School of Humanities",
+      "url": "https://catalogue.uci.edu/schoolofhumanities/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "uci_catalogue_education": {
+      "title": "UC Irvine General Catalogue 2026-2027: School of Education",
+      "url": "https://catalogue.uci.edu/schoolofeducation/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "uci_catalogue_joe_c_wen_population_public_health": {
+      "title": "UC Irvine General Catalogue 2026-2027: Joe C. Wen School of Population and Public Health",
+      "url": "https://catalogue.uci.edu/joecwenschoolofpopulationandpublichealth/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "uci_catalogue_sue_bill_gross_nursing": {
+      "title": "UC Irvine General Catalogue 2026-2027: Sue and Bill Gross School of Nursing",
+      "url": "https://catalogue.uci.edu/sueandbillgrossschoolofnursing/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "uci_catalogue_pharmacy_pharmaceutical_sciences": {
+      "title": "UC Irvine General Catalogue 2026-2027: School of Pharmacy and Pharmaceutical Sciences",
+      "url": "https://catalogue.uci.edu/schoolofpharmacyandpharmaceuticalsciences/",
+      "publisher": "University of California, Irvine",
+      "retrieved_on": "2026-09-26"
+    },
+    "ucd_catalog_programs": {
+      "title": "UC Davis 2026-2027 General Catalog: Departments, Programs, & Degrees",
+      "url": "https://catalog.ucdavis.edu/departments-programs-degrees/",
+      "publisher": "University of California, Davis",
+      "retrieved_on": "2026-09-26",
+      "note": "Each program page names the college or school that offers it under the program title; every major lists its program page in source_url."
+    },
+    "ucm_catalog_programs": {
+      "title": "UC Merced 2026-2027 Catalog: Academic Programs",
+      "url": "https://catalog.ucmerced.edu/content.php?catoid=26&navoid=3780",
+      "publisher": "University of California, Merced",
+      "retrieved_on": "2026-09-26",
+      "note": "Programs are listed under the school that offers them; an emphasis belongs to its major."
+    },
+    "uc_tag_matrix_2027_28": {
+      "title": "UC Transfer Admission Guarantee (TAG) for students applying for fall 2027 or spring 2028 admission",
+      "document": "202728-tag-matrix_ada.pdf, page 3 (data/uc_tag_requirements_2027_2028.json)",
+      "publisher": "University of California",
+      "retrieved_on": "2026-09-26",
+      "note": "The TAG matrix's own spelling of a unit, kept as an alias so its rules match."
+    },
+    "ucm_catalog_engineering": {
+      "title": "UC Merced 2026-2027 Catalog: School of Engineering",
+      "url": "https://catalog.ucmerced.edu/content.php?catoid=26&navoid=3652",
+      "publisher": "University of California, Merced",
+      "retrieved_on": "2026-09-26"
+    },
+    "ucm_catalog_natural_sciences": {
+      "title": "UC Merced 2026-2027 Catalog: School of Natural Sciences",
+      "url": "https://catalog.ucmerced.edu/content.php?catoid=26&navoid=3651",
+      "publisher": "University of California, Merced",
+      "retrieved_on": "2026-09-26"
+    },
+    "ucm_catalog_social_sciences_humanities_arts": {
+      "title": "UC Merced 2026-2027 Catalog: School of Social Sciences, Humanities and Arts",
+      "url": "https://catalog.ucmerced.edu/content.php?catoid=26&navoid=3650",
+      "publisher": "University of California, Merced",
+      "retrieved_on": "2026-09-26"
+    },
+    "ucsb_admissions_majors": {
+      "title": "UC Santa Barbara Undergraduate Admissions: Majors",
+      "url": "https://admissions.sa.ucsb.edu/majors",
+      "publisher": "University of California, Santa Barbara",
+      "retrieved_on": "2026-09-26",
+      "note": "Majors are listed under the college or school that offers them. The page appends \"for College of ...\" to names two colleges share (Art, Mathematics, Physics); that suffix isn't part of the name."
+    },
+    "ucsb_colleges": {
+      "title": "UC Santa Barbara: Undergraduate Colleges and Majors",
+      "url": "https://www.ucsb.edu/academics/undergraduate",
+      "publisher": "University of California, Santa Barbara",
+      "retrieved_on": "2026-09-26",
+      "note": "Names the colleges \"College of Creative Studies\", \"College of Engineering\" and \"College of Letters & Science\"."
+    },
+    "ucsb_engineering_majors": {
+      "title": "UC Santa Barbara Robert Mehrabian College of Engineering: Majors & Programs",
+      "url": "https://engineering.ucsb.edu/undergraduate/majors-programs",
+      "publisher": "University of California, Santa Barbara",
+      "retrieved_on": "2026-09-26",
+      "note": "Its undergraduate majors lead to the Bachelor of Science (BS) degree."
+    },
+    "ucsb_ccs_majors": {
+      "title": "UC Santa Barbara College of Creative Studies: Majors",
+      "url": "https://ccs.ucsb.edu/majors",
+      "publisher": "University of California, Santa Barbara",
+      "retrieved_on": "2026-09-26"
+    },
+    "ucr_admissions_majors": {
+      "title": "UC Riverside Undergraduate Admissions: Majors (Search by UCR's Colleges and Schools)",
+      "url": "https://admissions.ucr.edu/majors",
+      "publisher": "University of California, Riverside",
+      "retrieved_on": "2026-09-26",
+      "note": "Majors are listed under the college or school that offers them."
+    },
+    "ucr_bcoe_programs": {
+      "title": "UC Riverside Marlan and Rosemary Bourns College of Engineering: Undergraduate Programs",
+      "url": "https://engr.ucr.edu/undergraduate-programs",
+      "publisher": "University of California, Riverside",
+      "retrieved_on": "2026-09-26",
+      "note": "The college's own list of its 11 undergraduate programs."
+    },
+    "ucr_bcoe_home": {
+      "title": "Bourns College of Engineering at UC Riverside",
+      "url": "https://engr.ucr.edu/",
+      "publisher": "University of California, Riverside",
+      "retrieved_on": "2026-09-26"
+    }
+  },
+  "campuses": [
+    {
+      "id": "davis",
+      "name": "UC Davis",
+      "official_name": "University of California, Davis",
+      "aliases": [],
+      "coverage": "selected_majors",
+      "notes": [
+        "The planner's majors and the majors the TAG rules name; UC Davis sets its TAG minimum GPA by college."
+      ],
+      "organizations": [
+        {
+          "id": "engineering",
+          "type": "college",
+          "name": "College of Engineering",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["ucd_catalog_programs"],
+          "majors": [
+            {"name": "Computer Science", "degrees": ["B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/computer-science-engineering/computer-science-bs/"},
+            {"name": "Computer Science & Engineering", "degrees": ["B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/computer-science-engineering/computer-science-engineering-bs/"},
+            {"name": "Computer Engineering", "degrees": ["B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/electrical-computer-engineering/computer-engineering-bs/"},
+            {"name": "Electrical Engineering", "degrees": ["B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/electrical-computer-engineering/electrical-engineering-bs/"},
+            {"name": "Mechanical Engineering", "degrees": ["B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/mechanical-aerospace-engineering/mechanical-engineering-bs/"}
+          ]
+        },
+        {
+          "id": "letters_science",
+          "type": "college",
+          "name": "College of Letters & Science",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["ucd_catalog_programs"],
+          "majors": [
+            {"name": "Chemistry", "degrees": ["B.A.", "B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/chemistry/chemistry-ab/"},
+            {"name": "Cognitive Science", "degrees": ["B.A.", "B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/cognitive-science/cognitive-science-ab/"},
+            {"name": "Economics", "degrees": ["B.A."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/economics/economics-ab/"},
+            {"name": "Mathematics", "degrees": ["B.A.", "B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/mathematics/mathematics-ab/"},
+            {"name": "Physics", "degrees": ["B.A.", "B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/physics/physics-ab/"},
+            {"name": "Psychology", "degrees": ["B.A.", "B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/psychology/psychology-ab/"},
+            {"name": "Data Science", "degrees": ["B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/statistics/data-science-bs/"},
+            {"name": "Statistics", "degrees": ["B.A.", "B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/statistics/statistics-ab/"}
+          ]
+        },
+        {
+          "id": "biological_sciences",
+          "type": "college",
+          "name": "College of Biological Sciences",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["ucd_catalog_programs"],
+          "majors": [
+            {"name": "Biological Sciences", "degrees": ["B.A.", "B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/biological-sciences/biological-sciences-ab/"}
+          ]
+        },
+        {
+          "id": "agricultural_environmental_sciences",
+          "type": "college",
+          "name": "College of Agricultural & Environmental Sciences",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["ucd_catalog_programs"],
+          "majors": [
+            {"name": "Landscape Architecture", "degrees": ["B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/human-ecology/landscape-architecture-bs/"}
+          ]
+        },
+        {
+          "id": "graduate_school_of_management",
+          "type": "school",
+          "name": "Graduate School of Management",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["ucd_catalog_programs"],
+          "majors": [
+            {"name": "Business", "degrees": ["B.S."], "source_url": "https://catalog.ucdavis.edu/departments-programs-degrees/graduate-school-management/business-bs/"}
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "id": "irvine",
+      "name": "UC Irvine",
+      "official_name": "University of California, Irvine",
+      "aliases": ["UCI"],
+      "coverage": "all_bachelors_majors",
+      "notes": [
+        "Every bachelor's major in the 2026-2027 catalogue: UC Irvine's TAG excludes a whole school."
+      ],
+      "organizations": [
+        {
+          "id": "donald_bren_ics",
+          "type": "school",
+          "name": "Donald Bren School of Information and Computer Sciences",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_donald_bren_ics"],
+          "majors": [
+            {"name": "Computer Science", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/donaldbrenschoolofinformationandcomputersciences/departmentofcomputerscience/computerscience_bs/"},
+            {"name": "Data Science", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/donaldbrenschoolofinformationandcomputersciences/departmentofstatistics/datascience_bs/"},
+            {"name": "Game Design and Interactive Media", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/donaldbrenschoolofinformationandcomputersciences/departmentofinformatics/gamedesignandinteractivemedia_bs/"},
+            {"name": "Informatics", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/donaldbrenschoolofinformationandcomputersciences/departmentofinformatics/informatics_bs/"},
+            {"name": "Information and Computer Science", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/donaldbrenschoolofinformationandcomputersciences/informationandcomputerscience_bs/"},
+            {"name": "Software Engineering", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/donaldbrenschoolofinformationandcomputersciences/softwareengineering_bs/"}
+          ]
+        },
+        {
+          "id": "henry_samueli_engineering",
+          "type": "school",
+          "name": "The Henry Samueli School of Engineering",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_henry_samueli_engineering"],
+          "majors": [
+            {"name": "Aerospace Engineering", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/thehenrysamuelischoolofengineering/departmentofmechanicalandaerospaceengineering/aerospaceengineering_bs/"},
+            {"name": "Biomedical Engineering", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/thehenrysamuelischoolofengineering/departmentofbiomedicalengineering/biomedicalengineering_bs/"},
+            {"name": "Biomedical Engineering: Premedical", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/thehenrysamuelischoolofengineering/departmentofbiomedicalengineering/biomedicalengineeringpremedical_bs/"},
+            {"name": "Chemical Engineering", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/thehenrysamuelischoolofengineering/departmentofchemicalandbiomolecularengineering/chemicalengineering_bs/"},
+            {"name": "Civil Engineering", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/thehenrysamuelischoolofengineering/departmentofcivilandenvironmentalengineering/civilengineering_bs/"},
+            {"name": "Computer Engineering", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/thehenrysamuelischoolofengineering/departmentofelectricalengineeringandcomputerscience/computerengineering_bs/"},
+            {"name": "Electrical Engineering", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/thehenrysamuelischoolofengineering/departmentofelectricalengineeringandcomputerscience/electricalengineering_bs/"},
+            {"name": "Environmental Engineering", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/thehenrysamuelischoolofengineering/departmentofcivilandenvironmentalengineering/environmentalengineering_bs/"},
+            {"name": "Materials Science and Engineering", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/thehenrysamuelischoolofengineering/departmentofmaterialsscienceandengineering/materialsscienceandengineering_bs/"},
+            {"name": "Mechanical Engineering", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/thehenrysamuelischoolofengineering/departmentofmechanicalandaerospaceengineering/mechanicalengineering_bs/"}
+          ]
+        },
+        {
+          "id": "physical_sciences",
+          "type": "school",
+          "name": "School of Physical Sciences",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_physical_sciences"],
+          "majors": [
+            {"name": "Applied and Computational Mathematics", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/schoolofphysicalsciences/departmentofmathematics/appliedandcomputationalmathematics_bs/"},
+            {"name": "Applied Physics", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/schoolofphysicalsciences/departmentofphysicsandastronomy/appliedphysics_bs/"},
+            {"name": "Chemistry", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/schoolofphysicalsciences/departmentofchemistry/chemistry_bs/"},
+            {"name": "Environmental and Earth System Science", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/schoolofphysicalsciences/departmentofearthsystemscience/environmentalandearthsystemscience_bs/"},
+            {"name": "Mathematics", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/schoolofphysicalsciences/departmentofmathematics/mathematics_bs/"},
+            {"name": "Physics", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/schoolofphysicalsciences/departmentofphysicsandastronomy/physics_bs/"}
+          ]
+        },
+        {
+          "id": "social_sciences",
+          "type": "school",
+          "name": "School of Social Sciences",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_social_sciences"],
+          "majors": [
+            {"name": "Anthropology", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialsciences/departmentofanthropology/anthropology_ba/"},
+            {"name": "Business Economics", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialsciences/departmentofeconomics/businesseconomics_ba/"},
+            {"name": "Chicano/Latino Studies", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialsciences/departmentofchicanolatinostudies/chicanolatinostudies_ba/"},
+            {"name": "Cognitive Sciences", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/schoolofsocialsciences/departmentofcognitivesciences/cognitivesciences_bs/"},
+            {"name": "Economics", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialsciences/departmentofeconomics/economics_ba/"},
+            {"name": "International Studies", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialsciences/departmentofglobalandinternationalstudies/internationalstudies_ba/"},
+            {"name": "Language Science", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialsciences/departmentoflanguagescience/languagescience_ba/"},
+            {"name": "Political Science", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialsciences/departmentofpoliticalscience/politicalscience_ba/"},
+            {"name": "Psychology", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/schoolofsocialsciences/departmentofcognitivesciences/psychology_bs/"},
+            {"name": "Quantitative Economics", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialsciences/departmentofeconomics/quantitativeeconomics_ba/"},
+            {"name": "Social Policy and Public Service", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialsciences/socialpolicyandpublicservice_ba/"},
+            {"name": "Sociology", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialsciences/departmentofsociology/sociology_ba/"}
+          ]
+        },
+        {
+          "id": "social_ecology",
+          "type": "school",
+          "name": "School of Social Ecology",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_social_ecology"],
+          "majors": [
+            {"name": "Criminology, Law and Society", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialecology/departmentofcriminologylawandsociety/criminologylawandsociety_ba/"},
+            {"name": "Psychology", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialecology/departmentofpsychology/psychology_ba/"},
+            {"name": "Social Ecology", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialecology/socialecology_ba/"},
+            {"name": "Urban Studies, Planning, and Policy", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofsocialecology/departmentofurbanplanningandpublicpolicy/urbanstudiesplanningandpolicy_ba/"}
+          ]
+        },
+        {
+          "id": "paul_merage_business",
+          "type": "school",
+          "name": "The Paul Merage School of Business",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_paul_merage_business"],
+          "majors": [
+            {"name": "Business Administration", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/thepaulmerageschoolofbusiness/businessadministration_ba/"}
+          ]
+        },
+        {
+          "id": "claire_trevor_arts",
+          "type": "school",
+          "name": "Claire Trevor School of the Arts",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_claire_trevor_arts"],
+          "majors": [
+            {"name": "Art", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/clairetrevorschoolofthearts/departmentofart/art_ba/"},
+            {"name": "Dance", "degrees": ["B.A.", "B.F.A."], "source_url": "https://catalogue.uci.edu/clairetrevorschoolofthearts/departmentofdance/dance_ba/"},
+            {"name": "Drama", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/clairetrevorschoolofthearts/departmentofdrama/drama_ba/"},
+            {"name": "Music", "degrees": ["B.A.", "B.Mus."], "source_url": "https://catalogue.uci.edu/clairetrevorschoolofthearts/departmentofmusic/music_ba/"},
+            {"name": "Music Theatre", "degrees": ["B.F.A."], "source_url": "https://catalogue.uci.edu/clairetrevorschoolofthearts/departmentofdrama/musictheatre_bfa/"}
+          ]
+        },
+        {
+          "id": "charlie_dunlop_biological_sciences",
+          "type": "school",
+          "name": "Charlie Dunlop School of Biological Sciences",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_charlie_dunlop_biological_sciences"],
+          "majors": [
+            {"name": "Biochemistry and Molecular Biology", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/charliedunlopschoolofbiologicalsciences/departmentofmolecularbiologyandbiochemistry/biochemistryandmolecularbiology_bs/"},
+            {"name": "Biological Sciences", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/charliedunlopschoolofbiologicalsciences/biologicalsciences_bs/"},
+            {"name": "Biology/Education", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/charliedunlopschoolofbiologicalsciences/biologyeducation_bs/"},
+            {"name": "Developmental and Cell Biology", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/charliedunlopschoolofbiologicalsciences/departmentofdevelopmentalandcellbiology/developmentalandcellbiology_bs/"},
+            {"name": "Ecology and Evolutionary Biology", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/charliedunlopschoolofbiologicalsciences/departmentofecologyandevolutionarybiology/ecologyandevolutionarybiology_bs/"},
+            {"name": "Genetics", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/charliedunlopschoolofbiologicalsciences/departmentofdevelopmentalandcellbiology/genetics_bs/"},
+            {"name": "Human Biology", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/charliedunlopschoolofbiologicalsciences/humanbiology_bs/"},
+            {"name": "Microbiology and Immunology", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/charliedunlopschoolofbiologicalsciences/departmentofmolecularbiologyandbiochemistry/microbiologyandimmunology_bs/"},
+            {"name": "Neurobiology", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/charliedunlopschoolofbiologicalsciences/departmentofneurobiologyandbehavior/neurobiology_bs/"},
+            {"name": "Physiology and Exercise Science", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/charliedunlopschoolofbiologicalsciences/physiologyandexercisescience_bs/"}
+          ]
+        },
+        {
+          "id": "humanities",
+          "type": "school",
+          "name": "School of Humanities",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_humanities"],
+          "majors": [
+            {"name": "African American Studies", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofafricanamericanstudies/africanamericanstudies_ba/"},
+            {"name": "Art History", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofarthistory/arthistory_ba/"},
+            {"name": "Asian American Studies", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofasianamericanstudies/asianamericanstudies_ba/"},
+            {"name": "Chinese Studies", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofeastasianstudies/chinesestudies_ba/"},
+            {"name": "Classics", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofclassics/classics_ba/"},
+            {"name": "Comparative Literature", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofcomparativeliterature/comparativeliterature_ba/"},
+            {"name": "East Asian Cultures", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofeastasianstudies/eastasiancultures_ba/"},
+            {"name": "English", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofenglish/english_ba/"},
+            {"name": "European Studies", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofeuropeanlanguagesandstudies/europeanstudies_ba/"},
+            {"name": "Film and Media Studies", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentoffilmandmediastudies/filmandmediastudies_ba/"},
+            {"name": "French", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofeuropeanlanguagesandstudies/french_ba/"},
+            {"name": "Gender and Sexuality Studies", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofgenderandsexualitystudies/genderandsexualitystudies_ba/"},
+            {"name": "German Studies", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofeuropeanlanguagesandstudies/germanstudies_ba/"},
+            {"name": "Global Cultures", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/undergraduateprograminglobalcultures/globalcultures_ba/"},
+            {"name": "History", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofhistory/history_ba/"},
+            {"name": "Japanese Language and Literature", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofeastasianstudies/japaneselanguageandliterature_ba/"},
+            {"name": "Korean Literature and Culture", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofeastasianstudies/koreanliteratureandculture_ba/"},
+            {"name": "Literary Journalism", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofenglish/literaryjournalism_ba/"},
+            {"name": "Philosophy", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/departmentofphilosophy/philosophy_ba/"},
+            {"name": "Religious Studies", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofhumanities/undergraduateprograminreligiousstudies/religiousstudies_ba/"}
+          ]
+        },
+        {
+          "id": "education",
+          "type": "school",
+          "name": "School of Education",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_education"],
+          "majors": [
+            {"name": "Education Sciences", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/schoolofeducation/education_ba/"}
+          ]
+        },
+        {
+          "id": "joe_c_wen_population_public_health",
+          "type": "school",
+          "name": "Joe C. Wen School of Population and Public Health",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_joe_c_wen_population_public_health"],
+          "majors": [
+            {"name": "Public Health Policy", "degrees": ["B.A."], "source_url": "https://catalogue.uci.edu/joecwenschoolofpopulationandpublichealth/publichealthpolicy_ba/"},
+            {"name": "Public Health Sciences", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/joecwenschoolofpopulationandpublichealth/publichealthsciences_bs/"}
+          ]
+        },
+        {
+          "id": "sue_bill_gross_nursing",
+          "type": "school",
+          "name": "Sue and Bill Gross School of Nursing",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_sue_bill_gross_nursing"],
+          "majors": [
+            {"name": "Nursing Science", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/sueandbillgrossschoolofnursing/nursingscience_bs/"}
+          ]
+        },
+        {
+          "id": "pharmacy_pharmaceutical_sciences",
+          "type": "school",
+          "name": "School of Pharmacy and Pharmaceutical Sciences",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["uci_catalogue_majors", "uci_catalogue_pharmacy_pharmaceutical_sciences"],
+          "majors": [
+            {"name": "Pharmaceutical Sciences", "degrees": ["B.S."], "source_url": "https://catalogue.uci.edu/schoolofpharmacyandpharmaceuticalsciences/pharmaceuticalsciences_bs/"}
+          ]
+        }
+      ],
+      "unresolved": [
+        {
+          "name": "Business Information Management",
+          "degrees": ["B.S."],
+          "source_url": "https://catalogue.uci.edu/interdisciplinarystudies/businessinformationmanagement_bs/",
+          "reason": "the catalogue lists it under Interdisciplinary Studies, \"jointly offered by the Donald Bren School of Information and Computer Sciences and the Paul Merage School of Business\"",
+          "sources": ["uci_catalogue_majors"]
+        },
+        {
+          "name": "Computer Science and Engineering",
+          "degrees": ["B.S."],
+          "source_url": "https://catalogue.uci.edu/interdisciplinarystudies/computerscienceandengineering_bs/",
+          "reason": "the catalogue lists it under Interdisciplinary Studies, \"administered by faculty from two academic units\": the Department of Computer Science in the Donald Bren School of Information and Computer Sciences and the Department of Electrical Engineering and Computer Science in The Henry Samueli School of Engineering",
+          "sources": ["uci_catalogue_majors"]
+        },
+        {
+          "name": "Environmental Science and Policy",
+          "degrees": ["B.A."],
+          "source_url": "https://catalogue.uci.edu/interdisciplinarystudies/environmentalscienceandpolicy_ba/",
+          "reason": "the catalogue lists it under Interdisciplinary Studies, not under a school",
+          "sources": ["uci_catalogue_majors"]
+        },
+        {
+          "name": "Global Middle East Studies",
+          "degrees": ["B.A."],
+          "source_url": "https://catalogue.uci.edu/interdisciplinarystudies/globalmiddleeaststudies_ba/",
+          "reason": "the catalogue lists it under Interdisciplinary Studies, not under a school",
+          "sources": ["uci_catalogue_majors"]
+        }
+      ]
+    },
+    {
+      "id": "merced",
+      "name": "UC Merced",
+      "official_name": "University of California, Merced",
+      "aliases": [],
+      "coverage": "all_bachelors_majors",
+      "notes": [
+        "Every bachelor's major in the 2026-2027 catalog: UC Merced sets its TAG minimum GPA by school.",
+        "UC Merced offers no major named \"Computer Science\" or \"Computer Engineering\" (Computer Science and Engineering; Electrical Engineering has a Computer Engineering emphasis)."
+      ],
+      "organizations": [
+        {
+          "id": "engineering",
+          "type": "school",
+          "name": "School of Engineering",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["ucm_catalog_programs", "ucm_catalog_engineering"],
+          "majors": [
+            {"name": "Aerospace Engineering", "degrees": ["B.S."]},
+            {"name": "Biochemical and Biomolecular Engineering", "degrees": ["B.S."]},
+            {"name": "Bioengineering", "degrees": ["B.S."]},
+            {"name": "Chemical Engineering", "degrees": ["B.S."]},
+            {"name": "Civil Engineering", "degrees": ["B.S."]},
+            {"name": "Computer Science and Engineering", "degrees": ["B.S."]},
+            {"name": "Data Science and Analytics", "degrees": ["B.A."]},
+            {"name": "Electrical Engineering", "degrees": ["B.S."]},
+            {"name": "Environmental Engineering", "degrees": ["B.S."]},
+            {"name": "Management of Innovation, Sustainability and Technology", "degrees": ["B.A."]},
+            {"name": "Materials Science and Engineering", "degrees": ["B.S."]},
+            {"name": "Mechanical Engineering", "degrees": ["B.S."]}
+          ]
+        },
+        {
+          "id": "natural_sciences",
+          "type": "school",
+          "name": "School of Natural Sciences",
+          "aliases": [
+            {"name": "School of Natural Science", "source": "uc_tag_matrix_2027_28"}
+          ],
+          "parent_id": null,
+          "sources": ["ucm_catalog_programs", "ucm_catalog_natural_sciences"],
+          "majors": [
+            {"name": "Applied Mathematical Sciences", "degrees": ["B.S."]},
+            {"name": "Biochemistry", "degrees": ["B.S."]},
+            {"name": "Biological Sciences", "degrees": ["B.A.", "B.S."]},
+            {"name": "Chemistry", "degrees": ["B.S."]},
+            {"name": "Data Science and Computing", "degrees": ["B.S."]},
+            {"name": "Ecology, Evolution, and Conservation Biology", "degrees": ["B.S."]},
+            {"name": "Environmental Systems Science", "degrees": ["B.S."]},
+            {"name": "Physics", "degrees": ["B.S."]}
+          ]
+        },
+        {
+          "id": "social_sciences_humanities_arts",
+          "type": "school",
+          "name": "School of Social Sciences, Humanities and Arts",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["ucm_catalog_programs", "ucm_catalog_social_sciences_humanities_arts"],
+          "majors": [
+            {"name": "Accounting", "degrees": ["B.S."]},
+            {"name": "Anthropology", "degrees": ["B.A."]},
+            {"name": "Business Administration", "degrees": ["B.A."]},
+            {"name": "Cognitive Science", "degrees": ["B.A.", "B.S."]},
+            {"name": "Communication and Media", "degrees": ["B.A."]},
+            {"name": "Critical Race and Ethnic Studies", "degrees": ["B.A."]},
+            {"name": "Economics", "degrees": ["B.A.", "B.S."]},
+            {"name": "Environmental Humanities", "degrees": ["B.A."]},
+            {"name": "Global Arts Studies", "degrees": ["B.A."]},
+            {"name": "History", "degrees": ["B.A."]},
+            {"name": "Liberal Studies", "degrees": ["B.A."]},
+            {"name": "Literatures in English", "degrees": ["B.A."]},
+            {"name": "Management and Business Economics", "degrees": ["B.S."]},
+            {"name": "Neuroscience", "degrees": ["B.A.", "B.S."]},
+            {"name": "Philosophy", "degrees": ["B.A."]},
+            {"name": "Political Science", "degrees": ["B.A."]},
+            {"name": "Psychology", "degrees": ["B.A."]},
+            {"name": "Public Health", "degrees": ["B.A.", "B.S."]},
+            {"name": "Science, Technology, and Ethics", "degrees": ["B.S."]},
+            {"name": "Sociology", "degrees": ["B.A."]},
+            {"name": "Spanish", "degrees": ["B.A."]},
+            {"name": "Writing Studies", "degrees": ["B.A."]}
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "id": "riverside",
+      "name": "UC Riverside",
+      "official_name": "University of California, Riverside",
+      "aliases": ["UCR"],
+      "coverage": "selected_majors",
+      "notes": [
+        "Every Bourns College of Engineering major, plus the planner's majors and the majors the TAG rules name. UC Riverside sets its TAG minimum GPA by college or school.",
+        "Data Science and Neuroscience are each offered in two colleges (tracks), so they resolve to both."
+      ],
+      "organizations": [
+        {
+          "id": "bourns_engineering",
+          "type": "college",
+          "name": "Marlan and Rosemary Bourns College of Engineering",
+          "aliases": [
+            {"name": "Bourns College of Engineering", "source": "ucr_bcoe_home"},
+            {"name": "BCOE", "source": "ucr_admissions_majors"}
+          ],
+          "parent_id": null,
+          "sources": ["ucr_bcoe_programs", "ucr_admissions_majors"],
+          "majors": [
+            {"name": "Bioengineering", "degrees": []},
+            {"name": "Chemical Engineering", "degrees": []},
+            {"name": "Computer Engineering", "degrees": []},
+            {"name": "Computer Science", "degrees": []},
+            {"name": "Computer Science with Business Applications", "degrees": []},
+            {"name": "Data Science", "degrees": []},
+            {"name": "Environmental Engineering", "degrees": []},
+            {"name": "Electrical Engineering", "degrees": []},
+            {"name": "Materials Science and Engineering", "degrees": []},
+            {"name": "Mechanical Engineering", "degrees": []},
+            {"name": "Robotics Engineering", "degrees": []},
+            {"name": "Computer Science with Applications", "degrees": []}
+          ]
+        },
+        {
+          "id": "natural_agricultural_sciences",
+          "type": "college",
+          "name": "College of Natural and Agricultural Sciences",
+          "aliases": [
+            {"name": "CNAS", "source": "ucr_admissions_majors"}
+          ],
+          "parent_id": null,
+          "sources": ["ucr_admissions_majors"],
+          "majors": [
+            {"name": "Biology", "degrees": []},
+            {"name": "Chemistry", "degrees": []},
+            {"name": "Data Science", "degrees": []},
+            {"name": "Mathematics", "degrees": []},
+            {"name": "Neuroscience", "degrees": []},
+            {"name": "Physics", "degrees": []},
+            {"name": "Statistics", "degrees": []}
+          ]
+        },
+        {
+          "id": "humanities_arts_social_sciences",
+          "type": "college",
+          "name": "College of Humanities, Arts, and Social Sciences",
+          "aliases": [
+            {"name": "CHASS", "source": "ucr_admissions_majors"}
+          ],
+          "parent_id": null,
+          "sources": ["ucr_admissions_majors"],
+          "majors": [
+            {"name": "Art (Studio)", "degrees": []},
+            {"name": "Business Economics", "degrees": []},
+            {"name": "Economics", "degrees": []},
+            {"name": "Neuroscience", "degrees": []},
+            {"name": "Psychology", "degrees": []}
+          ]
+        },
+        {
+          "id": "business",
+          "type": "school",
+          "name": "School of Business",
+          "aliases": [],
+          "parent_id": null,
+          "sources": ["ucr_admissions_majors"],
+          "majors": [
+            {"name": "Actuarial Science", "degrees": []},
+            {"name": "Business Administration", "degrees": []}
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    {
+      "id": "santa_barbara",
+      "name": "UC Santa Barbara",
+      "official_name": "University of California, Santa Barbara",
+      "aliases": ["UCSB"],
+      "coverage": "all_bachelors_majors",
+      "notes": [
+        "Every major on the Undergraduate Admissions majors page: UC Santa Barbara's TAG excludes whole colleges.",
+        "\"Biology\" is the College of Creative Studies major; the College of Letters and Science's is \"Biological Sciences\"."
+      ],
+      "organizations": [
+        {
+          "id": "letters_science",
+          "type": "college",
+          "name": "College of Letters and Science",
+          "aliases": [
+            {"name": "College of Letters & Science", "source": "ucsb_colleges"},
+            {"name": "L&S", "source": "ucsb_admissions_majors"}
+          ],
+          "parent_id": null,
+          "sources": ["ucsb_admissions_majors", "ucsb_colleges"],
+          "majors": [
+            {"name": "Actuarial Science", "degrees": []},
+            {"name": "Anthropology", "degrees": []},
+            {"name": "Applied Mathematics", "degrees": []},
+            {"name": "Aquatic Biology", "degrees": []},
+            {"name": "Art", "degrees": []},
+            {"name": "Asian American Studies", "degrees": []},
+            {"name": "Biochemistry", "degrees": []},
+            {"name": "Biological Sciences", "degrees": []},
+            {"name": "Biopsychology", "degrees": []},
+            {"name": "Black Studies", "degrees": []},
+            {"name": "Chemistry", "degrees": []},
+            {"name": "Chicano & Chicana Studies", "degrees": []},
+            {"name": "Classics", "degrees": []},
+            {"name": "Communication", "degrees": []},
+            {"name": "Comparative Literature", "degrees": []},
+            {"name": "Dance", "degrees": []},
+            {"name": "Earth Science", "degrees": []},
+            {"name": "East Asian Studies", "degrees": []},
+            {"name": "Ecology & Evolution", "degrees": []},
+            {"name": "Economics", "degrees": []},
+            {"name": "Economics & Accounting", "degrees": []},
+            {"name": "English", "degrees": []},
+            {"name": "Environmental Studies", "degrees": []},
+            {"name": "Feminist Studies", "degrees": []},
+            {"name": "Film & Media Studies", "degrees": []},
+            {"name": "Financial Mathematics & Statistics", "degrees": []},
+            {"name": "French", "degrees": []},
+            {"name": "Geography", "degrees": []},
+            {"name": "German", "degrees": []},
+            {"name": "Global Studies", "degrees": []},
+            {"name": "History", "degrees": []},
+            {"name": "History of Art & Architecture", "degrees": []},
+            {"name": "History of Policy, Law, & Governance", "degrees": []},
+            {"name": "Hydrologic Sciences & Policy", "degrees": []},
+            {"name": "Italian Studies", "degrees": []},
+            {"name": "Language, Culture & Society", "degrees": []},
+            {"name": "Latin American & Iberian Studies", "degrees": []},
+            {"name": "Linguistics", "degrees": []},
+            {"name": "Mathematics", "degrees": []},
+            {"name": "Medieval Studies", "degrees": []},
+            {"name": "Middle East Studies", "degrees": []},
+            {"name": "Molecular & Cellular Biology", "degrees": []},
+            {"name": "Music Performance/Music Studies", "degrees": []},
+            {"name": "Philosophy", "degrees": []},
+            {"name": "Physics", "degrees": []},
+            {"name": "Physiology", "degrees": []},
+            {"name": "Political Science", "degrees": []},
+            {"name": "Portuguese", "degrees": []},
+            {"name": "Psychological & Brain Sciences", "degrees": []},
+            {"name": "Religious Studies", "degrees": []},
+            {"name": "Russian & East European Studies", "degrees": []},
+            {"name": "Sociology", "degrees": []},
+            {"name": "Spanish", "degrees": []},
+            {"name": "Statistics & Data Science", "degrees": []},
+            {"name": "Theater", "degrees": []},
+            {"name": "Zoology", "degrees": []}
+          ]
+        },
+        {
+          "id": "engineering",
+          "type": "college",
+          "name": "Robert Mehrabian College of Engineering",
+          "aliases": [
+            {"name": "College of Engineering", "source": "ucsb_colleges"},
+            {"name": "COE", "source": "ucsb_admissions_majors"}
+          ],
+          "parent_id": null,
+          "sources": ["ucsb_admissions_majors", "ucsb_engineering_majors"],
+          "majors": [
+            {"name": "Artificial Intelligence", "degrees": ["B.S."]},
+            {"name": "Chemical Engineering", "degrees": ["B.S."]},
+            {"name": "Computer Engineering", "degrees": ["B.S."]},
+            {"name": "Computer Science", "degrees": ["B.S."]},
+            {"name": "Electrical Engineering", "degrees": ["B.S."]},
+            {"name": "Mechanical Engineering", "degrees": ["B.S."]}
+          ]
+        },
+        {
+          "id": "creative_studies",
+          "type": "college",
+          "name": "College of Creative Studies",
+          "aliases": [
+            {"name": "CCS", "source": "ucsb_admissions_majors"}
+          ],
+          "parent_id": null,
+          "sources": ["ucsb_admissions_majors", "ucsb_ccs_majors"],
+          "majors": [
+            {"name": "Art", "degrees": []},
+            {"name": "Biology", "degrees": []},
+            {"name": "Chemistry and Biochemistry", "degrees": []},
+            {"name": "Computing", "degrees": []},
+            {"name": "Marine Science", "degrees": []},
+            {"name": "Mathematics", "degrees": []},
+            {"name": "Music Composition", "degrees": []},
+            {"name": "Physics", "degrees": []},
+            {"name": "Writing and Literature", "degrees": []}
+          ]
+        },
+        {
+          "id": "gevirtz_education",
+          "type": "school",
+          "name": "Gevirtz School of Education",
+          "aliases": [
+            {"name": "GSE", "source": "ucsb_admissions_majors"}
+          ],
+          "parent_id": null,
+          "sources": ["ucsb_admissions_majors"],
+          "majors": [
+            {"name": "Education and Society", "degrees": []}
+          ]
+        }
+      ],
+      "unresolved": []
+    }
+  ]
+}

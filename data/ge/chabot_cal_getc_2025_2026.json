@@ -1,0 +1,4573 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "chabot_cal_getc_2025_2026",
+  "source": {
+    "publisher": "Chabot College",
+    "document_title": "Chabot College 2025-2026 Catalog - CAL-GETC Certificate of Achievement",
+    "catalog_pages": [
+      360,
+      361,
+      362,
+      363
+    ],
+    "academic_year": "2025-2026",
+    "effective_terms": "Fall 2025, Spring 2026 and Summer 2026 (the certificate says the list is subject to change each academic year; ASSIST is the official list)",
+    "generated_by": "tools/extract_chabot_cal_getc.py"
+  },
+  "institution": {
+    "id": "chabot",
+    "name": "Chabot College",
+    "institution_type": "California Community College"
+  },
+  "ge_pathway": {
+    "id": "cal_getc",
+    "name": "California General Education Transfer Curriculum",
+    "display_name": "Cal-GETC",
+    "minimum_total_semester_units": 34,
+    "transfer_scope_statement": "The certificate says Cal-GETC is one option to complete lower-division general education for the University of California or the California State University.",
+    "requirements": [
+      {
+        "id": "1",
+        "source_label": "Area 1 - English Communication",
+        "name": "English Communication",
+        "minimum_courses": 3,
+        "minimum_semester_units": null,
+        "rule": "Three courses, one each from area: 1A, 1B, and 1C",
+        "subareas": [
+          {
+            "id": "1A",
+            "name": "English Composition",
+            "minimum_courses": 1,
+            "minimum_semester_units": 3,
+            "eligible_course_codes": [
+              "ENGL C1000"
+            ]
+          },
+          {
+            "id": "1B",
+            "name": "Critical Thinking and Composition",
+            "minimum_courses": 1,
+            "minimum_semester_units": 3,
+            "eligible_course_codes": [
+              "ENGL 4A",
+              "ENGL C1001"
+            ]
+          },
+          {
+            "id": "1C",
+            "name": "Oral Communication",
+            "minimum_courses": 1,
+            "minimum_semester_units": 3,
+            "eligible_course_codes": [
+              "COMM C1000"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "source_label": "Area 2 - Mathematical Concepts and Quantitative Reasoning",
+        "name": "Mathematical Concepts and Quantitative Reasoning",
+        "minimum_courses": 1,
+        "minimum_semester_units": 3,
+        "rule": "One course (3 semester/4 quarter units)",
+        "subareas": [
+          {
+            "id": "2",
+            "name": "Mathematical Concepts and Quantitative Reasoning",
+            "minimum_courses": 1,
+            "eligible_course_codes": [
+              "BUS 19",
+              "CSCI 28",
+              "MTH 1",
+              "MTH 2",
+              "MTH 3",
+              "MTH 4",
+              "MTH 6",
+              "MTH 8",
+              "MTH 15",
+              "MTH 16",
+              "MTH 21",
+              "MTH 22",
+              "MTH 33",
+              "MTH 33S",
+              "MTH 43S",
+              "MTH 44",
+              "MTH 47",
+              "MTH 47S",
+              "PSY 5",
+              "STAT C1000"
+            ]
+          }
+        ],
+        "notes": [
+          "Math courses numbered “S” or those courses with similar course content may be subject to transfer unit limits at UC."
+        ]
+      },
+      {
+        "id": "3",
+        "source_label": "Area 3 - Arts and Humanities",
+        "name": "Arts and Humanities",
+        "minimum_courses": 2,
+        "minimum_semester_units": 6,
+        "rule": "Two courses, with at least one course from the Arts (3A) and one course from the Humanities (3B) (6 semester/8 quarter units)",
+        "subareas": [
+          {
+            "id": "3A",
+            "name": "Arts",
+            "minimum_courses": 1,
+            "eligible_course_codes": [
+              "ARTH 1",
+              "ARTH 3",
+              "ARTH 4",
+              "ARTH 5",
+              "ARTH 6",
+              "ARTH 7",
+              "ARTH 8",
+              "ARTH 20",
+              "ES 5",
+              "MUSL 1",
+              "ES 12",
+              "MUSL 3",
+              "MUSL 4",
+              "MUSL 8",
+              "PHOT 20",
+              "THTR 10",
+              "THTR 14"
+            ]
+          },
+          {
+            "id": "3B",
+            "name": "Humanities",
+            "minimum_courses": 1,
+            "eligible_course_codes": [
+              "ARTH 4",
+              "ARTH 7",
+              "ARTH 20",
+              "COMM 6",
+              "ENGL 20",
+              "ENGL 21",
+              "ENGL 22",
+              "ENGL 25",
+              "ENGL 28",
+              "ENGL 31",
+              "ENGL 32",
+              "ENGL 35",
+              "ENGL 41",
+              "ENGL 45",
+              "ENGL 48",
+              "ES 5",
+              "FRNC 2A",
+              "FRNC 2B",
+              "HIS 1",
+              "HIS 2",
+              "HIS 3",
+              "HIS 4",
+              "HIS 33",
+              "HUMN 60",
+              "HUMN 68",
+              "JAPN 2A",
+              "JAPN 2B",
+              "PHIL 50",
+              "PHIL 60",
+              "PHIL 65",
+              "PHIL 70",
+              "PHOT 20",
+              "RELS 50",
+              "RELS 65",
+              "SPA 2A",
+              "SPA 2B"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "source_label": "Area 4 - Social and Behavioral Sciences",
+        "name": "Social and Behavioral Sciences",
+        "minimum_courses": 2,
+        "minimum_semester_units": 6,
+        "rule": "Two courses, from at least two different disciplines or an interdisciplinary sequence (6 semester/8 quarter units)",
+        "subareas": [
+          {
+            "id": "4",
+            "name": "Social and Behavioral Sciences",
+            "minimum_courses": 2,
+            "eligible_course_codes": [
+              "ADMJ 45",
+              "ADMJ 50",
+              "ADMJ 60",
+              "ANTH 1",
+              "ANTH 2",
+              "ANTH 3",
+              "ANTH 4",
+              "ANTH 5",
+              "ANTH 12",
+              "APHC 9702",
+              "BIOS 18",
+              "BUS 20",
+              "COMM 11",
+              "COMM 12",
+              "COMM 50",
+              "ECD 52",
+              "ECD 56",
+              "ECD 62",
+              "ECN 1",
+              "ECN 2",
+              "ECN 10",
+              "ENST 1",
+              "ES 1",
+              "ES 4",
+              "ES 5",
+              "ES 6",
+              "ES 7",
+              "ES 11",
+              "ES 25",
+              "ES 42",
+              "ES 43",
+              "ES 52",
+              "ES 53",
+              "ES 62",
+              "ES 63",
+              "GEO 2",
+              "GEO 3",
+              "GEO 5",
+              "GEO 10",
+              "GEO 12",
+              "HLTH 18",
+              "HIS 1",
+              "HIS 2",
+              "HIS 3",
+              "HIS 4",
+              "HIS 7",
+              "HIS 8",
+              "HIS 12",
+              "HIS 25",
+              "HIS 32",
+              "HIS 33",
+              "HIS 42",
+              "HIS 43",
+              "HIS 48",
+              "HIS 49",
+              "HIS 52",
+              "HIS 53",
+              "HIS 62",
+              "HIS 63",
+              "KINE 70",
+              "MCOM 40",
+              "MCOM 41",
+              "POLS C1000",
+              "POSC 12",
+              "POSC 20",
+              "POSC 25",
+              "POSC 30",
+              "POSC 35",
+              "PSYC C1000",
+              "PSY 2",
+              "PSY 3",
+              "PSY 4",
+              "PSY 6",
+              "PSY 12",
+              "PSY 33",
+              "PSCN 4",
+              "PSCN 13",
+              "SOCI 1",
+              "SOCI 2",
+              "SOCI 3",
+              "SOCI 4",
+              "SOCI 5",
+              "SOCI 6",
+              "SOCI 7",
+              "SOCI 10",
+              "SOCI 20",
+              "SOCI 22"
+            ]
+          }
+        ],
+        "minimum_disciplines": 2
+      },
+      {
+        "id": "5",
+        "source_label": "Area 5 - Physical and Biological Sciences",
+        "name": "Physical and Biological Sciences",
+        "minimum_courses": 2,
+        "minimum_semester_units": 7,
+        "rule": "Two courses, one course from 5A and one from 5B. At least one course must include a laboratory, 5C (7 semester/ 9 quarter units)",
+        "subareas": [
+          {
+            "id": "5A",
+            "name": "Physical Science",
+            "minimum_courses": 1,
+            "eligible_course_codes": [
+              "ASTR 10",
+              "ASTR 20",
+              "ASTR 45",
+              "CHEM 1A",
+              "CHEM 1B",
+              "CHEM 10",
+              "CHEM 12A",
+              "CHEM 12B",
+              "CHEM 30A",
+              "CHEM 30B",
+              "CHEM 31",
+              "GEO 1",
+              "GEO 8",
+              "GEO 13",
+              "GEOS 1",
+              "GEOS 9",
+              "GEOS 11",
+              "GEOS 12",
+              "PHYS 3A",
+              "PHYS 3B",
+              "PHYS 4A",
+              "PHYS 4B",
+              "PHYS 4C",
+              "PHYS 5",
+              "PHYS 11"
+            ]
+          },
+          {
+            "id": "5B",
+            "name": "Biological Sciences",
+            "minimum_courses": 1,
+            "eligible_course_codes": [
+              "ANTH 1",
+              "ANTH 13",
+              "BIOS 1",
+              "BIOS 5",
+              "BIOS 15",
+              "BIOS 21A",
+              "BIOS 21B",
+              "BIOS 21C",
+              "BIOS 41",
+              "BIOS 42",
+              "BIOS 43",
+              "BIOS 44",
+              "ENSC 10",
+              "ENSC 11",
+              "ENSC 15",
+              "PSY 4"
+            ]
+          },
+          {
+            "id": "5C",
+            "name": "Lab Requirement",
+            "note": "courses listed in Area 5C that are also listed in Area 5A or 5B may be used to satisfy both areas",
+            "eligible_course_codes": [
+              "ANTH 1L",
+              "ANTH 13L",
+              "ASTR 30",
+              "BIOS 1",
+              "BIOS 15",
+              "BIOS 21A",
+              "BIOS 21B",
+              "BIOS 21C",
+              "BIOS 41",
+              "BIOS 42",
+              "BIOS 43",
+              "BIOS 44",
+              "CHEM 1A",
+              "CHEM 1B",
+              "CHEM 10",
+              "CHEM 12A",
+              "CHEM 12B",
+              "CHEM 30A",
+              "CHEM 30B",
+              "CHEM 31",
+              "ENSC 10L",
+              "ENSC 11",
+              "ENSC 15L",
+              "GEO 1L",
+              "GEOS 1",
+              "GEOS 11L",
+              "PHYS 3A",
+              "PHYS 3B",
+              "PHYS 4A",
+              "PHYS 4B",
+              "PHYS 4C",
+              "PHYS 11"
+            ]
+          }
+        ],
+        "laboratory_required": true,
+        "laboratory_subarea": "5C"
+      },
+      {
+        "id": "6",
+        "source_label": "Area 7 - ETHNIC STUDIES",
+        "name": "Ethnic Studies",
+        "minimum_courses": 1,
+        "minimum_semester_units": 3,
+        "rule": "One course (3 semester/4 quarter units).",
+        "subareas": [
+          {
+            "id": "6",
+            "name": "Ethnic Studies",
+            "minimum_courses": 1,
+            "eligible_course_codes": [
+              "ES 1",
+              "ES 4",
+              "ES 6",
+              "ES 42",
+              "ES 43",
+              "ES 52",
+              "ES 53",
+              "ES 62",
+              "ES 63",
+              "HIS 42",
+              "HIS 43",
+              "HIS 52",
+              "HIS 53",
+              "HIS 62",
+              "HIS 63"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "courses": [
+    {
+      "id": "chabot:ADMJ45",
+      "code": "ADMJ 45",
+      "subject": "ADMJ",
+      "number": "45",
+      "title": "Law and Democracy",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "ADMJ 50 or POLS C1000 (Formerly POSC 1)",
+      "prerequisite_course_ids": [
+        "ADMJ 50",
+        "POLS C1000",
+        "POSC 1"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ADMJ50",
+      "code": "ADMJ 50",
+      "subject": "ADMJ",
+      "number": "50",
+      "title": "Introduction to the Administration of Justice",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ADMJ60",
+      "code": "ADMJ 60",
+      "subject": "ADMJ",
+      "number": "60",
+      "title": "Criminal Law",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ANTH1",
+      "code": "ANTH 1",
+      "subject": "ANTH",
+      "number": "1",
+      "title": "Biological/Physical Anthropology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "5B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        362
+      ]
+    },
+    {
+      "id": "chabot:ANTH12",
+      "code": "ANTH 12",
+      "subject": "ANTH",
+      "number": "12",
+      "title": "Magic, Religion, Witchcraft and Healing",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ANTH13",
+      "code": "ANTH 13",
+      "subject": "ANTH",
+      "number": "13",
+      "title": "Forensic Anthropology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:ANTH13L",
+      "code": "ANTH 13L",
+      "subject": "ANTH",
+      "number": "13L",
+      "title": "Forensic Anthropology Laboratory",
+      "semester_units": 1.0,
+      "cal_getc_areas": [
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "ANTH 13 (may be taken concurrently)",
+      "prerequisite_course_ids": [
+        "ANTH 13"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:ANTH1L",
+      "code": "ANTH 1L",
+      "subject": "ANTH",
+      "number": "1L",
+      "title": "Biological/Physical Anthropology Laboratory",
+      "semester_units": 1.0,
+      "cal_getc_areas": [
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "ANTH 1 may be taken concurrently",
+      "prerequisite_course_ids": [
+        "ANTH 1"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:ANTH2",
+      "code": "ANTH 2",
+      "subject": "ANTH",
+      "number": "2",
+      "title": "Introduction to Archaeology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ANTH3",
+      "code": "ANTH 3",
+      "subject": "ANTH",
+      "number": "3",
+      "title": "Social and Cultural Anthropology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ANTH4",
+      "code": "ANTH 4",
+      "subject": "ANTH",
+      "number": "4",
+      "title": "Language and Culture",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ANTH5",
+      "code": "ANTH 5",
+      "subject": "ANTH",
+      "number": "5",
+      "title": "Cultures of the U.S. in Global Perspective",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:APHC9702",
+      "code": "APHC 9702",
+      "subject": "APHC",
+      "number": "9702",
+      "title": "Introduction to Public Health",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "BIOS 18",
+        "HLTH 18"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "apprenticeship",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ARTH1",
+      "code": "ARTH 1",
+      "subject": "ARTH",
+      "number": "1",
+      "title": "Introduction to Art",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "ART 1"
+      ],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ARTH20",
+      "code": "ARTH 20",
+      "subject": "ARTH",
+      "number": "20",
+      "title": "History of Photography",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A",
+        "3B"
+      ],
+      "same_as": [
+        "PHOT 20"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ARTH3",
+      "code": "ARTH 3",
+      "subject": "ARTH",
+      "number": "3",
+      "title": "Film History and Appreciation",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ARTH4",
+      "code": "ARTH 4",
+      "subject": "ARTH",
+      "number": "4",
+      "title": "Art History-Ancient to Gothic",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A",
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "ART 4"
+      ],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ARTH5",
+      "code": "ARTH 5",
+      "subject": "ARTH",
+      "number": "5",
+      "title": "Art History - Renaissance to Modern-Day",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ARTH6",
+      "code": "ARTH 6",
+      "subject": "ARTH",
+      "number": "6",
+      "title": "Art History - Twentieth- and Twenty-First Century Art",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ARTH7",
+      "code": "ARTH 7",
+      "subject": "ARTH",
+      "number": "7",
+      "title": "Multicultural History of American Art",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A",
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ARTH8",
+      "code": "ARTH 8",
+      "subject": "ARTH",
+      "number": "8",
+      "title": "Art History - A Global Perspective",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ASTR10",
+      "code": "ASTR 10",
+      "subject": "ASTR",
+      "number": "10",
+      "title": "Introduction to Astronomy: The Solar System",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:ASTR20",
+      "code": "ASTR 20",
+      "subject": "ASTR",
+      "number": "20",
+      "title": "Introduction to Astronomy: Stars and the Universe",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:ASTR30",
+      "code": "ASTR 30",
+      "subject": "ASTR",
+      "number": "30",
+      "title": "Introduction to Astronomy Lab",
+      "semester_units": 1.0,
+      "cal_getc_areas": [
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "ASTR 10 May be taken concurrently or ASTR 20 may be taken concurrently",
+      "prerequisite_course_ids": [
+        "ASTR 10",
+        "ASTR 20"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:ASTR45",
+      "code": "ASTR 45",
+      "subject": "ASTR",
+      "number": "45",
+      "title": "Descriptive Astronomy",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:BIOS1",
+      "code": "BIOS 1",
+      "subject": "BIOS",
+      "number": "1",
+      "title": "Introduction to the Science of Biology",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:BIOS15",
+      "code": "BIOS 15",
+      "subject": "BIOS",
+      "number": "15",
+      "title": "Anatomy and Physiology",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:BIOS18",
+      "code": "BIOS 18",
+      "subject": "BIOS",
+      "number": "18",
+      "title": "Introduction to Public Health",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "APHC 9702",
+        "HLTH 18"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:BIOS21A",
+      "code": "BIOS 21A",
+      "subject": "BIOS",
+      "number": "21A",
+      "title": "Principles of Plant Biology and Ecology",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 55 (or MTH 255) or equivalent",
+      "prerequisite_course_ids": [
+        "MTH 55",
+        "MTH 255"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:BIOS21B",
+      "code": "BIOS 21B",
+      "subject": "BIOS",
+      "number": "21B",
+      "title": "Principles of Animal Biology and Evolution",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 55 (or MTH 255) or equivalent and BIOS 21A (or BIOL 6) or CHEM 1A",
+      "prerequisite_course_ids": [
+        "MTH 55",
+        "MTH 255",
+        "BIOS 21A",
+        "BIOL 6",
+        "CHEM 1A"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:BIOS21C",
+      "code": "BIOS 21C",
+      "subject": "BIOS",
+      "number": "21C",
+      "title": "Principles of Cell and Molecular Biology",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "CHEM 1A and BIOS 21A (or BIOL 6) or BIOS 21B (or BIOL 4)",
+      "prerequisite_course_ids": [
+        "CHEM 1A",
+        "BIOS 21A",
+        "BIOL 6",
+        "BIOS 21B",
+        "BIOL 4"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:BIOS41",
+      "code": "BIOS 41",
+      "subject": "BIOS",
+      "number": "41",
+      "title": "Fundamentals of Biology for Health Sciences",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:BIOS42",
+      "code": "BIOS 42",
+      "subject": "BIOS",
+      "number": "42",
+      "title": "General Human Anatomy",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "BIOS 41 or BIOL 31 or BIOS 21C",
+      "prerequisite_course_ids": [
+        "BIOS 41",
+        "BIOL 31",
+        "BIOS 21C"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:BIOS43",
+      "code": "BIOS 43",
+      "subject": "BIOS",
+      "number": "43",
+      "title": "Human Physiology",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "CHEM 30A and BIOS 42",
+      "prerequisite_course_ids": [
+        "CHEM 30A",
+        "BIOS 42"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:BIOS44",
+      "code": "BIOS 44",
+      "subject": "BIOS",
+      "number": "44",
+      "title": "Microbiology",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "BIOS 41 or BIOL 31 or BIOS 21C or BIOL 2 or BIOS 21B or BIOL 4 or CHEM 30A or CHEM 1A",
+      "prerequisite_course_ids": [
+        "BIOS 41",
+        "BIOL 31",
+        "BIOS 21C",
+        "BIOL 2",
+        "BIOS 21B",
+        "BIOL 4",
+        "CHEM 30A",
+        "CHEM 1A"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:BIOS5",
+      "code": "BIOS 5",
+      "subject": "BIOS",
+      "number": "5",
+      "title": "Human Heredity and Evolution",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:BUS19",
+      "code": "BUS 19",
+      "subject": "BUS",
+      "number": "19",
+      "title": "Business Statistics",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 53 or MTH 55 or Intermediate Algebra or appropriate skill level demonstrated through Mathematics Assessment process or equivalent",
+      "prerequisite_course_ids": [
+        "MTH 53",
+        "MTH 55"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:BUS20",
+      "code": "BUS 20",
+      "subject": "BUS",
+      "number": "20",
+      "title": "Law and Society",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:CHEM10",
+      "code": "CHEM 10",
+      "subject": "CHEM",
+      "number": "10",
+      "title": "Introduction to Chemistry",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:CHEM12A",
+      "code": "CHEM 12A",
+      "subject": "CHEM",
+      "number": "12A",
+      "title": "Organic Chemistry I",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "CHEM 1B",
+      "prerequisite_course_ids": [
+        "CHEM 1B"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:CHEM12B",
+      "code": "CHEM 12B",
+      "subject": "CHEM",
+      "number": "12B",
+      "title": "Organic Chemistry II",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "CHEM 12A",
+      "prerequisite_course_ids": [
+        "CHEM 12A"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:CHEM1A",
+      "code": "CHEM 1A",
+      "subject": "CHEM",
+      "number": "1A",
+      "title": "General College Chemistry I",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 55 or MTH 55B CHEM 31 or skill level demonstrated through the Chemistry Placement Process",
+      "prerequisite_course_ids": [
+        "MTH 55",
+        "MTH 55B",
+        "CHEM 31"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:CHEM1B",
+      "code": "CHEM 1B",
+      "subject": "CHEM",
+      "number": "1B",
+      "title": "General College Chemistry II",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "CHEM 1A",
+      "prerequisite_course_ids": [
+        "CHEM 1A"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:CHEM30A",
+      "code": "CHEM 30A",
+      "subject": "CHEM",
+      "number": "30A",
+      "title": "Introductory and Applied Chemistry I",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 65, MTH 65B or MTH 65L or MTH 53 or MTH 53B",
+      "prerequisite_course_ids": [
+        "MTH 65",
+        "MTH 65B",
+        "MTH 65L",
+        "MTH 53",
+        "MTH 53B"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:CHEM30B",
+      "code": "CHEM 30B",
+      "subject": "CHEM",
+      "number": "30B",
+      "title": "Introductory and Applied Chemistry II",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "CHEM 30A",
+      "prerequisite_course_ids": [
+        "CHEM 30A"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:CHEM31",
+      "code": "CHEM 31",
+      "subject": "CHEM",
+      "number": "31",
+      "title": "Introduction to College Chemistry",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 55 or MTH 55B",
+      "prerequisite_course_ids": [
+        "MTH 55",
+        "MTH 55B"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:COMM11",
+      "code": "COMM 11",
+      "subject": "COMM",
+      "number": "11",
+      "title": "Intercultural Communication",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:COMM12",
+      "code": "COMM 12",
+      "subject": "COMM",
+      "number": "12",
+      "title": "Gender, Sexual Identity, and Communication",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:COMM50",
+      "code": "COMM 50",
+      "subject": "COMM",
+      "number": "50",
+      "title": "Introduction to Communication Studies",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:COMM6",
+      "code": "COMM 6",
+      "subject": "COMM",
+      "number": "6",
+      "title": "Introduction to Performance Studies",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:COMMC1000",
+      "code": "COMM C1000",
+      "subject": "COMM",
+      "number": "C1000",
+      "title": "Introduction to Public Speaking",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "1C"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "COMM 1"
+      ],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:CSCI28",
+      "code": "CSCI 28",
+      "subject": "CSCI",
+      "number": "28",
+      "title": "Discrete Mathematics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 1",
+      "prerequisite_course_ids": [
+        "MTH 1"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ECD52",
+      "code": "ECD 52",
+      "subject": "ECD",
+      "number": "52",
+      "title": "Childhood and Adolescence",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ECD56",
+      "code": "ECD 56",
+      "subject": "ECD",
+      "number": "56",
+      "title": "Child Growth and Development",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ECD62",
+      "code": "ECD 62",
+      "subject": "ECD",
+      "number": "62",
+      "title": "Child, Family and Community",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ECN1",
+      "code": "ECN 1",
+      "subject": "ECN",
+      "number": "1",
+      "title": "Principles of Microeconomics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 53, MTH 53B or MTH 65 or MTH 65B an appropriate skill level demonstrated through the mathematics assessment process",
+      "prerequisite_course_ids": [
+        "MTH 53",
+        "MTH 53B",
+        "MTH 65",
+        "MTH 65B"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ECN10",
+      "code": "ECN 10",
+      "subject": "ECN",
+      "number": "10",
+      "title": "General Economics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ECN2",
+      "code": "ECN 2",
+      "subject": "ECN",
+      "number": "2",
+      "title": "Principles of Macroeconomics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 53 or MTH 53B or MTH 65 or MTH 65B or an appropriate skill level demonstrated through the Mathematics assessment process",
+      "prerequisite_course_ids": [
+        "MTH 53",
+        "MTH 53B",
+        "MTH 65",
+        "MTH 65B"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ENGL20",
+      "code": "ENGL 20",
+      "subject": "ENGL",
+      "number": "20",
+      "title": "Studies in Shakespeare",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGL21",
+      "code": "ENGL 21",
+      "subject": "ENGL",
+      "number": "21",
+      "title": "The Evolution of the Black Writer",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGL22",
+      "code": "ENGL 22",
+      "subject": "ENGL",
+      "number": "22",
+      "title": "Mexican American/Latinx Literature of the U.S.",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGL25",
+      "code": "ENGL 25",
+      "subject": "ENGL",
+      "number": "25",
+      "title": "Asian-American Literature",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGL28",
+      "code": "ENGL 28",
+      "subject": "ENGL",
+      "number": "28",
+      "title": "Classic and Contemporary Youth Literature",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGL31",
+      "code": "ENGL 31",
+      "subject": "ENGL",
+      "number": "31",
+      "title": "Introduction to Queer Literature",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGL32",
+      "code": "ENGL 32",
+      "subject": "ENGL",
+      "number": "32",
+      "title": "U.S. Women’s Literature",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGL35",
+      "code": "ENGL 35",
+      "subject": "ENGL",
+      "number": "35",
+      "title": "Modern and Contemporary U.S. Literature",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "Eligibility for ENGL C1000 (Formerly ENGL 1) as determined by multiple measures or other appropriate method",
+      "prerequisite_course_ids": [
+        "ENGL C1000",
+        "ENGL 1"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGL41",
+      "code": "ENGL 41",
+      "subject": "ENGL",
+      "number": "41",
+      "title": "World Literature (17th Century to the Present)",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "Eligibility for ENGL C1000 (Formerly ENGL 1) as determined by multiple measures or other appropriate method",
+      "prerequisite_course_ids": [
+        "ENGL C1000",
+        "ENGL 1"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGL45",
+      "code": "ENGL 45",
+      "subject": "ENGL",
+      "number": "45",
+      "title": "Studies in Fiction",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGL48",
+      "code": "ENGL 48",
+      "subject": "ENGL",
+      "number": "48",
+      "title": "The Literature of the Holocaust",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGL4A",
+      "code": "ENGL 4A",
+      "subject": "ENGL",
+      "number": "4A",
+      "title": "Critical Thinking and Writing about Literature",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "1B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "ENGL C1000 (Formerly ENGL 1)",
+      "prerequisite_course_ids": [
+        "ENGL C1000",
+        "ENGL 1"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGLC1000",
+      "code": "ENGL C1000",
+      "subject": "ENGL",
+      "number": "C1000",
+      "title": "Academic Reading and Writing",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "1A"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "ENGL 1"
+      ],
+      "prerequisite": "ENGL 202 or ENGL 201B or Placement as determined by the college’s multiple measures assessment process",
+      "prerequisite_course_ids": [
+        "ENGL 202",
+        "ENGL 201B"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENGLC1001",
+      "code": "ENGL C1001",
+      "subject": "ENGL",
+      "number": "C1001",
+      "title": "Critical Thinking and Writing",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "1B"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "ENGL 7A"
+      ],
+      "prerequisite": "College-level composition (ENGL C1000/C-ID ENGL 100) or equivalent",
+      "prerequisite_course_ids": [
+        "ENGL C1000",
+        "ENGL 100"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ENSC10",
+      "code": "ENSC 10",
+      "subject": "ENSC",
+      "number": "10",
+      "title": "Humans and the Environment",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:ENSC10L",
+      "code": "ENSC 10L",
+      "subject": "ENSC",
+      "number": "10L",
+      "title": "Humans and the Environment Laboratory",
+      "semester_units": 1.0,
+      "cal_getc_areas": [
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "ENSC 10 (may be taken concurrently)",
+      "prerequisite_course_ids": [
+        "ENSC 10"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:ENSC11",
+      "code": "ENSC 11",
+      "subject": "ENSC",
+      "number": "11",
+      "title": "Humans and the Environment with Laboratory",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:ENSC15",
+      "code": "ENSC 15",
+      "subject": "ENSC",
+      "number": "15",
+      "title": "Agroecology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:ENSC15L",
+      "code": "ENSC 15L",
+      "subject": "ENSC",
+      "number": "15L",
+      "title": "Agroecology Laboratory",
+      "semester_units": 1.0,
+      "cal_getc_areas": [
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "ENSC 15 ENSC 15 (may be taken concurrently)",
+      "prerequisite_course_ids": [
+        "ENSC 15"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:ENST1",
+      "code": "ENST 1",
+      "subject": "ENST",
+      "number": "1",
+      "title": "Introduction to Environmental Studies",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ES1",
+      "code": "ES 1",
+      "subject": "ES",
+      "number": "1",
+      "title": "Introduction to Ethnic Studies",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        362
+      ]
+    },
+    {
+      "id": "chabot:ES11",
+      "code": "ES 11",
+      "subject": "ES",
+      "number": "11",
+      "title": "Solidarity in Asian American and Pacific Islander Communities",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ES12",
+      "code": "ES 12",
+      "subject": "ES",
+      "number": "12",
+      "title": "Chicanx and Latinx Expressive Cultures and Resistance",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:ES25",
+      "code": "ES 25",
+      "subject": "ES",
+      "number": "25",
+      "title": "American Indian History and Culture",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "HIS 25"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:ES4",
+      "code": "ES 4",
+      "subject": "ES",
+      "number": "4",
+      "title": "Intro to Latinx Studies",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        362
+      ]
+    },
+    {
+      "id": "chabot:ES42",
+      "code": "ES 42",
+      "subject": "ES",
+      "number": "42",
+      "title": "Asian American History: 18th Century to 1945",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "HIS 42"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        362
+      ]
+    },
+    {
+      "id": "chabot:ES43",
+      "code": "ES 43",
+      "subject": "ES",
+      "number": "43",
+      "title": "Asian American History: Early 20th Century - 21st Century",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "HIS 43"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        362
+      ]
+    },
+    {
+      "id": "chabot:ES5",
+      "code": "ES 5",
+      "subject": "ES",
+      "number": "5",
+      "title": "Critiquing Race and Gender in Popular Culture",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A",
+        "3B",
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360,
+        361
+      ]
+    },
+    {
+      "id": "chabot:ES52",
+      "code": "ES 52",
+      "subject": "ES",
+      "number": "52",
+      "title": "United States History from a Chicano Perspective I",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "HIS 52"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        362
+      ]
+    },
+    {
+      "id": "chabot:ES53",
+      "code": "ES 53",
+      "subject": "ES",
+      "number": "53",
+      "title": "United States History from a Chicano Perspective II",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "HIS 53"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        362
+      ]
+    },
+    {
+      "id": "chabot:ES6",
+      "code": "ES 6",
+      "subject": "ES",
+      "number": "6",
+      "title": "Introduction to Pacific Islands and Oceania Studies",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        362
+      ]
+    },
+    {
+      "id": "chabot:ES62",
+      "code": "ES 62",
+      "subject": "ES",
+      "number": "62",
+      "title": "The African-American Experience in U.S. History Through the Civil War",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "HIS 62"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        363
+      ]
+    },
+    {
+      "id": "chabot:ES63",
+      "code": "ES 63",
+      "subject": "ES",
+      "number": "63",
+      "title": "The African American Experience in U.S. History From Reconstruction",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "HIS 63"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        363
+      ]
+    },
+    {
+      "id": "chabot:ES7",
+      "code": "ES 7",
+      "subject": "ES",
+      "number": "7",
+      "title": "Women of Color in the United States: Introduction to Race, Gender, and Sexuality Studies",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "SOCI 7"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:FRNC2A",
+      "code": "FRNC 2A",
+      "subject": "FRNC",
+      "number": "2A",
+      "title": "Intermediate French",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "FRNC 1B",
+      "prerequisite_course_ids": [
+        "FRNC 1B"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:FRNC2B",
+      "code": "FRNC 2B",
+      "subject": "FRNC",
+      "number": "2B",
+      "title": "Advanced French",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "FRNC 2A",
+      "prerequisite_course_ids": [
+        "FRNC 2A"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:GEO1",
+      "code": "GEO 1",
+      "subject": "GEO",
+      "number": "1",
+      "title": "Introduction to Physical Geography",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:GEO10",
+      "code": "GEO 10",
+      "subject": "GEO",
+      "number": "10",
+      "title": "Global Environmental Solutions",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:GEO12",
+      "code": "GEO 12",
+      "subject": "GEO",
+      "number": "12",
+      "title": "Geography of California",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:GEO13",
+      "code": "GEO 13",
+      "subject": "GEO",
+      "number": "13",
+      "title": "Climate Studies",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:GEO1L",
+      "code": "GEO 1L",
+      "subject": "GEO",
+      "number": "1L",
+      "title": "Introduction to Physical Geography Laboratory",
+      "semester_units": 1.0,
+      "cal_getc_areas": [
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "GEO 1 may be taken concurrently",
+      "prerequisite_course_ids": [
+        "GEO 1"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:GEO2",
+      "code": "GEO 2",
+      "subject": "GEO",
+      "number": "2",
+      "title": "Cultural Geography",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:GEO3",
+      "code": "GEO 3",
+      "subject": "GEO",
+      "number": "3",
+      "title": "Economic Geography",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:GEO5",
+      "code": "GEO 5",
+      "subject": "GEO",
+      "number": "5",
+      "title": "World Regional Geography",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:GEO8",
+      "code": "GEO 8",
+      "subject": "GEO",
+      "number": "8",
+      "title": "Introduction to Weather and Climate",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:GEOS1",
+      "code": "GEOS 1",
+      "subject": "GEOS",
+      "number": "1",
+      "title": "Physical Geology with Laboratory",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:GEOS11",
+      "code": "GEOS 11",
+      "subject": "GEOS",
+      "number": "11",
+      "title": "Physical Geology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:GEOS11L",
+      "code": "GEOS 11L",
+      "subject": "GEOS",
+      "number": "11L",
+      "title": "Physical Geology Lab",
+      "semester_units": 1.0,
+      "cal_getc_areas": [
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "GEOS 11 May be taken concurrently",
+      "prerequisite_course_ids": [
+        "GEOS 11"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:GEOS12",
+      "code": "GEOS 12",
+      "subject": "GEOS",
+      "number": "12",
+      "title": "Introduction to Oceanography",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:GEOS9",
+      "code": "GEOS 9",
+      "subject": "GEOS",
+      "number": "9",
+      "title": "The Planets",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:HIS1",
+      "code": "HIS 1",
+      "subject": "HIS",
+      "number": "1",
+      "title": "History of Western Civilization to 1600",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B",
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360,
+        361
+      ]
+    },
+    {
+      "id": "chabot:HIS12",
+      "code": "HIS 12",
+      "subject": "HIS",
+      "number": "12",
+      "title": "History of California",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:HIS2",
+      "code": "HIS 2",
+      "subject": "HIS",
+      "number": "2",
+      "title": "History of Western Civilization Since 1600",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B",
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360,
+        361
+      ]
+    },
+    {
+      "id": "chabot:HIS25",
+      "code": "HIS 25",
+      "subject": "HIS",
+      "number": "25",
+      "title": "American Indian History and Culture",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "ES 25"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:HIS3",
+      "code": "HIS 3",
+      "subject": "HIS",
+      "number": "3",
+      "title": "World History: Beginnings to 1500",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B",
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360,
+        361
+      ]
+    },
+    {
+      "id": "chabot:HIS32",
+      "code": "HIS 32",
+      "subject": "HIS",
+      "number": "32",
+      "title": "Colonial Latin America",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:HIS33",
+      "code": "HIS 33",
+      "subject": "HIS",
+      "number": "33",
+      "title": "Modern Latin America",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B",
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360,
+        361
+      ]
+    },
+    {
+      "id": "chabot:HIS4",
+      "code": "HIS 4",
+      "subject": "HIS",
+      "number": "4",
+      "title": "World History: 1500 to the Present",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B",
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360,
+        361
+      ]
+    },
+    {
+      "id": "chabot:HIS42",
+      "code": "HIS 42",
+      "subject": "HIS",
+      "number": "42",
+      "title": "Asian American History: 18th Century to 1945",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "ES 42"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        363
+      ]
+    },
+    {
+      "id": "chabot:HIS43",
+      "code": "HIS 43",
+      "subject": "HIS",
+      "number": "43",
+      "title": "Asian American History: Early 20th Century - 21st Century",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "ES 43"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        363
+      ]
+    },
+    {
+      "id": "chabot:HIS48",
+      "code": "HIS 48",
+      "subject": "HIS",
+      "number": "48",
+      "title": "U. S. Women’s History Through Reconstruction",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:HIS49",
+      "code": "HIS 49",
+      "subject": "HIS",
+      "number": "49",
+      "title": "U.S. Women’s History Post-Reconstruction",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:HIS52",
+      "code": "HIS 52",
+      "subject": "HIS",
+      "number": "52",
+      "title": "United States History from a Chicano Perspective I",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "ES 52"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        363
+      ]
+    },
+    {
+      "id": "chabot:HIS53",
+      "code": "HIS 53",
+      "subject": "HIS",
+      "number": "53",
+      "title": "United States History from a Chicano Perspective II",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "ES 53"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        363
+      ]
+    },
+    {
+      "id": "chabot:HIS62",
+      "code": "HIS 62",
+      "subject": "HIS",
+      "number": "62",
+      "title": "The African-American Experience in U.S. History Through the Civil War",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "ES 62"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        363
+      ]
+    },
+    {
+      "id": "chabot:HIS63",
+      "code": "HIS 63",
+      "subject": "HIS",
+      "number": "63",
+      "title": "The African American Experience in U.S. History From Reconstruction",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "ES 63"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        363
+      ]
+    },
+    {
+      "id": "chabot:HIS7",
+      "code": "HIS 7",
+      "subject": "HIS",
+      "number": "7",
+      "title": "U.S. History Through Reconstruction",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:HIS8",
+      "code": "HIS 8",
+      "subject": "HIS",
+      "number": "8",
+      "title": "U.S. History Since Reconstruction",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:HLTH18",
+      "code": "HLTH 18",
+      "subject": "HLTH",
+      "number": "18",
+      "title": "Introduction to Public Health",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "APHC 9702",
+        "BIOS 18"
+      ],
+      "former_codes": [
+        "HLTH 80"
+      ],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:HUMN60",
+      "code": "HUMN 60",
+      "subject": "HUMN",
+      "number": "60",
+      "title": "Creativity and the Community",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:HUMN68",
+      "code": "HUMN 68",
+      "subject": "HUMN",
+      "number": "68",
+      "title": "World Mythology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "HUMN 28"
+      ],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:JAPN2A",
+      "code": "JAPN 2A",
+      "subject": "JAPN",
+      "number": "2A",
+      "title": "Intermediate Japanese",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "JAPN 1B",
+      "prerequisite_course_ids": [
+        "JAPN 1B"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:JAPN2B",
+      "code": "JAPN 2B",
+      "subject": "JAPN",
+      "number": "2B",
+      "title": "Advanced Japanese",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "JAPN 2A",
+      "prerequisite_course_ids": [
+        "JAPN 2A"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:KINE70",
+      "code": "KINE 70",
+      "subject": "KINE",
+      "number": "70",
+      "title": "History and Philosophy of Sport and Physical Activity",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:MCOM40",
+      "code": "MCOM 40",
+      "subject": "MCOM",
+      "number": "40",
+      "title": "Introduction to Broadcasting",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:MCOM41",
+      "code": "MCOM 41",
+      "subject": "MCOM",
+      "number": "41",
+      "title": "Introduction to Mass Communications",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:MTH1",
+      "code": "MTH 1",
+      "subject": "MTH",
+      "number": "1",
+      "title": "Calculus I",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 20 or MTH 22 or both College Algebra (MTH 21 or MTH 31 or MTH 31S) and Trigonometry (MTH 36 or MTH 36S or MTH 37) or an appropriate skill level demonstrated through the mathematics assessment process",
+      "prerequisite_course_ids": [
+        "MTH 20",
+        "MTH 22",
+        "MTH 21",
+        "MTH 31",
+        "MTH 31S",
+        "MTH 36",
+        "MTH 36S",
+        "MTH 37"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH15",
+      "code": "MTH 15",
+      "subject": "MTH",
+      "number": "15",
+      "title": "Applied Calculus I",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 31 or MTH 20 or MTH 21 or an appropriate skill level demonstrated through the Mathematics Assessment process",
+      "prerequisite_course_ids": [
+        "MTH 31",
+        "MTH 20",
+        "MTH 21"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH16",
+      "code": "MTH 16",
+      "subject": "MTH",
+      "number": "16",
+      "title": "Applied Calculus II",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 15 or an appropriate skill level demonstrated through the Mathematics Assessment process",
+      "prerequisite_course_ids": [
+        "MTH 15"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH2",
+      "code": "MTH 2",
+      "subject": "MTH",
+      "number": "2",
+      "title": "Calculus II",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 1",
+      "prerequisite_course_ids": [
+        "MTH 1"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH21",
+      "code": "MTH 21",
+      "subject": "MTH",
+      "number": "21",
+      "title": "College Algebra for BSTEM",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 55 or an appropriate skill level demonstrated through the Mathematics Assessment Process. May not receive credit if MTH 31 has been completed",
+      "prerequisite_course_ids": [
+        "MTH 55",
+        "MTH 31"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH22",
+      "code": "MTH 22",
+      "subject": "MTH",
+      "number": "22",
+      "title": "Trigonometry with Analytic Geometry",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 21 or MTH 31 or MTH 31S or an appropriate skill level demonstrated through the Mathematics Assessment Process",
+      "prerequisite_course_ids": [
+        "MTH 21",
+        "MTH 31",
+        "MTH 31S"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH3",
+      "code": "MTH 3",
+      "subject": "MTH",
+      "number": "3",
+      "title": "Multivariable Calculus",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 2",
+      "prerequisite_course_ids": [
+        "MTH 2"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH33",
+      "code": "MTH 33",
+      "subject": "MTH",
+      "number": "33",
+      "title": "Finite Mathematics",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 55 or MTH 53 or an appropriate skill level demonstrated through the Early Assessment Program or an appropriate skill level demonstrated through the mathematics assessment process",
+      "prerequisite_course_ids": [
+        "MTH 55",
+        "MTH 53"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH33S",
+      "code": "MTH 33S",
+      "subject": "MTH",
+      "number": "33S",
+      "title": "Finite Mathematics with Support",
+      "semester_units": 4.5,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 55 or MTH 55B or an appropriate placement through the Mathematics Placement process",
+      "prerequisite_course_ids": [
+        "MTH 55",
+        "MTH 55B"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH4",
+      "code": "MTH 4",
+      "subject": "MTH",
+      "number": "4",
+      "title": "Elementary Differential Equations",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 2",
+      "prerequisite_course_ids": [
+        "MTH 2"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH43S",
+      "code": "MTH 43S",
+      "subject": "MTH",
+      "number": "43S",
+      "title": "Introduction to Probability and Statistics with Support",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 53 or MTH 55 or MTH 53B or MTH 54 or MTH 54L or MTH 55B or MTH 55L or an appropriate placement through the Mathematics Placement process",
+      "prerequisite_course_ids": [
+        "MTH 53",
+        "MTH 55",
+        "MTH 53B",
+        "MTH 54",
+        "MTH 54L",
+        "MTH 55B",
+        "MTH 55L"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH44",
+      "code": "MTH 44",
+      "subject": "MTH",
+      "number": "44",
+      "title": "Mathematics for Democracy",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 55 or MTH 53 or an appropriate skill level demonstrated through the mathematics assessment process",
+      "prerequisite_course_ids": [
+        "MTH 55",
+        "MTH 53"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH47",
+      "code": "MTH 47",
+      "subject": "MTH",
+      "number": "47",
+      "title": "Mathematics for Liberal Arts",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 53 or MTH 53B or MTH 55 or MTH 55B or an appropriate skill level demonstrated through the mathematics assessment process",
+      "prerequisite_course_ids": [
+        "MTH 53",
+        "MTH 53B",
+        "MTH 55",
+        "MTH 55B"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH47S",
+      "code": "MTH 47S",
+      "subject": "MTH",
+      "number": "47S",
+      "title": "Mathematics for Liberal Arts with Support",
+      "semester_units": 3.5,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 55 or MTH 55B or MTH 53 or MTH 53B or an appropriate placement through the Mathematics Placement process",
+      "prerequisite_course_ids": [
+        "MTH 55",
+        "MTH 55B",
+        "MTH 53",
+        "MTH 53B"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH6",
+      "code": "MTH 6",
+      "subject": "MTH",
+      "number": "6",
+      "title": "Elementary Linear Algebra",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MTH8",
+      "code": "MTH 8",
+      "subject": "MTH",
+      "number": "8",
+      "title": "Discrete Mathematics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 1",
+      "prerequisite_course_ids": [
+        "MTH 1"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MUSL1",
+      "code": "MUSL 1",
+      "subject": "MUSL",
+      "number": "1",
+      "title": "Introduction to Music",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MUSL3",
+      "code": "MUSL 3",
+      "subject": "MUSL",
+      "number": "3",
+      "title": "World Music",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MUSL4",
+      "code": "MUSL 4",
+      "subject": "MUSL",
+      "number": "4",
+      "title": "History of Jazz Music",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:MUSL8",
+      "code": "MUSL 8",
+      "subject": "MUSL",
+      "number": "8",
+      "title": "History of Rock and Roll and Popular Music",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:PHIL50",
+      "code": "PHIL 50",
+      "subject": "PHIL",
+      "number": "50",
+      "title": "Introduction to Philosophy",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:PHIL60",
+      "code": "PHIL 60",
+      "subject": "PHIL",
+      "number": "60",
+      "title": "Ethics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:PHIL65",
+      "code": "PHIL 65",
+      "subject": "PHIL",
+      "number": "65",
+      "title": "Introduction to Philosophy: Theory of Knowledge",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:PHIL70",
+      "code": "PHIL 70",
+      "subject": "PHIL",
+      "number": "70",
+      "title": "Social and Political Philosophy",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:PHOT20",
+      "code": "PHOT 20",
+      "subject": "PHOT",
+      "number": "20",
+      "title": "History of Photography",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A",
+        "3B"
+      ],
+      "same_as": [
+        "ARTH 20"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:PHYS11",
+      "code": "PHYS 11",
+      "subject": "PHYS",
+      "number": "11",
+      "title": "Descriptive Physics",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:PHYS3A",
+      "code": "PHYS 3A",
+      "subject": "PHYS",
+      "number": "3A",
+      "title": "College Physics A",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 1 or MTH 22 and MTH 15 (MTH 1 or MTH 15 can be taken concurrently.)",
+      "prerequisite_course_ids": [
+        "MTH 1",
+        "MTH 22",
+        "MTH 15"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:PHYS3B",
+      "code": "PHYS 3B",
+      "subject": "PHYS",
+      "number": "3B",
+      "title": "College Physics B",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "PHYS 3A, and select one Math option: MTH 1, or both MTH 15 and MTH 22",
+      "prerequisite_course_ids": [
+        "PHYS 3A",
+        "MTH 1",
+        "MTH 15",
+        "MTH 22"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:PHYS4A",
+      "code": "PHYS 4A",
+      "subject": "PHYS",
+      "number": "4A",
+      "title": "General Physics I",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 1, MTH 2 (MTH 2 may be taken concurrently)",
+      "prerequisite_course_ids": [
+        "MTH 1",
+        "MTH 2"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:PHYS4B",
+      "code": "PHYS 4B",
+      "subject": "PHYS",
+      "number": "4B",
+      "title": "General Physics II",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "PHYS 4A and MTH 2 and MTH 3 (MTH 3 may be taken concurrently)",
+      "prerequisite_course_ids": [
+        "PHYS 4A",
+        "MTH 2",
+        "MTH 3"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:PHYS4C",
+      "code": "PHYS 4C",
+      "subject": "PHYS",
+      "number": "4C",
+      "title": "General Physics III",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "PHYS 4B and MTH 3 and MTH 4 and, MTH 6 (MTH 4 and MTH 6 may be taken concurrently with PHYS 4C)",
+      "prerequisite_course_ids": [
+        "PHYS 4B",
+        "MTH 3",
+        "MTH 4",
+        "MTH 6",
+        "PHYS 4C"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:PHYS5",
+      "code": "PHYS 5",
+      "subject": "PHYS",
+      "number": "5",
+      "title": "Modern Physics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "PHYS 4B, MTH 3 and MTH 4 and MTH 6 (MTH 4 and MTH 6 may be taken concurrently)",
+      "prerequisite_course_ids": [
+        "PHYS 4B",
+        "MTH 3",
+        "MTH 4",
+        "MTH 6"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:POLSC1000",
+      "code": "POLS C1000",
+      "subject": "POLS",
+      "number": "C1000",
+      "title": "American Government and Politics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "POSC 1"
+      ],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:POSC12",
+      "code": "POSC 12",
+      "subject": "POSC",
+      "number": "12",
+      "title": "Introduction to California State and Local Government",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:POSC20",
+      "code": "POSC 20",
+      "subject": "POSC",
+      "number": "20",
+      "title": "Comparative Politics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:POSC25",
+      "code": "POSC 25",
+      "subject": "POSC",
+      "number": "25",
+      "title": "Introduction to Political Theory",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:POSC30",
+      "code": "POSC 30",
+      "subject": "POSC",
+      "number": "30",
+      "title": "International Relations",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:POSC35",
+      "code": "POSC 35",
+      "subject": "POSC",
+      "number": "35",
+      "title": "Politics of Race and Gender: History, Governance, and Public Policy",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:PSCN13",
+      "code": "PSCN 13",
+      "subject": "PSCN",
+      "number": "13",
+      "title": "Multicultural Issues in Contemporary America",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:PSCN4",
+      "code": "PSCN 4",
+      "subject": "PSCN",
+      "number": "4",
+      "title": "Multiethnic/Cultural Communication",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:PSY12",
+      "code": "PSY 12",
+      "subject": "PSY",
+      "number": "12",
+      "title": "Lifespan Psychology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:PSY2",
+      "code": "PSY 2",
+      "subject": "PSY",
+      "number": "2",
+      "title": "Introduction to Psychological Methodology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "PSYC C1000 (Formerly PSY 1) and PSY 5 or an equivalent statistics course (completed with a grade of C or higher)",
+      "prerequisite_course_ids": [
+        "PSYC C1000",
+        "PSY 1",
+        "PSY 5"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:PSY3",
+      "code": "PSY 3",
+      "subject": "PSY",
+      "number": "3",
+      "title": "Social Psychology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:PSY33",
+      "code": "PSY 33",
+      "subject": "PSY",
+      "number": "33",
+      "title": "Psychology of Personal and Social Adjustment",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:PSY4",
+      "code": "PSY 4",
+      "subject": "PSY",
+      "number": "4",
+      "title": "Brain, Mind and Behavior",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "5B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "PSYC C1000 (Formerly PSY 1)",
+      "prerequisite_course_ids": [
+        "PSYC C1000",
+        "PSY 1"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        361,
+        362
+      ]
+    },
+    {
+      "id": "chabot:PSY5",
+      "code": "PSY 5",
+      "subject": "PSY",
+      "number": "5",
+      "title": "Introductory Statistics for the Behavioral and Social Sciences",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "MTH 53 or MTH 55 or MTH 53B or MTH 54 or MTH 54L or MTH 55B or MTH 55L or or an appropriate skill level demonstrated through the Early Assessment Program or an appropriate skill level demonstrated through the Mathematics Assessment process",
+      "prerequisite_course_ids": [
+        "MTH 53",
+        "MTH 55",
+        "MTH 53B",
+        "MTH 54",
+        "MTH 54L",
+        "MTH 55B",
+        "MTH 55L"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:PSY6",
+      "code": "PSY 6",
+      "subject": "PSY",
+      "number": "6",
+      "title": "Abnormal Psychology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:PSYCC1000",
+      "code": "PSYC C1000",
+      "subject": "PSYC",
+      "number": "C1000",
+      "title": "Introduction to Psychology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "PSY 1"
+      ],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:RELS50",
+      "code": "RELS 50",
+      "subject": "RELS",
+      "number": "50",
+      "title": "Religions of the World",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:RELS65",
+      "code": "RELS 65",
+      "subject": "RELS",
+      "number": "65",
+      "title": "Religions of Asia",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:SOCI1",
+      "code": "SOCI 1",
+      "subject": "SOCI",
+      "number": "1",
+      "title": "Principles of Sociology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:SOCI10",
+      "code": "SOCI 10",
+      "subject": "SOCI",
+      "number": "10",
+      "title": "Asian Americans in U.S. Society",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:SOCI2",
+      "code": "SOCI 2",
+      "subject": "SOCI",
+      "number": "2",
+      "title": "Social Problems",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:SOCI20",
+      "code": "SOCI 20",
+      "subject": "SOCI",
+      "number": "20",
+      "title": "Environment, Society, and Justice",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:SOCI22",
+      "code": "SOCI 22",
+      "subject": "SOCI",
+      "number": "22",
+      "title": "Sociology of Globalization",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:SOCI3",
+      "code": "SOCI 3",
+      "subject": "SOCI",
+      "number": "3",
+      "title": "Introduction to Race and Ethnicity",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:SOCI4",
+      "code": "SOCI 4",
+      "subject": "SOCI",
+      "number": "4",
+      "title": "Marriage and Family Relations",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        361
+      ]
+    },
+    {
+      "id": "chabot:SOCI5",
+      "code": "SOCI 5",
+      "subject": "SOCI",
+      "number": "5",
+      "title": "Introduction to Social Research Methods",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "SOCI 1",
+      "prerequisite_course_ids": [
+        "SOCI 1"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:SOCI6",
+      "code": "SOCI 6",
+      "subject": "SOCI",
+      "number": "6",
+      "title": "Introduction to Gender",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:SOCI7",
+      "code": "SOCI 7",
+      "subject": "SOCI",
+      "number": "7",
+      "title": "Women of Color in the United States: Introduction to Race, Gender, and Sexuality Studies",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "ES 7"
+      ],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        362
+      ]
+    },
+    {
+      "id": "chabot:SPA2A",
+      "code": "SPA 2A",
+      "subject": "SPA",
+      "number": "2A",
+      "title": "Intermediate Spanish",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "SPA 1B or SPA 1B2",
+      "prerequisite_course_ids": [
+        "SPA 1B"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:SPA2B",
+      "code": "SPA 2B",
+      "subject": "SPA",
+      "number": "2B",
+      "title": "Advanced Spanish",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": "SPA 2A",
+      "prerequisite_course_ids": [
+        "SPA 2A"
+      ],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:STATC1000",
+      "code": "STAT C1000",
+      "subject": "STAT",
+      "number": "C1000",
+      "title": "Introduction to Statistics",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "MTH 43"
+      ],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:THTR10",
+      "code": "THTR 10",
+      "subject": "THTR",
+      "number": "10",
+      "title": "Introduction to Theater Arts",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    },
+    {
+      "id": "chabot:THTR14",
+      "code": "THTR 14",
+      "subject": "THTR",
+      "number": "14",
+      "title": "American Cultures in Theater",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "prerequisite": null,
+      "prerequisite_course_ids": [],
+      "catalog_type": "credit",
+      "source_pages": [
+        360
+      ]
+    }
+  ],
+  "notes": [
+    "Chabot College course list for Cal-GETC, transcribed from the catalog certificate; not IGETC and not the UC 7-course pattern.",
+    "The catalog labels Ethnic Studies \"Area 7\"; Cal-GETC numbers it Area 6, which is used here.",
+    "A course listed in 5C and in 5A or 5B may satisfy both (catalog: \"courses listed in Area 5C that are also listed in Area 5A or 5B may be used to satisfy both areas\").",
+    "cal_getc_areas lists every area the certificate shows a course under."
+  ]
+}

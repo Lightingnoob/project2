@@ -1,0 +1,3003 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "porterville_cal_getc_2025_2026",
+  "source": {
+    "publisher": "ASSIST",
+    "document_title": "Cal-GETC Course List - All Cal-GETC Areas",
+    "source_filename": "View Transferability List.pdf",
+    "date_generated": "2026-09-26",
+    "academic_year": "2025-2026",
+    "page_count": 9,
+    "assist_url": "https://assist.org/transfer/results/preview?year=76&institution=125&type=CALGETC&view=transferability&viewBy=calgetcArea&viewSendingAgreements=false&viewByKey=all"
+  },
+  "institution": {
+    "id": "porterville",
+    "name": "Porterville College",
+    "institution_type": "California Community College"
+  },
+  "ge_pathway": {
+    "id": "cal_getc",
+    "name": "California General Education Transfer Curriculum",
+    "display_name": "Cal-GETC",
+    "scope": "All Cal-GETC Areas",
+    "minimum_total_semester_units": 34,
+    "minimum_total_quarter_units": 45,
+    "total_units_note": "34 semester units is derived by summing the minimums for Areas 1-6; the 5C lab is embedded within the Area 5 science requirement rather than added on top.",
+    "transfer_scope_statement": "The source says Cal-GETC may satisfy lower-division general education before transfer to CSU or UC; it is accepted by all CSU campuses and most UC campuses/programs.",
+    "requirements": [
+      {
+        "id": "1",
+        "name": "English Communication",
+        "minimum_courses": 3,
+        "minimum_semester_units": 9,
+        "minimum_quarter_units": 12,
+        "rule": "Complete one course in each subarea 1A, 1B, and 1C.",
+        "subareas": [
+          {
+            "id": "1A",
+            "name": "English Composition",
+            "minimum_courses": 1,
+            "minimum_semester_units": 3,
+            "minimum_quarter_units": 4,
+            "eligible_course_codes": [
+              "ENGL C1000"
+            ]
+          },
+          {
+            "id": "1B",
+            "name": "Critical Thinking and Composition",
+            "minimum_courses": 1,
+            "minimum_semester_units": 3,
+            "minimum_quarter_units": 4,
+            "eligible_course_codes": [
+              "ENGL P101B",
+              "ENGL C1001",
+              "ENGL C1003"
+            ]
+          },
+          {
+            "id": "1C",
+            "name": "Oral Communication",
+            "minimum_courses": 1,
+            "minimum_semester_units": 3,
+            "minimum_quarter_units": 4,
+            "eligible_course_codes": [
+              "COMM C1000"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Mathematical Concepts and Quantitative Reasoning",
+        "minimum_courses": 1,
+        "minimum_semester_units": 3,
+        "minimum_quarter_units": 4,
+        "rule": "Complete one course in Area 2.",
+        "subareas": [
+          {
+            "id": "2",
+            "name": "Mathematical Concepts and Quantitative Reasoning",
+            "minimum_courses": 1,
+            "minimum_semester_units": 3,
+            "minimum_quarter_units": 4,
+            "eligible_course_codes": [
+              "BSAD P150",
+              "BSAD P155",
+              "MATH P100",
+              "MATH P101",
+              "MATH P101A",
+              "MATH P103",
+              "MATH P104",
+              "MATH P110",
+              "MATH P118",
+              "MATH P205",
+              "MATH P207",
+              "MATH P208",
+              "MATH C2211",
+              "MATH C2221",
+              "STAT C1000"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Arts and Humanities",
+        "minimum_courses": 2,
+        "minimum_semester_units": 6,
+        "minimum_quarter_units": 8,
+        "rule": "Complete one course in each subarea 3A and 3B.",
+        "subareas": [
+          {
+            "id": "3A",
+            "name": "Arts",
+            "minimum_courses": 1,
+            "minimum_semester_units": 3,
+            "minimum_quarter_units": 4,
+            "eligible_course_codes": [
+              "ART P101",
+              "ART P113",
+              "ART P114",
+              "ARTH C1100",
+              "ARTH C1200",
+              "DRMA P101",
+              "MUSC P109",
+              "MUSC P110",
+              "MUSC P111",
+              "MUSC P112"
+            ]
+          },
+          {
+            "id": "3B",
+            "name": "Humanities",
+            "minimum_courses": 1,
+            "minimum_semester_units": 3,
+            "minimum_quarter_units": 4,
+            "eligible_course_codes": [
+              "ANTH P102",
+              "ENGL P102",
+              "ENGL P103",
+              "ENGL P104",
+              "ENGL P112",
+              "ENGL P113",
+              "ENGL P114",
+              "ENGL P115",
+              "ENGL P116",
+              "ENGL P117",
+              "ENGL P118",
+              "ENGL P119",
+              "ENGL P130",
+              "ENGL P131",
+              "HIST P104",
+              "HIST P105",
+              "HIST P120",
+              "HIST P121",
+              "PHIL P106",
+              "PHIL P108",
+              "PHIL P109",
+              "PHIL P110",
+              "PHIL P112",
+              "PHIL P113",
+              "PHIL P114",
+              "SPAN P103",
+              "SPAN P104",
+              "SPAN P105",
+              "SPAN P106"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Social and Behavioral Sciences",
+        "minimum_courses": 2,
+        "minimum_semester_units": 6,
+        "minimum_quarter_units": 8,
+        "rule": "Complete two courses from two academic disciplines or in an interdisciplinary sequence.",
+        "subareas": [
+          {
+            "id": "4",
+            "name": "Social and Behavioral Sciences",
+            "minimum_courses": 2,
+            "minimum_semester_units": 6,
+            "minimum_quarter_units": 8,
+            "eligible_course_codes": [
+              "ADMJ P102",
+              "ADMJ P107",
+              "AGRI P102",
+              "ANTH P102",
+              "ANTH P103",
+              "ANTH P104",
+              "ANTH P105",
+              "ANTH P107",
+              "CDEV C1000",
+              "CHDV P223",
+              "COMM P106",
+              "ECON P101",
+              "ECON P102",
+              "ECON C2001",
+              "ECON C2002",
+              "ERSC P114",
+              "ETHN P105",
+              "ETHN P106",
+              "ETHN P119",
+              "ETHN P150",
+              "GEOG P113",
+              "GEOG P114",
+              "GEOG P125",
+              "HIST P101",
+              "HIST P102",
+              "HIST P104",
+              "HIST P105",
+              "HIST P107",
+              "HIST P108",
+              "HIST P109",
+              "HIST P114",
+              "HIST P117",
+              "HIST P118",
+              "HIST P119",
+              "HIST P120",
+              "HIST P121",
+              "HIST P123",
+              "HIST C1001",
+              "HIST C1002",
+              "POLS P102",
+              "POLS P103",
+              "POLS C1000",
+              "PSYC P110",
+              "PSYC P126",
+              "PSYC P133",
+              "PSYC P223",
+              "PSYC C1000",
+              "SOCI P101",
+              "SOCI P102",
+              "SOCI P130",
+              "SOCI P140",
+              "SOCI P150",
+              "SOCI P160",
+              "SOCI P170",
+              "SOCI C1000"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Physical and Biological Sciences",
+        "minimum_courses": 2,
+        "minimum_semester_units": 7,
+        "minimum_quarter_units": 9,
+        "rule": "Complete one course in 5A and one course in 5B; one of the two courses must include a laboratory satisfying 5C.",
+        "laboratory_required": true,
+        "laboratory_subarea": "5C",
+        "subareas": [
+          {
+            "id": "5A",
+            "name": "Physical Science",
+            "minimum_courses": 1,
+            "minimum_semester_units": 3,
+            "minimum_quarter_units": 4,
+            "eligible_course_codes": [
+              "ASTR P101",
+              "ASTR C1000",
+              "CHEM P101A",
+              "CHEM P101B",
+              "CHEM P105",
+              "CHEM P106",
+              "ERSC P110",
+              "GEOL P110",
+              "PHSC P112",
+              "PHYS P102A",
+              "PHYS P102B",
+              "PHYS P104A",
+              "PHYS P104B"
+            ]
+          },
+          {
+            "id": "5B",
+            "name": "Biological Science",
+            "minimum_courses": 1,
+            "minimum_semester_units": 3,
+            "minimum_quarter_units": 4,
+            "eligible_course_codes": [
+              "AGRI P131",
+              "ANTH P101",
+              "ANTH C1001",
+              "BIOL P110",
+              "BIOL P119",
+              "BIOL P120",
+              "BIOL P135",
+              "BIOL P136",
+              "BIOL P160",
+              "BIOL C1000"
+            ]
+          },
+          {
+            "id": "5C",
+            "name": "Laboratory",
+            "minimum_semester_units": 1,
+            "minimum_quarter_units": 1,
+            "note": "Laboratory requirement; may be embedded in a 5A or 5B course.",
+            "eligible_course_codes": [
+              "ASTR P101",
+              "ASTR C1000",
+              "BIOL P110",
+              "BIOL P119",
+              "BIOL P120",
+              "BIOL P135",
+              "BIOL P136",
+              "BIOL P160",
+              "BIOL C1000",
+              "CHEM P101A",
+              "CHEM P101B",
+              "CHEM P105",
+              "CHEM P106",
+              "ERSC P110",
+              "GEOL P110",
+              "PHSC P112",
+              "PHYS P102A",
+              "PHYS P102B",
+              "PHYS P104A",
+              "PHYS P104B"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "Ethnic Studies",
+        "minimum_courses": 1,
+        "minimum_semester_units": 3,
+        "minimum_quarter_units": 4,
+        "rule": "Complete one course in Area 6.",
+        "subareas": [
+          {
+            "id": "6",
+            "name": "Ethnic Studies",
+            "minimum_courses": 1,
+            "minimum_semester_units": 3,
+            "minimum_quarter_units": 4,
+            "eligible_course_codes": [
+              "ANTH P105",
+              "ETHN P105",
+              "ETHN P150",
+              "SOCI P150"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "courses": [
+    {
+      "id": "porterville:ENGLC1000",
+      "code": "ENGL C1000",
+      "subject": "ENGL",
+      "number": "C1000",
+      "title": "Academic Reading and Writing",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "1A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "id": "porterville:ENGLP101B",
+      "code": "ENGL P101B",
+      "subject": "ENGL",
+      "number": "P101B",
+      "title": "Argumentative Writing and Critical Thinking Through Literature",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "1B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "id": "porterville:ENGLC1001",
+      "code": "ENGL C1001",
+      "subject": "ENGL",
+      "number": "C1001",
+      "title": "Critical Thinking and Writing",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "1B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "id": "porterville:ENGLC1003",
+      "code": "ENGL C1003",
+      "subject": "ENGL",
+      "number": "C1003",
+      "title": "Critical Thinking and Writing Through Literature",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "1B"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "ENGL P101B"
+      ],
+      "former_titles": [
+        "Argumentative Writing and Critical Thinking Through Literature"
+      ],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "porterville:COMMC1000",
+      "code": "COMM C1000",
+      "subject": "COMM",
+      "number": "C1000",
+      "title": "Introduction to Public Speaking",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "1C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:BSADP150",
+      "code": "BSAD P150",
+      "subject": "BSAD",
+      "number": "P150",
+      "title": "Quantitative Methods for Business Decision Making",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:BSADP155",
+      "code": "BSAD P155",
+      "subject": "BSAD",
+      "number": "P155",
+      "title": "Business Statistics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:MATHP100",
+      "code": "MATH P100",
+      "subject": "MATH",
+      "number": "P100",
+      "title": "College PreCalculus I",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:MATHP101",
+      "code": "MATH P101",
+      "subject": "MATH",
+      "number": "P101",
+      "title": "College PreCalculus II",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:MATHP101A",
+      "code": "MATH P101A",
+      "subject": "MATH",
+      "number": "P101A",
+      "title": "Pre-Calculus and Trigonometry",
+      "semester_units": 6.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:MATHP103",
+      "code": "MATH P103",
+      "subject": "MATH",
+      "number": "P103",
+      "title": "Calculus I with Analytic Geometry",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:MATHP104",
+      "code": "MATH P104",
+      "subject": "MATH",
+      "number": "P104",
+      "title": "Calculus II with Analytical Geometry",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:MATHP110",
+      "code": "MATH P110",
+      "subject": "MATH",
+      "number": "P110",
+      "title": "General College Algebra",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:MATHP118",
+      "code": "MATH P118",
+      "subject": "MATH",
+      "number": "P118",
+      "title": "Finite Mathematics",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:MATHP205",
+      "code": "MATH P205",
+      "subject": "MATH",
+      "number": "P205",
+      "title": "Calculus 3 with Analytic Geometry",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:MATHP207",
+      "code": "MATH P207",
+      "subject": "MATH",
+      "number": "P207",
+      "title": "Ordinary Differential Equations",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:MATHP208",
+      "code": "MATH P208",
+      "subject": "MATH",
+      "number": "P208",
+      "title": "Introduction to Linear Algebra",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:MATHC2211",
+      "code": "MATH C2211",
+      "subject": "MATH",
+      "number": "C2211",
+      "title": "Calculus I: Late Transcendentals",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "MATH P103"
+      ],
+      "former_titles": [
+        "Calculus I with Analytic Geometry"
+      ],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:MATHC2221",
+      "code": "MATH C2221",
+      "subject": "MATH",
+      "number": "C2221",
+      "title": "Calculus II: Late Transcendentals",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "MATH P104"
+      ],
+      "former_titles": [
+        "Calculus II with Analytical Geometry"
+      ],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:STATC1000",
+      "code": "STAT C1000",
+      "subject": "STAT",
+      "number": "C1000",
+      "title": "Introduction to Statistics",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "2"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "porterville:ARTP101",
+      "code": "ART P101",
+      "subject": "ART",
+      "number": "P101",
+      "title": "Art Studio Fundamentals",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ARTP113",
+      "code": "ART P113",
+      "subject": "ART",
+      "number": "P113",
+      "title": "Pre-Historic to Medieval Art History",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ARTP114",
+      "code": "ART P114",
+      "subject": "ART",
+      "number": "P114",
+      "title": "Renaissance to Contemporary Art History",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ARTHC1100",
+      "code": "ARTH C1100",
+      "subject": "ARTH",
+      "number": "C1100",
+      "title": "Survey of Art from Prehistory to the Medieval Era",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "ART P113"
+      ],
+      "former_titles": [
+        "Pre-Historic to Medieval Art History"
+      ],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ARTHC1200",
+      "code": "ARTH C1200",
+      "subject": "ARTH",
+      "number": "C1200",
+      "title": "Survey of Art from the Renaissance to Contemporary",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "ART P114"
+      ],
+      "former_titles": [
+        "Renaissance to Contemporary Art History"
+      ],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:DRMAP101",
+      "code": "DRMA P101",
+      "subject": "DRMA",
+      "number": "P101",
+      "title": "Introduction to Theater",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:MUSCP109",
+      "code": "MUSC P109",
+      "subject": "MUSC",
+      "number": "P109",
+      "title": "History of Rock and Roll",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:MUSCP110",
+      "code": "MUSC P110",
+      "subject": "MUSC",
+      "number": "P110",
+      "title": "Exploring the World Through Music",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:MUSCP111",
+      "code": "MUSC P111",
+      "subject": "MUSC",
+      "number": "P111",
+      "title": "Music Appreciation: Music Through 1800",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:MUSCP112",
+      "code": "MUSC P112",
+      "subject": "MUSC",
+      "number": "P112",
+      "title": "Music Appreciation: 1800 to the Present",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3A"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ANTHP102",
+      "code": "ANTH P102",
+      "subject": "ANTH",
+      "number": "P102",
+      "title": "Introduction to Cultural Anthropology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B",
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "porterville:ENGLP102",
+      "code": "ENGL P102",
+      "subject": "ENGL",
+      "number": "P102",
+      "title": "British Literature 1",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ENGLP103",
+      "code": "ENGL P103",
+      "subject": "ENGL",
+      "number": "P103",
+      "title": "Shakespeare Survey",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ENGLP104",
+      "code": "ENGL P104",
+      "subject": "ENGL",
+      "number": "P104",
+      "title": "British Literature 2",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ENGLP112",
+      "code": "ENGL P112",
+      "subject": "ENGL",
+      "number": "P112",
+      "title": "Forms of Literature: Chicano Literature",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ENGLP113",
+      "code": "ENGL P113",
+      "subject": "ENGL",
+      "number": "P113",
+      "title": "Forms of Literature: Chicano Drama",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ENGLP114",
+      "code": "ENGL P114",
+      "subject": "ENGL",
+      "number": "P114",
+      "title": "Introduction to Mythology and Folklore",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ENGLP115",
+      "code": "ENGL P115",
+      "subject": "ENGL",
+      "number": "P115",
+      "title": "Forms of Literature: Women Writers",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ENGLP116",
+      "code": "ENGL P116",
+      "subject": "ENGL",
+      "number": "P116",
+      "title": "Forms of Literature: The Short Story",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ENGLP117",
+      "code": "ENGL P117",
+      "subject": "ENGL",
+      "number": "P117",
+      "title": "Forms of Literature-American Indian Literature",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ENGLP118",
+      "code": "ENGL P118",
+      "subject": "ENGL",
+      "number": "P118",
+      "title": "The Bible as Literature",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ENGLP119",
+      "code": "ENGL P119",
+      "subject": "ENGL",
+      "number": "P119",
+      "title": "Forms of Literature: Poetry",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ENGLP130",
+      "code": "ENGL P130",
+      "subject": "ENGL",
+      "number": "P130",
+      "title": "American Literature 1",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:ENGLP131",
+      "code": "ENGL P131",
+      "subject": "ENGL",
+      "number": "P131",
+      "title": "American Literature 2",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "porterville:HISTP104",
+      "code": "HIST P104",
+      "subject": "HIST",
+      "number": "P104",
+      "title": "History of Western Civilization I",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B",
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP105",
+      "code": "HIST P105",
+      "subject": "HIST",
+      "number": "P105",
+      "title": "History of Western Civilization II",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B",
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP120",
+      "code": "HIST P120",
+      "subject": "HIST",
+      "number": "P120",
+      "title": "History of the Middle East",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B",
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "F2028",
+      "source_pages": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP121",
+      "code": "HIST P121",
+      "subject": "HIST",
+      "number": "P121",
+      "title": "History of East Asia",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B",
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "F2028",
+      "source_pages": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "porterville:PHILP106",
+      "code": "PHIL P106",
+      "subject": "PHIL",
+      "number": "P106",
+      "title": "Introduction to Philosophy",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:PHILP108",
+      "code": "PHIL P108",
+      "subject": "PHIL",
+      "number": "P108",
+      "title": "Introduction to the Philosophy of Religion",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:PHILP109",
+      "code": "PHIL P109",
+      "subject": "PHIL",
+      "number": "P109",
+      "title": "Existence and Reality",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:PHILP110",
+      "code": "PHIL P110",
+      "subject": "PHIL",
+      "number": "P110",
+      "title": "Introduction to Ethics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:PHILP112",
+      "code": "PHIL P112",
+      "subject": "PHIL",
+      "number": "P112",
+      "title": "The Ethics of Living and Dying",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:PHILP113",
+      "code": "PHIL P113",
+      "subject": "PHIL",
+      "number": "P113",
+      "title": "Introduction to the World's Religions",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:PHILP114",
+      "code": "PHIL P114",
+      "subject": "PHIL",
+      "number": "P114",
+      "title": "History of Ancient Philosophy",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:SPANP103",
+      "code": "SPAN P103",
+      "subject": "SPAN",
+      "number": "P103",
+      "title": "Intermediate Spanish",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:SPANP104",
+      "code": "SPAN P104",
+      "subject": "SPAN",
+      "number": "P104",
+      "title": "Intermediate Spanish",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:SPANP105",
+      "code": "SPAN P105",
+      "subject": "SPAN",
+      "number": "P105",
+      "title": "Spanish for Spanish Speakers",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:SPANP106",
+      "code": "SPAN P106",
+      "subject": "SPAN",
+      "number": "P106",
+      "title": "Spanish for Spanish Speakers",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "3B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:ADMJP102",
+      "code": "ADMJ P102",
+      "subject": "ADMJ",
+      "number": "P102",
+      "title": "Introduction to Administration of Justice",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:ADMJP107",
+      "code": "ADMJ P107",
+      "subject": "ADMJ",
+      "number": "P107",
+      "title": "Exploring Contemporary Multicultural Issues",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:AGRIP102",
+      "code": "AGRI P102",
+      "subject": "AGRI",
+      "number": "P102",
+      "title": "Agricultural Economics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:ANTHP103",
+      "code": "ANTH P103",
+      "subject": "ANTH",
+      "number": "P103",
+      "title": "Introduction to Archaeology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:ANTHP104",
+      "code": "ANTH P104",
+      "subject": "ANTH",
+      "number": "P104",
+      "title": "Prehistory and Ancient Civilization",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:ANTHP105",
+      "code": "ANTH P105",
+      "subject": "ANTH",
+      "number": "P105",
+      "title": "Native Cultures of North America",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "ETHN P105"
+      ],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": "porterville:ANTHP107",
+      "code": "ANTH P107",
+      "subject": "ANTH",
+      "number": "P107",
+      "title": "Anthropology of Religion and Ritual",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:CDEVC1000",
+      "code": "CDEV C1000",
+      "subject": "CDEV",
+      "number": "C1000",
+      "title": "Child Growth and Development",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "PSYC P223"
+      ],
+      "former_codes": [
+        "CHDV P223"
+      ],
+      "former_titles": [],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:CHDVP223",
+      "code": "CHDV P223",
+      "subject": "CHDV",
+      "number": "P223",
+      "title": "Child Growth and Development",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "PSYC P223"
+      ],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:COMMP106",
+      "code": "COMM P106",
+      "subject": "COMM",
+      "number": "P106",
+      "title": "Intercultural Communication",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "ETHN P106"
+      ],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:ECONP101",
+      "code": "ECON P101",
+      "subject": "ECON",
+      "number": "P101",
+      "title": "Principles of Microeconomics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:ECONP102",
+      "code": "ECON P102",
+      "subject": "ECON",
+      "number": "P102",
+      "title": "Principles of Macroeconomics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:ECONC2001",
+      "code": "ECON C2001",
+      "subject": "ECON",
+      "number": "C2001",
+      "title": "Principles of Microeconomics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "ECON P101"
+      ],
+      "former_titles": [],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:ECONC2002",
+      "code": "ECON C2002",
+      "subject": "ECON",
+      "number": "C2002",
+      "title": "Principles of Macroeconomics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "ECON P102"
+      ],
+      "former_titles": [],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "id": "porterville:ERSCP114",
+      "code": "ERSC P114",
+      "subject": "ERSC",
+      "number": "P114",
+      "title": "Physical Geography",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "GEOG P114"
+      ],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "F2026",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "porterville:ETHNP105",
+      "code": "ETHN P105",
+      "subject": "ETHN",
+      "number": "P105",
+      "title": "Native Cultures of North America",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "ANTH P105"
+      ],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5,
+        8
+      ]
+    },
+    {
+      "id": "porterville:ETHNP106",
+      "code": "ETHN P106",
+      "subject": "ETHN",
+      "number": "P106",
+      "title": "Intercultural Communication",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "COMM P106"
+      ],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:ETHNP119",
+      "code": "ETHN P119",
+      "subject": "ETHN",
+      "number": "P119",
+      "title": "Mexican American History",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "HIST P119"
+      ],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:ETHNP150",
+      "code": "ETHN P150",
+      "subject": "ETHN",
+      "number": "P150",
+      "title": "Race and Ethnicity",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "SOCI P150"
+      ],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "porterville:GEOGP113",
+      "code": "GEOG P113",
+      "subject": "GEOG",
+      "number": "P113",
+      "title": "Cultural Geography",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:GEOGP114",
+      "code": "GEOG P114",
+      "subject": "GEOG",
+      "number": "P114",
+      "title": "Physical Geography",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "ERSC P114"
+      ],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "F2026",
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:GEOGP125",
+      "code": "GEOG P125",
+      "subject": "GEOG",
+      "number": "P125",
+      "title": "World Regional Geography",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP101",
+      "code": "HIST P101",
+      "subject": "HIST",
+      "number": "P101",
+      "title": "World History to 1500",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP102",
+      "code": "HIST P102",
+      "subject": "HIST",
+      "number": "P102",
+      "title": "World History from 1500 to the Present",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP107",
+      "code": "HIST P107",
+      "subject": "HIST",
+      "number": "P107",
+      "title": "California History",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP108",
+      "code": "HIST P108",
+      "subject": "HIST",
+      "number": "P108",
+      "title": "Early Latin American History",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP109",
+      "code": "HIST P109",
+      "subject": "HIST",
+      "number": "P109",
+      "title": "Modern Latin American History",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP114",
+      "code": "HIST P114",
+      "subject": "HIST",
+      "number": "P114",
+      "title": "History of Women in the United States",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP117",
+      "code": "HIST P117",
+      "subject": "HIST",
+      "number": "P117",
+      "title": "History of the United States to 1877",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP118",
+      "code": "HIST P118",
+      "subject": "HIST",
+      "number": "P118",
+      "title": "History of the United States from 1865",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP119",
+      "code": "HIST P119",
+      "subject": "HIST",
+      "number": "P119",
+      "title": "Mexican American History",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "ETHN P119"
+      ],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTP123",
+      "code": "HIST P123",
+      "subject": "HIST",
+      "number": "P123",
+      "title": "History of Mexico",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTC1001",
+      "code": "HIST C1001",
+      "subject": "HIST",
+      "number": "C1001",
+      "title": "United States History to 1877",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "HIST P117"
+      ],
+      "former_titles": [
+        "History of the United States to 1877"
+      ],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:HISTC1002",
+      "code": "HIST C1002",
+      "subject": "HIST",
+      "number": "C1002",
+      "title": "United States History since 1865",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "HIST P118"
+      ],
+      "former_titles": [
+        "History of the United States from 1865 "
+      ],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:POLSP102",
+      "code": "POLS P102",
+      "subject": "POLS",
+      "number": "P102",
+      "title": "Introduction to Comparative Politics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:POLSP103",
+      "code": "POLS P103",
+      "subject": "POLS",
+      "number": "P103",
+      "title": "Introduction to International Politics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:POLSC1000",
+      "code": "POLS C1000",
+      "subject": "POLS",
+      "number": "C1000",
+      "title": "American Government and Politics",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:PSYCP110",
+      "code": "PSYC P110",
+      "subject": "PSYC",
+      "number": "P110",
+      "title": "Abnormal Psychology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:PSYCP126",
+      "code": "PSYC P126",
+      "subject": "PSYC",
+      "number": "P126",
+      "title": "Lifespan Human Development",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "porterville:PSYCP133",
+      "code": "PSYC P133",
+      "subject": "PSYC",
+      "number": "P133",
+      "title": "Psychology of Personal and Social Adjustment",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "id": "porterville:PSYCP223",
+      "code": "PSYC P223",
+      "subject": "PSYC",
+      "number": "P223",
+      "title": "Child Psychology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [
+        "CHDV P223"
+      ],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "id": "porterville:PSYCC1000",
+      "code": "PSYC C1000",
+      "subject": "PSYC",
+      "number": "C1000",
+      "title": "Introduction to Psychology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "id": "porterville:SOCIP101",
+      "code": "SOCI P101",
+      "subject": "SOCI",
+      "number": "P101",
+      "title": "The Social World",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "id": "porterville:SOCIP102",
+      "code": "SOCI P102",
+      "subject": "SOCI",
+      "number": "P102",
+      "title": "Social Problems",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "id": "porterville:SOCIP130",
+      "code": "SOCI P130",
+      "subject": "SOCI",
+      "number": "P130",
+      "title": "Family and Society",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "id": "porterville:SOCIP140",
+      "code": "SOCI P140",
+      "subject": "SOCI",
+      "number": "P140",
+      "title": "Gender and Society",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "id": "porterville:SOCIP150",
+      "code": "SOCI P150",
+      "subject": "SOCI",
+      "number": "P150",
+      "title": "Race and Ethnicity",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4",
+        "6"
+      ],
+      "same_as": [
+        "ETHN P150"
+      ],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6,
+        9
+      ]
+    },
+    {
+      "id": "porterville:SOCIP160",
+      "code": "SOCI P160",
+      "subject": "SOCI",
+      "number": "P160",
+      "title": "Crime and Society",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "id": "porterville:SOCIP170",
+      "code": "SOCI P170",
+      "subject": "SOCI",
+      "number": "P170",
+      "title": "Community and Social Psychology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "id": "porterville:SOCIC1000",
+      "code": "SOCI C1000",
+      "subject": "SOCI",
+      "number": "C1000",
+      "title": "Introduction to Sociology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "4"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "SOCI P101"
+      ],
+      "former_titles": [
+        "The Social World"
+      ],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "id": "porterville:ASTRP101",
+      "code": "ASTR P101",
+      "subject": "ASTR",
+      "number": "P101",
+      "title": "Elementary Astronomy",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "porterville:ASTRC1000",
+      "code": "ASTR C1000",
+      "subject": "ASTR",
+      "number": "C1000",
+      "title": "Introduction to Astronomy with Lab",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "ASTR P101"
+      ],
+      "former_titles": [
+        "Elementary Astronomy"
+      ],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "porterville:CHEMP101A",
+      "code": "CHEM P101A",
+      "subject": "CHEM",
+      "number": "P101A",
+      "title": "General Chemistry I",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6,
+        8
+      ]
+    },
+    {
+      "id": "porterville:CHEMP101B",
+      "code": "CHEM P101B",
+      "subject": "CHEM",
+      "number": "P101B",
+      "title": "General Chemistry II",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6,
+        8
+      ]
+    },
+    {
+      "id": "porterville:CHEMP105",
+      "code": "CHEM P105",
+      "subject": "CHEM",
+      "number": "P105",
+      "title": "Introduction to General, Organic, and Biological Chemistry",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6,
+        8
+      ]
+    },
+    {
+      "id": "porterville:CHEMP106",
+      "code": "CHEM P106",
+      "subject": "CHEM",
+      "number": "P106",
+      "title": "Introduction to Chemical Principles",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6,
+        8
+      ]
+    },
+    {
+      "id": "porterville:ERSCP110",
+      "code": "ERSC P110",
+      "subject": "ERSC",
+      "number": "P110",
+      "title": "Introduction to Earth Science",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6,
+        8
+      ]
+    },
+    {
+      "id": "porterville:GEOLP110",
+      "code": "GEOL P110",
+      "subject": "GEOL",
+      "number": "P110",
+      "title": "Introduction to Geology",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6,
+        8
+      ]
+    },
+    {
+      "id": "porterville:PHSCP112",
+      "code": "PHSC P112",
+      "subject": "PHSC",
+      "number": "P112",
+      "title": "Physical Science",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6,
+        8
+      ]
+    },
+    {
+      "id": "porterville:PHYSP102A",
+      "code": "PHYS P102A",
+      "subject": "PHYS",
+      "number": "P102A",
+      "title": "General College Physics I",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "porterville:PHYSP102B",
+      "code": "PHYS P102B",
+      "subject": "PHYS",
+      "number": "P102B",
+      "title": "General College Physics II",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "porterville:PHYSP104A",
+      "code": "PHYS P104A",
+      "subject": "PHYS",
+      "number": "P104A",
+      "title": "Physics for Scientists and Engineers",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "porterville:PHYSP104B",
+      "code": "PHYS P104B",
+      "subject": "PHYS",
+      "number": "P104B",
+      "title": "Physics for Scientists and Engineers",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5A",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "porterville:AGRIP131",
+      "code": "AGRI P131",
+      "subject": "AGRI",
+      "number": "P131",
+      "title": "Introduction to Plant Science",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "id": "porterville:ANTHP101",
+      "code": "ANTH P101",
+      "subject": "ANTH",
+      "number": "P101",
+      "title": "Introduction to Biological Anthropology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5B"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "id": "porterville:ANTHC1001",
+      "code": "ANTH C1001",
+      "subject": "ANTH",
+      "number": "C1001",
+      "title": "Introduction to Biological Anthropology",
+      "semester_units": 3.0,
+      "cal_getc_areas": [
+        "5B"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "ANTH P101"
+      ],
+      "former_titles": [],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "id": "porterville:BIOLP110",
+      "code": "BIOL P110",
+      "subject": "BIOL",
+      "number": "P110",
+      "title": "Principles of Biology",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": "Su2026",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "id": "porterville:BIOLP119",
+      "code": "BIOL P119",
+      "subject": "BIOL",
+      "number": "P119",
+      "title": "Human Anatomy",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "id": "porterville:BIOLP120",
+      "code": "BIOL P120",
+      "subject": "BIOL",
+      "number": "P120",
+      "title": "Human Physiology",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "porterville:BIOLP135",
+      "code": "BIOL P135",
+      "subject": "BIOL",
+      "number": "P135",
+      "title": "General Biology I",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "porterville:BIOLP136",
+      "code": "BIOL P136",
+      "subject": "BIOL",
+      "number": "P136",
+      "title": "General Biology II",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "porterville:BIOLP160",
+      "code": "BIOL P160",
+      "subject": "BIOL",
+      "number": "P160",
+      "title": "General Microbiology",
+      "semester_units": 5.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [],
+      "former_titles": [],
+      "effective_begin": "F2025",
+      "effective_end": null,
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "porterville:BIOLC1000",
+      "code": "BIOL C1000",
+      "subject": "BIOL",
+      "number": "C1000",
+      "title": "Introduction to Biology with Lab",
+      "semester_units": 4.0,
+      "cal_getc_areas": [
+        "5B",
+        "5C"
+      ],
+      "same_as": [],
+      "former_codes": [
+        "BIOL P110"
+      ],
+      "former_titles": [
+        "Principles of Biology"
+      ],
+      "effective_begin": "Su2026",
+      "effective_end": null,
+      "source_pages": [
+        7,
+        8
+      ]
+    }
+  ],
+  "notes": [
+    "This dataset is Cal-GETC, not the older IGETC course list.",
+    "Course eligibility, aliases, effective terms, cross-listed/same-as relationships, and former course numbers/titles are transcribed from the supplied ASSIST PDF.",
+    "A course can appear in more than one Cal-GETC area; cal_getc_areas lists every area shown in the source.",
+    "Effective-begin/effective-end values use the source's term notation (for example F2025 and Su2026).",
+    "This file is for Porterville College, not Chabot College."
+  ]
+}

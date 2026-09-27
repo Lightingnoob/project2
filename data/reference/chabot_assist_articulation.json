@@ -1,0 +1,20 @@
+{
+  "source": "ASSIST.org agreements, Chabot College -> each UC campus and CSU East Bay (fill in by hand; nothing here is pre-filled)",
+  "academic_year": "2025-2026",
+  "how_to_fill": "On assist.org open Chabot College -> campus -> the student's major. For each Chabot course below, list the UC course(s) it articulates to, e.g. \"MTH 1\": [\"MATH 20A\"]. Use [] when ASSIST says 'No course articulated'. Leave a course out if you have not checked it yet.",
+  "courses_to_check": ["MTH 1", "MTH 2", "CHEM 1A", "BIOS 41", "CSCI 14", "STAT C1000", "ECN 1", "ECN 2",
+    "PHYS 4A", "PHYS 7A", "PHYS 4B", "PHYS 7C", "ENGL C1000", "PSYC C1000", "POLS C1000", "POSC 20",
+    "HIS 1", "HIS 2", "HIS 7", "HIS 8", "ARTH 4", "ARTH 5", "CHIN 1B", "FRNC 1B", "JAPN 1B", "SPA 1B"],
+  "campuses": {
+    "berkeley": {},
+    "csueb": {},
+    "davis": {},
+    "irvine": {},
+    "los_angeles": {},
+    "merced": {},
+    "riverside": {},
+    "san_diego": {},
+    "santa_barbara": {},
+    "santa_cruz": {}
+  }
+}

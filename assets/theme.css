@@ -1,0 +1,487 @@
+/* =====================================================================
+ * theme.css — TransferPath visual theme (plain CSS, no Tailwind rebuild needed)
+ *
+ * An ambient page backdrop (soft rose glow at the top, sky blue through the
+ * middle in light mode, mint/aqua glow at the bottom, drifting very slowly)
+ * under frosted, mostly-white content surfaces. In light mode it turns from
+ * pink-based to blue-based as the page scrolls down.
+ * Colors are tokens on :root, redefined for .dark (the theme toggle's class).
+ * Semantic colors (blue major prep, teal GE, amber summer, emerald done) stay
+ * as Tailwind utilities in the markup; this file owns the atmosphere, the
+ * surfaces and the planner form's controls (violet accent, rose -> violet CTA).
+ * ===================================================================== */
+
+:root {
+  /* Backdrop: vertical wash + blurred glows. Light mode shifts with scroll (see "Scroll shift"): pink-based
+     with some blue at the top of the page, blue-based with some pink further down. */
+  --backdrop-base: #fdf1f7;                /* faint pink */
+  --backdrop-top: #fbe4f0;
+  --backdrop-bottom: #e6f1fc;              /* faint blue */
+  --backdrop-scrolled:                     /* what the page cross-fades to as you scroll down */
+    radial-gradient(60vmax 42vmax at 100% 100%, rgb(249 168 212 / .38), transparent 70%),   /* pink, bottom right */
+    linear-gradient(180deg, #f9e8f2 0%, #e4f0fd 30%, #d9eafb 100%);                         /* blue base */
+  --glow-rose: rgb(249 168 212 / .5);      /* pink-300 */
+  --glow-magenta: rgb(232 121 249 / .2);   /* fuchsia-400 */
+  --glow-mint: rgb(110 231 183 / .38);     /* emerald-300 */
+  --glow-aqua: rgb(125 211 252 / .45);     /* sky-300 */
+  --glow-sky: rgb(56 189 248 / .3);        /* sky-400, light mode only: through the middle, behind the content */
+
+  /* Surfaces: mostly white, so text keeps its contrast over any part of the backdrop */
+  --surface-bg: rgb(255 255 255 / .8);
+  --surface-border: rgb(255 255 255 / .9);
+  --surface-shadow: 0 1px 2px rgb(15 23 42 / .04), 0 16px 40px -18px rgb(131 24 67 / .16);
+  --bar-bg: rgb(255 255 255 / .6);
+  --bar-border: rgb(15 23 42 / .06);
+  --panel-bg: rgb(255 255 255 / .9);
+  --tile-bg: rgb(255 255 255 / .62);
+  --tile-border: rgb(15 23 42 / .07);
+  --dashed-border: rgb(15 23 42 / .16);
+  --scrim: rgb(46 16 63 / .2);
+
+  /* Brand accents (logo mark, wordmark); the violet midpoint keeps rose -> teal from turning grey */
+  --brand-from: #db2777;
+  --brand-via: #9b5de5;
+  --brand-to: #0d9488;
+  --brand-text-from: #be185d;
+  --brand-text-to: #0f766e;
+
+  /* Feature card (the planner form): blush tint at the top, mint at the bottom, luminous edge */
+  --feature-top: rgb(252 231 243 / .7);
+  --feature-bottom: rgb(209 250 229 / .38);
+  --feature-edge-top: rgb(244 114 182 / .45);
+  --feature-edge-mid: rgb(255 255 255 / .95);
+  --feature-edge-bottom: rgb(45 212 191 / .4);
+  --feature-shadow: inset 0 1px 0 rgb(255 255 255 / .9), 0 1px 2px rgb(15 23 42 / .04),
+    0 30px 60px -30px rgb(190 24 93 / .3), 0 22px 44px -30px rgb(13 148 136 / .24);
+
+  /* Interactive accent: violet, the bridge between the rose and mint glows (5.7:1 on white) */
+  --accent: #7c3aed;
+  --accent-text: #6d28d9;
+  --accent-soft: rgb(124 58 237 / .08);
+  --accent-soft-hover: rgb(124 58 237 / .14);
+  --accent-ring: rgb(124 58 237 / .2);
+  /* Hovered semester card: sky-blue border, ring + glow, and a drop shadow under it so it reads as lifted */
+  --tile-hover-border: #0ea5e9;                                   /* sky-500 */
+  --tile-hover-shadow: 0 0 0 3px rgb(14 165 233 / .14), 0 0 22px -4px rgb(14 165 233 / .5),
+    0 12px 24px -12px rgb(3 105 161 / .35);
+  --tile-hover-text-glow: 0 0 10px rgb(14 165 233 / .4);          /* the card's words, icons and numbers */
+
+  /* Prerequisite map in a focused semester card (plan_graph.js): red critical path, blue accents */
+  --pg-node-bg: #fff;
+  --pg-node-border: #e2e8f0;
+  --pg-node-text: #0f172a;
+  --pg-node-meta: #475569;
+  --pg-accent: #3b82f6;                    /* blue-500: accent bar, this term's outline */
+  --pg-term-bg: #eff6ff;
+  --pg-critical: #ef4444;
+  --pg-critical-bg: #fef2f2;
+  --pg-critical-border: #fca5a5;
+  --pg-critical-text: #b91c1c;
+  --pg-critical-halo: rgb(239 68 68 / .12);
+  --pg-edge: #cbd5e1;
+  --pg-dots: #dbe3ee;
+  --pg-node-shadow: 0 1px 2px rgb(15 23 42 / .08), 0 6px 14px -4px rgb(15 23 42 / .18);
+  --pg-node-glow: 0 0 0 transparent;       /* dark mode only: a faint glow in the box's colour */
+  --pg-critical-glow: 0 0 0 transparent;
+  --focus-offset: #fff;
+  --focus-ring: 0 0 0 2px var(--focus-offset), 0 0 0 4px var(--accent);
+
+  /* Primary button: rose -> violet, dark enough at both ends for white text (>= 5.7:1) */
+  --cta-from: #be185d;
+  --cta-to: #6d28d9;
+  --cta-glow: rgb(157 23 77 / .45);
+
+  /* Form controls: near-white fields with a soft lavender-grey edge */
+  --field-bg: rgb(255 255 255 / .92);
+  --field-border: rgb(112 92 140 / .3);
+  --field-border-hover: rgb(112 92 140 / .5);
+  --field-shadow: 0 1px 2px rgb(76 29 149 / .05);
+  --field-placeholder: #64748b;
+  --track-bg: rgb(112 92 140 / .045);
+  --track-border: rgb(112 92 140 / .16);
+  --switch-off: rgb(112 92 140 / .32);
+  --menu-bg: #fff;
+  --menu-shadow: 0 16px 36px -14px rgb(76 29 149 / .28);
+}
+
+.dark {
+  /* Richer than light mode's wash: plum above, deep teal-green below, glows strong enough to read on a
+     near-black base (a center vignette, further down, keeps the middle deep so they stand out) */
+  --backdrop-base: #0a0913;
+  --backdrop-top: #2a1134;
+  --backdrop-bottom: #062a26;
+  --glow-rose: rgb(236 72 153 / .34);      /* pink-500 */
+  --glow-magenta: rgb(168 85 247 / .26);   /* purple-500 */
+  --glow-mint: rgb(16 185 129 / .28);      /* emerald-500 */
+  --glow-aqua: rgb(20 184 166 / .24);      /* teal-500 */
+
+  /* Violet-ink glass (not blue slate), so the glows tint through; lavender-tinted edges */
+  --surface-bg: rgb(16 14 30 / .6);
+  --surface-border: rgb(236 220 255 / .1);
+  --surface-shadow: 0 1px 2px rgb(0 0 0 / .35), 0 18px 44px -18px rgb(0 0 0 / .7),
+    0 24px 60px -36px rgb(236 72 153 / .22);
+  --bar-bg: rgb(14 10 26 / .55);
+  --bar-border: rgb(244 114 182 / .14);
+  --panel-bg: rgb(17 14 32 / .9);
+  --tile-bg: rgb(38 33 64 / .4);
+  --tile-border: rgb(236 220 255 / .08);
+  --dashed-border: rgb(236 220 255 / .2);
+  --scrim: rgb(8 4 18 / .55);
+
+  --brand-text-from: #f9a8d4;
+  --brand-text-to: #5eead4;
+
+  /* Planner card: stronger blush/mint bands and edge, with a pink halo above and a mint one below */
+  --feature-top: rgb(236 72 153 / .16);
+  --feature-bottom: rgb(20 184 166 / .12);
+  --feature-edge-top: rgb(244 114 182 / .55);
+  --feature-edge-mid: rgb(236 220 255 / .08);
+  --feature-edge-bottom: rgb(45 212 191 / .45);
+  --feature-shadow: inset 0 1px 0 rgb(255 255 255 / .06), 0 1px 2px rgb(0 0 0 / .35),
+    0 30px 60px -30px rgb(0 0 0 / .75), 0 -12px 60px -30px rgb(236 72 153 / .35),
+    0 30px 70px -34px rgb(20 184 166 / .35);
+
+  /* Accent leans pink-purple on dark; light enough to read as a focus ring on the ink surfaces */
+  --accent: #c084fc;
+  --accent-text: #e9d5ff;
+  --accent-soft: rgb(192 132 252 / .14);
+  --accent-soft-hover: rgb(192 132 252 / .22);
+  --accent-ring: rgb(192 132 252 / .32);
+  --tile-hover-border: #c084fc;                                   /* the dark accent: violet on dark */
+  --tile-hover-shadow: 0 0 0 3px rgb(192 132 252 / .16), 0 0 26px -4px rgb(192 132 252 / .5),
+    0 12px 24px -12px rgb(0 0 0 / .6);
+  --tile-hover-text-glow: 0 0 10px rgb(192 132 252 / .55);
+
+  --pg-node-bg: #1c1930;
+  --pg-node-border: rgb(236 220 255 / .14);
+  --pg-node-text: #f1f5f9;
+  --pg-node-meta: #a5b4c8;
+  --pg-accent: #60a5fa;
+  --pg-term-bg: rgb(59 130 246 / .18);
+  --pg-critical: #f87171;
+  --pg-critical-bg: rgb(239 68 68 / .14);
+  --pg-critical-border: rgb(248 113 113 / .45);
+  --pg-critical-text: #fecaca;
+  --pg-critical-halo: rgb(248 113 113 / .12);
+  --pg-edge: #4b5568;
+  --pg-dots: rgb(236 220 255 / .09);
+  --pg-node-shadow: 0 3px 6px rgb(0 0 0 / .6), 0 14px 26px -6px rgb(0 0 0 / .95);   /* deeper: the card is dark */
+  --pg-node-glow: 0 0 18px -3px rgb(96 165 250 / .32);     /* a black shadow alone barely shows on dark */
+  --pg-critical-glow: 0 0 18px -3px rgb(248 113 113 / .32);
+  --focus-offset: #120f22;
+
+  /* CTA: brighter violet end (still >= 5.7:1 with white text) and a stronger rose glow */
+  --cta-to: #7c3aed;
+  --cta-glow: rgb(236 72 153 / .45);
+
+  --field-bg: rgb(32 28 56 / .7);
+  --field-border: rgb(233 213 255 / .16);
+  --field-border-hover: rgb(233 213 255 / .3);
+  --field-shadow: inset 0 1px 0 rgb(255 255 255 / .03), 0 1px 2px rgb(0 0 0 / .25);
+  --field-placeholder: #94a3b8;
+  --track-bg: rgb(233 213 255 / .05);
+  --track-border: rgb(233 213 255 / .1);
+  --switch-off: rgb(233 213 255 / .2);
+  --menu-bg: #1d1934;
+  --menu-shadow: 0 16px 36px -14px rgb(0 0 0 / .7);
+}
+
+/* Users who ask for less transparency get solid surfaces */
+@media (prefers-reduced-transparency: reduce) {
+  :root { --surface-bg: #fff; --bar-bg: #fff; --panel-bg: #fff; --tile-bg: #fbfbfd; --field-bg: #fff; }
+  .dark { --surface-bg: #110f20; --bar-bg: #0c0a18; --panel-bg: #110f20; --tile-bg: #1c1930; --field-bg: #1d1934; }
+}
+
+body { background-color: var(--backdrop-base); }
+
+/* ---------------------------------------------------------------------
+ * Ambient backdrop: fixed behind everything (z-index -1 in the root stacking
+ * context). Soft radial glows drift a few percent of the viewport over 19–26s.
+ * ------------------------------------------------------------------- */
+.ambient {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background: linear-gradient(180deg, var(--backdrop-top) 0%, var(--backdrop-base) 50%, var(--backdrop-bottom) 100%);
+}
+
+.ambient-glow {
+  position: absolute;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--glow) 0%, transparent 100%);
+  animation: var(--drift) var(--duration) ease-in-out var(--delay, 0s) infinite alternate;
+  will-change: transform;
+}
+.ambient-glow.is-rose    { --glow: var(--glow-rose);    width: 72vmax; left: -22vmax;  top: -38vmax;    --drift: drift-a; --duration: 22s; }
+.ambient-glow.is-magenta { --glow: var(--glow-magenta); width: 56vmax; right: -16vmax; top: -30vmax;    --drift: drift-b; --duration: 26s; --delay: -9s; }
+.ambient-glow.is-mint    { --glow: var(--glow-mint);    width: 70vmax; left: -14vmax;  bottom: -38vmax; --drift: drift-c; --duration: 24s; --delay: -5s; }
+.ambient-glow.is-aqua    { --glow: var(--glow-aqua);    width: 60vmax; right: -22vmax; bottom: -32vmax; --drift: drift-d; --duration: 19s; --delay: -12s; }
+.ambient-glow.is-sky     { --glow: var(--glow-sky);     width: 64vmax; left: 18vw;     top: 12vh;       --drift: drift-e; --duration: 28s; --delay: -7s; }
+.dark .ambient-glow.is-sky { display: none; }   /* dark keeps its plum / teal glows */
+
+@keyframes drift-a { to { transform: translate3d(6vmax, 3vmax, 0) scale(1.06); } }
+@keyframes drift-b { to { transform: translate3d(-5vmax, 4vmax, 0) scale(.94); } }
+@keyframes drift-c { to { transform: translate3d(5vmax, -3vmax, 0) scale(1.05); } }
+@keyframes drift-d { to { transform: translate3d(-6vmax, -2vmax, 0) scale(1.04); } }
+@keyframes drift-e { to { transform: translate3d(-7vmax, 4vmax, 0) scale(1.08); } }
+
+/* Dark only: a soft vignette deepens the middle of the page, where content sits, so the plum and teal
+   glows at the edges read as distinct light rather than an overall haze */
+.dark .ambient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 45% at 50% 45%, rgb(6 5 14 / .38), transparent 72%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-glow { animation: none; }
+}
+
+/* Scroll shift (light only): the blue wash fades in over the pink one and the pink glows recede as the page
+   scrolls, driven by the scroll position (CSS scroll-driven animations, no JavaScript). Browsers without
+   them keep the top-of-page look. The glows sit above the wash, so the sky and mint glows stay throughout. */
+.ambient-pink { position: absolute; inset: 0; }   /* the rose + magenta glows, faded as one */
+:root:not(.dark) .ambient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--backdrop-scrolled);
+  opacity: 0;
+}
+@supports (animation-timeline: scroll()) {
+  :root:not(.dark) .ambient::before {
+    animation: backdrop-to-blue 1ms linear both;   /* 1ms: any duration maps onto the scroll range */
+    animation-timeline: scroll(root);
+  }
+  :root:not(.dark) .ambient-pink {
+    animation: backdrop-pink-recede 1ms linear both;
+    animation-timeline: scroll(root);
+  }
+}
+@keyframes backdrop-to-blue { to { opacity: 1; } }
+@keyframes backdrop-pink-recede { to { opacity: .4; } }
+
+/* ---------------------------------------------------------------------
+ * Surfaces. Each class owns background, border color and blur; the markup
+ * keeps border width, radius and spacing as Tailwind utilities.
+ * ------------------------------------------------------------------- */
+/* Major content cards: the form, plan cards, result banners */
+.surface {
+  background-color: var(--surface-bg);
+  border-color: var(--surface-border);
+  box-shadow: var(--surface-shadow);
+  -webkit-backdrop-filter: blur(20px) saturate(1.3);
+  backdrop-filter: blur(20px) saturate(1.3);
+}
+/* Empty / N/A states: same glass, quieter edge */
+.surface.surface-dashed { border-color: var(--dashed-border); box-shadow: none; }
+
+/* Feature card (the planner form): the same glass with a blush -> mint inner tint and a luminous edge.
+   Layers, top to bottom: tint bands, the surface color, and the edge gradient that the transparent
+   border reveals. The bands have fixed heights (heading area / action row), so a tall phone-width card
+   isn't tinted behind its fields, and helper text keeps its contrast. */
+.surface.surface-feature {
+  border-color: transparent;
+  background:
+    linear-gradient(180deg, var(--feature-top), transparent 140px) padding-box,
+    linear-gradient(0deg, var(--feature-bottom), transparent 180px) padding-box,
+    linear-gradient(var(--surface-bg), var(--surface-bg)) padding-box,
+    linear-gradient(180deg, var(--feature-edge-top), var(--feature-edge-mid) 35%, var(--feature-edge-mid) 65%, var(--feature-edge-bottom)) border-box;
+  box-shadow: var(--feature-shadow);
+}
+
+/* Sticky app bar */
+.surface-bar {
+  background-color: var(--bar-bg);
+  border-color: var(--bar-border);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  backdrop-filter: blur(16px) saturate(1.4);
+}
+
+/* Slide-over panels (GE requirements) */
+.surface-panel {
+  background-color: var(--panel-bg);
+  border-color: var(--surface-border);
+  -webkit-backdrop-filter: blur(24px) saturate(1.3);
+  backdrop-filter: blur(24px) saturate(1.3);
+}
+
+/* Tiles nested inside a surface (semester cards): translucent, no second blur */
+.surface-tile {
+  background-color: var(--tile-bg);
+  border-color: var(--tile-border);
+}
+
+/* Semester cards open focused on click (focus_card.js). On hover the card is "picked up": it rises and grows
+   a little, its border and glow turn sky blue (violet on dark), and a shadow falls underneath. z-index keeps the
+   raised card over its neighbours. .plan-semesters keeps this above the summer / padding cards' dark:border-*. */
+.plan-semesters > [data-term-card] {
+  position: relative;
+  cursor: zoom-in;
+  transition: transform .25s cubic-bezier(.2, .8, .2, 1), border-color .2s ease, box-shadow .25s ease,
+    text-shadow .25s ease;
+}
+.plan-semesters > [data-term-card]:hover {
+  z-index: 1;
+  transform: translateY(-4px) scale(1.015);
+  border-color: var(--tile-hover-border);
+  box-shadow: var(--tile-hover-shadow);
+  text-shadow: var(--tile-hover-text-glow);   /* inherited: every word in the card glows, without reflowing it */
+}
+@media (prefers-reduced-motion: reduce) {
+  .plan-semesters > [data-term-card]:hover { transform: none; }   /* still glows, just doesn't move */
+}
+
+/* Prerequisite map that a focused semester card's course list turns into (plan_graph.js). Sizes are in the
+   map's own px; the map is scaled to fit the card. */
+.pg {
+  position: absolute;
+  opacity: 0;                              /* plan_graph.js fades it in once the card has landed */
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: radial-gradient(circle, var(--pg-dots) .8px, transparent 1.1px);
+  background-size: 9px 9px;
+}
+.pg-stage { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+.pg-edges { position: absolute; left: 0; top: 0; overflow: visible; }
+.pg-edge { fill: none; stroke: var(--pg-edge); stroke-width: 1.5; }
+.pg-edge.is-coreq { stroke-dasharray: 4 4; }
+.pg-edge.is-critical { stroke: var(--pg-critical); stroke-width: 2.5; }
+.pg-arrow { fill: var(--pg-edge); }
+.pg-arrow.is-critical { fill: var(--pg-critical); }
+
+.pg-node {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  border: 1px solid var(--pg-node-border);
+  border-left: 4px solid var(--pg-accent);
+  border-radius: 7px;
+  background: var(--pg-node-bg);
+  box-shadow: var(--pg-node-shadow), var(--pg-node-glow);
+  transform-origin: 0 0;                 /* the fly-in from the list row is computed from the top-left */
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.pg-code { font-size: 12.5px; font-weight: 600; color: var(--pg-node-text); }
+.pg-meta { font-size: 11px; color: var(--pg-node-meta); font-variant-numeric: tabular-nums; }
+.pg-node.is-critical {
+  background: var(--pg-critical-bg);
+  border-color: var(--pg-critical-border);
+  border-left-color: var(--pg-critical);
+  box-shadow: 0 0 0 3px var(--pg-critical-halo), var(--pg-node-shadow), var(--pg-critical-glow);
+}
+.pg-node.is-critical .pg-code,
+.pg-node.is-critical .pg-meta { color: var(--pg-critical-text); }
+.pg-node.is-term { border: 2px solid var(--pg-accent); border-left-width: 4px; background: var(--pg-term-bg); }
+.pg-node.is-term.is-critical { border-color: var(--pg-critical); background: var(--pg-critical-bg); }
+
+.pg-legend {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 6px;
+  font-size: 10.5px;
+  color: var(--pg-node-meta);
+  white-space: nowrap;
+}
+.pg-key { display: inline-flex; align-items: center; gap: 5px; }
+.pg-swatch-critical { width: 16px; border-top: 2.5px solid var(--pg-critical); }
+.pg-swatch-coreq { width: 16px; border-top: 1.5px dashed var(--pg-node-meta); }
+.pg-swatch-term { width: 12px; height: 9px; border: 2px solid var(--pg-accent); border-radius: 3px; background: var(--pg-term-bg); }
+
+/* Dimmed page behind a panel */
+.scrim {
+  background-color: var(--scrim);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+/* ---------------------------------------------------------------------
+ * Form controls. Like the surfaces, each class owns color, border color and
+ * focus styling; size, spacing and radius stay as Tailwind utilities.
+ * ------------------------------------------------------------------- */
+/* Text inputs, selects, the course tag box and the summer row */
+.field {
+  background-color: var(--field-bg);
+  border-color: var(--field-border);
+  box-shadow: var(--field-shadow);
+  transition: background-color .25s, color .25s, border-color .15s, box-shadow .15s;
+}
+.field::placeholder, .field ::placeholder { color: var(--field-placeholder); opacity: 1; }
+.field:hover { border-color: var(--field-border-hover); }
+/* Focus: the control itself, or the tag box while its inner input has focus. The summer row is a label,
+   so it doesn't light up on click; its switch shows the keyboard focus ring instead. */
+.field:is(input, select):focus, div.field:focus-within {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 0 0 5px var(--accent-ring);
+}
+
+/* Segmented control (GE pathway): tinted track; the checked option stays a white pill */
+.field-track { background-color: var(--track-bg); border-color: var(--track-border); }
+.field-track .peer:focus-visible + span { box-shadow: 0 0 0 2px var(--accent); }
+/* Dark only: a lavender-tinted pill instead of Tailwind's slate-700 */
+.dark .field-track .peer:checked + span { background-color: rgb(233 213 255 / .13); }
+
+/* On/off switch (summer classes); the knob is Tailwind `after:` utilities */
+.switch { background-color: var(--switch-off); transition: background-color .2s, box-shadow .15s; }
+.peer:checked + .switch { background-color: var(--accent); }
+.peer:focus-visible + .switch { box-shadow: var(--focus-ring); }
+/* Dark only: "on" uses the CTA's rose -> violet gradient */
+.dark .peer:checked + .switch { background-image: linear-gradient(90deg, var(--cta-from), var(--cta-to)); }
+
+/* Autocomplete dropdowns */
+.menu { background-color: var(--menu-bg); border-color: var(--field-border); box-shadow: var(--menu-shadow); }
+.menu-option:hover { background-color: var(--accent-soft); }
+
+/* Main call to action (Generate SEP Plans) */
+.btn-primary {
+  color: #fff;
+  background-image: linear-gradient(120deg, var(--cta-from), var(--cta-to));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / .2), 0 10px 24px -12px var(--cta-glow);
+  transition: filter .2s, box-shadow .2s;
+}
+.btn-primary:hover:not(:disabled) {
+  filter: brightness(1.08);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / .25), 0 14px 30px -12px var(--cta-glow);
+}
+.btn-primary:active:not(:disabled) { filter: brightness(.94); }
+.btn-primary:focus-visible { outline: none; box-shadow: var(--focus-ring), 0 10px 24px -12px var(--cta-glow); }
+
+/* Secondary action inside the form (AP "Add"): tinted, so the main CTA stays the strongest button */
+.btn-tonal {
+  color: var(--accent-text);
+  background-color: var(--accent-soft);
+  box-shadow: inset 0 0 0 1px var(--accent-ring);
+  transition: background-color .15s, box-shadow .15s;
+}
+.btn-tonal:hover:not(:disabled) { background-color: var(--accent-soft-hover); }
+.btn-tonal:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+/* ---------------------------------------------------------------------
+ * Brand accents
+ * ------------------------------------------------------------------- */
+.brand-mark {
+  background-image: linear-gradient(145deg, var(--brand-from), var(--brand-via), var(--brand-to));
+  box-shadow: 0 4px 14px -4px rgb(219 39 119 / .45);
+}
+
+.brand-accent { color: var(--brand-text-from); }
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .brand-accent {
+    background-image: linear-gradient(90deg, var(--brand-text-from), var(--brand-text-to));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}

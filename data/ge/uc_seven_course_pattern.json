@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "uc_seven_course_pattern_chabot_catalog_2025_2026",
+  "kind": "ge_standard",
+  "source": {
+    "publisher": "University of California, as published in the Chabot College 2025-2026 Catalog",
+    "document_title": "Chabot College 2025-2026 Catalog - University of California (UC) transfer admission requirements; Advanced Placement chart",
+    "catalog_pages": [35, 41, 42, 43],
+    "requirement_text": "Complete the following seven-course pattern, earning a grade of C or better in each course: Two transferable college courses (3 semester or 4-5 quarter units) in English composition; One transferable college course (3 semester or 4-5 quarter units) in mathematical concepts and quantitative reasoning; Four transferable college courses (3 semester or 4-5 quarter units each) chosen from at least two of the following subject areas: arts and humanities, social and behavioral sciences, and physical and biological sciences.",
+    "transcribed_on": "2026-09-26",
+    "note": "Transcribed because the dedicated UC 7-Course Pattern JSON was not provided. Replace this file with that JSON (or keep both and delete this one) when it is available."
+  },
+  "scope": {
+    "type": "uc_transfer_admission_requirement",
+    "program_name": "UC seven-course pattern",
+    "not_a_general_education_certification": true,
+    "college_specific_course_list_included": false,
+    "note": "A UC admission requirement for junior-level transfer, not a GE certification pattern and not a CSU requirement. Courses must be UC-transferable; ASSIST marks the eligible courses of each college with UC transfer admission areas UC-E, UC-M, UC-H, UC-B and UC-S."
+  },
+  "ge_pathway": {
+    "id": "seven_course_pattern",
+    "name": "UC 7-Course Pattern",
+    "display_name": "UC 7-Course Pattern",
+    "systems": ["UC"],
+    "course_area_codes": {
+      "UC-E": "English composition",
+      "UC-M": "Mathematical concepts and quantitative reasoning",
+      "UC-H": "Arts and humanities",
+      "UC-B": "Social and behavioral sciences",
+      "UC-S": "Physical and biological sciences"
+    },
+    "multiple_area_use": "one_area",
+    "multiple_area_use_note": "Seven courses: each course counts once.",
+    "requirements": [
+      {
+        "id": "E",
+        "name": "English composition",
+        "area_id": "E",
+        "area_name": "English composition",
+        "minimum_courses": 2,
+        "minimum_semester_units_each": 3,
+        "accepts": ["UC-E"],
+        "rule": "Two transferable college courses (3 semester or 4-5 quarter units) in English composition."
+      },
+      {
+        "id": "M",
+        "name": "Mathematical concepts and quantitative reasoning",
+        "area_id": "M",
+        "area_name": "Mathematical concepts and quantitative reasoning",
+        "minimum_courses": 1,
+        "minimum_semester_units_each": 3,
+        "accepts": ["UC-M"],
+        "rule": "One transferable college course (3 semester or 4-5 quarter units) in mathematical concepts and quantitative reasoning."
+      },
+      {
+        "id": "BR",
+        "name": "Breadth: at least two of arts & humanities, social & behavioral sciences, physical & biological sciences",
+        "area_id": "BR",
+        "area_name": "Breadth",
+        "minimum_courses": 4,
+        "minimum_semester_units_each": 3,
+        "accepts": ["UC-H", "UC-B", "UC-S"],
+        "minimum_distinct_areas": 2,
+        "rule": "Four transferable college courses (3 semester or 4-5 quarter units each) chosen from at least two of the following subject areas: arts and humanities, social and behavioral sciences, and physical and biological sciences."
+      }
+    ]
+  },
+  "ap_rules": {
+    "minimum_score": 3,
+    "source": "Chabot College 2025-2026 Catalog, Advanced Placement chart (pp. 41-43), column 'UC Max Units/Subject Requirement Areas'. Exams with no UC area in that column are not listed.",
+    "note": "Each qualifying exam counts as one course in one of its areas.",
+    "exams": [
+      {"exam_id": "ap:art_history", "areas": ["UC-H"]},
+      {"exam_id": "ap:biology", "areas": ["UC-S"]},
+      {"exam_id": "ap:calculus_ab", "areas": ["UC-M"]},
+      {"exam_id": "ap:calculus_bc_ab_subscore", "areas": ["UC-M"]},
+      {"exam_id": "ap:calculus_bc", "areas": ["UC-M"]},
+      {"exam_id": "ap:chemistry", "areas": ["UC-S"]},
+      {"exam_id": "ap:chinese_language_and_culture", "areas": ["UC-H"]},
+      {"exam_id": "ap:macroeconomics", "areas": ["UC-B"]},
+      {"exam_id": "ap:microeconomics", "areas": ["UC-B"]},
+      {"exam_id": "ap:english_language_and_composition", "areas": ["UC-E"]},
+      {"exam_id": "ap:english_literature_and_composition", "area_options": ["UC-E", "UC-H"]},
+      {"exam_id": "ap:environmental_science", "areas": ["UC-S"]},
+      {"exam_id": "ap:french_language_and_culture", "areas": ["UC-H"]},
+      {"exam_id": "ap:german_language_and_culture", "areas": ["UC-H"]},
+      {"exam_id": "ap:comparative_government_and_politics", "areas": ["UC-B"]},
+      {"exam_id": "ap:united_states_government_and_politics", "areas": ["UC-B"]},
+      {"exam_id": "ap:european_history", "area_options": ["UC-B", "UC-H"]},
+      {"exam_id": "ap:united_states_history", "area_options": ["UC-B", "UC-H"]},
+      {"exam_id": "ap:world_history_modern", "area_options": ["UC-B", "UC-H"]},
+      {"exam_id": "ap:human_geography", "areas": ["UC-B"]},
+      {"exam_id": "ap:italian_language_and_culture", "areas": ["UC-H"]},
+      {"exam_id": "ap:japanese_language_and_culture", "areas": ["UC-H"]},
+      {"exam_id": "ap:latin", "areas": ["UC-H"]},
+      {"exam_id": "ap:music_theory", "areas": ["UC-H"], "note": "No credit for the Music Theory subscore."},
+      {"exam_id": "ap:physics_1_algebra_based", "areas": ["UC-S"]},
+      {"exam_id": "ap:physics_2_algebra_based", "areas": ["UC-S"]},
+      {"exam_id": "ap:physics_c_mechanics", "areas": ["UC-S"]},
+      {"exam_id": "ap:physics_c_electricity_and_magnetism", "areas": ["UC-S"]},
+      {"exam_id": "ap:psychology", "areas": ["UC-B"]},
+      {"exam_id": "ap:spanish_language_and_culture", "areas": ["UC-H"]},
+      {"exam_id": "ap:spanish_literature_and_culture", "areas": ["UC-H"]},
+      {"exam_id": "ap:statistics", "areas": ["UC-M"]}
+    ]
+  },
+  "general_rules": {
+    "minimum_grade": "C or better in each course",
+    "minimum_units_per_course": {"semester": 3, "quarter_range": [4, 5]},
+    "other_admission_requirements": "60 semester (90 quarter) UC-transferable units with a GPA of at least 2.4 (2.8 for nonresidents); at most 14 semester units Pass/Not Pass. Not planned here."
+  },
+  "notes": [
+    "The UC 7-course pattern is a UC transfer admission requirement. It does not apply to CSU campuses.",
+    "It is not IGETC and not Cal-GETC; campus GE (for example Berkeley L&S Seven-Course Breadth) is a different requirement."
+  ]
+}

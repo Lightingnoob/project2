@@ -1,0 +1,955 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "chabot_csueb_computer_science_bs_2026_2027",
+  "source": {
+    "publisher": "ASSIST",
+    "document_title": "2026-2027 Computer Science, B.S. Agreement",
+    "filename": "2026-2027 Computer Science, B.S. Agreement.pdf",
+    "sha256": "c49c6ebdb58ad75313765122dcce0f113d6570bc82cb853da4dd58a0f5d65059",
+    "page_count": 3,
+    "date_published": "2026-08-03",
+    "date_published_as_printed": "8/3/26"
+  },
+  "agreement": {
+    "type": "Major Articulation Agreement",
+    "academic_year": "2026-2027",
+    "from_institution_id": "chabot",
+    "to_institution_id": "csueb",
+    "major": "Computer Science",
+    "degree": "B.S.",
+    "program_total_units": 120,
+    "extracted_requirement_scope": "lower_division_core",
+    "complete_degree_requirements_in_source": false,
+    "admission_requirements_status": "not_specified_in_source",
+    "source_pages": [
+      1
+    ]
+  },
+  "institutions": [
+    {
+      "id": "chabot",
+      "name": "Chabot College",
+      "role": "sending",
+      "catalog": "2026-2027 General Catalog",
+      "calendar": "semester",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "id": "csueb",
+      "name": "California State University, East Bay",
+      "role": "receiving",
+      "catalog": "2026-2027 General Catalog",
+      "calendar": "semester",
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "csueb:CS101",
+      "institution_id": "csueb",
+      "code": "CS 101",
+      "title": "Computer Science I",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:CS201",
+      "institution_id": "csueb",
+      "code": "CS 201",
+      "title": "Computer Science II",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:CS211",
+      "institution_id": "csueb",
+      "code": "CS 211",
+      "title": "DISCRETE STRUCTURES",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:CS221",
+      "institution_id": "csueb",
+      "code": "CS 221",
+      "title": "Assembly Language and Computer Architecture",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:CS230",
+      "institution_id": "csueb",
+      "code": "CS 230",
+      "title": "Computing and Social Responsibility",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:MATH130",
+      "institution_id": "csueb",
+      "code": "MATH 130",
+      "title": "CALCULUS I",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:MATH131",
+      "institution_id": "csueb",
+      "code": "MATH 131",
+      "title": "CALCULUS II",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:MATH225",
+      "institution_id": "csueb",
+      "code": "MATH 225",
+      "title": "Numerical Algorithms and Linear Algebra for Computer Science",
+      "units": 3.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "csueb:PHYS135",
+      "institution_id": "csueb",
+      "code": "PHYS 135",
+      "title": "Physics for Scientists and Engineers I",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "chabot:CSCI15",
+      "institution_id": "chabot",
+      "code": "CSCI 15",
+      "title": "Object-Oriented Programming Methods",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "chabot:CSCI19A",
+      "institution_id": "chabot",
+      "code": "CSCI 19A",
+      "title": "Object-Oriented Programming Methods in JAVA",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "chabot:CSCI20",
+      "institution_id": "chabot",
+      "code": "CSCI 20",
+      "title": "Introduction to Data Structures",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "chabot:MTH8",
+      "institution_id": "chabot",
+      "code": "MTH 8",
+      "title": "Discrete Mathematics",
+      "units": 3.0,
+      "cross_listed_codes": [
+        "CSCI 28"
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "chabot:CSCI21",
+      "institution_id": "chabot",
+      "code": "CSCI 21",
+      "title": "Computer Organization and Assembly Language Programming",
+      "units": 4.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "chabot:MTH1",
+      "institution_id": "chabot",
+      "code": "MTH 1",
+      "title": "Calculus I",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "chabot:MTH2",
+      "institution_id": "chabot",
+      "code": "MTH 2",
+      "title": "Calculus II",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "chabot:PHYS4A",
+      "institution_id": "chabot",
+      "code": "PHYS 4A",
+      "title": "General Physics I",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "id": "chabot:PHYS7A",
+      "institution_id": "chabot",
+      "code": "PHYS 7A",
+      "title": "Physics for Scientists and Engineers: Classical Mechanics",
+      "units": 5.0,
+      "cross_listed_codes": [],
+      "source_pages": [
+        3
+      ]
+    }
+  ],
+  "requirement_groups": [
+    {
+      "id": "lower_division_core",
+      "title": "LOWER DIVISION CORE",
+      "source_group_label": "1",
+      "source_subgroup_label": "A",
+      "operator": "AND",
+      "requirement_ids": [
+        "requirement:CS101",
+        "requirement:CS201",
+        "requirement:CS211",
+        "requirement:CS221",
+        "requirement:CS230",
+        "requirement:MATH130",
+        "requirement:MATH131",
+        "requirement:MATH225",
+        "requirement:PHYS135"
+      ],
+      "source_pages": [
+        2,
+        3
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "requirement:CS101",
+      "target_course_id": "csueb:CS101",
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "OR",
+        "operands": [
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:CSCI15"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:CSCI19A"
+          }
+        ]
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:CS201",
+      "target_course_id": "csueb:CS201",
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:CSCI20"
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:CS211",
+      "target_course_id": "csueb:CS211",
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:MTH8"
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:CS221",
+      "target_course_id": "csueb:CS221",
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:CSCI21"
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:CS230",
+      "target_course_id": "csueb:CS230",
+      "articulation_status": "no_course_articulated",
+      "source_requirement": null,
+      "source_note": "No Course Articulated",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:MATH130",
+      "target_course_id": "csueb:MATH130",
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:MTH1"
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:MATH131",
+      "target_course_id": "csueb:MATH131",
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "COURSE",
+        "course_id": "chabot:MTH2"
+      },
+      "source_note": null,
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:MATH225",
+      "target_course_id": "csueb:MATH225",
+      "articulation_status": "no_course_articulated",
+      "source_requirement": null,
+      "source_note": "No Course Articulated",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "requirement:PHYS135",
+      "target_course_id": "csueb:PHYS135",
+      "articulation_status": "articulated",
+      "source_requirement": {
+        "operator": "OR",
+        "operands": [
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:PHYS4A"
+          },
+          {
+            "operator": "COURSE",
+            "course_id": "chabot:PHYS7A"
+          }
+        ]
+      },
+      "source_note": null,
+      "source_pages": [
+        3
+      ]
+    }
+  ],
+  "transfer_policies": [
+    {
+      "id": "in_person_labs",
+      "title": "NO ONLINE LABS FOR TRANSFER",
+      "scope": "Transfer students within CSU East Bay College of Science majors",
+      "online_labs_accepted_as_equivalent_to_csueb_labs": false,
+      "required_lab_format": "in_person",
+      "required_lab_setting": "college_laboratory",
+      "in_person_lab_equivalence": "eligible_for_consideration",
+      "online_lab_requires_in_person_retake_for_major_credit": true,
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "general_education_before_enrollment",
+      "strength": "encouraged",
+      "scope": "California community college transfer students",
+      "action": "Complete CSU General Education Breadth or CALGETC at the community college before enrollment at CSU East Bay.",
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "prerequisite_data": {
+    "status": "researched_with_source_and_policy_caveats",
+    "reviewed_on": "2026-09-24",
+    "institution_id": "chabot",
+    "registry_file": "chabot_prerequisites.json",
+    "edges": null,
+    "records": {
+      "chabot:CSCI15": {
+        "course_id": "chabot:CSCI15",
+        "code": "CSCI 15",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "COURSE",
+          "course_id": "chabot:CSCI14",
+          "timing": "before",
+          "minimum_grade": "C"
+        },
+        "summary": "CSCI 14 (C or better).",
+        "advisory": [
+          "MTH 20 (C or better) recommended."
+        ],
+        "source_ids": [
+          "cs"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:CSCI19A": {
+        "course_id": "chabot:CSCI19A",
+        "code": "CSCI 19A",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "NONE"
+        },
+        "summary": "No mandatory prerequisite listed.",
+        "advisory": [
+          "CSCI 14 AND MTH 20 (C or better) recommended."
+        ],
+        "source_ids": [
+          "cs"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:CSCI20": {
+        "course_id": "chabot:CSCI20",
+        "code": "CSCI 20",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "COURSE",
+          "course_id": "chabot:CSCI15",
+          "timing": "before",
+          "minimum_grade": "C"
+        },
+        "summary": "CSCI 15 (C or better).",
+        "advisory": [
+          "MTH 1 (C or better) recommended."
+        ],
+        "source_ids": [
+          "cs"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:MTH8": {
+        "course_id": "chabot:MTH8",
+        "code": "MTH 8",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "COURSE",
+          "course_id": "chabot:MTH1",
+          "timing": "before"
+        },
+        "summary": "MTH 1.",
+        "advisory": [
+          "CSCI 14 recommended."
+        ],
+        "source_ids": [
+          "math",
+          "MTH 8"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:CSCI21": {
+        "course_id": "chabot:CSCI21",
+        "code": "CSCI 21",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "COURSE",
+          "course_id": "chabot:CSCI14",
+          "timing": "before",
+          "minimum_grade": "C"
+        },
+        "summary": "CSCI 14 (C or better).",
+        "advisory": [],
+        "source_ids": [
+          "cs"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:MTH1": {
+        "course_id": "chabot:MTH1",
+        "code": "MTH 1",
+        "reviewed_on": "2026-09-24",
+        "status": "policy_dependent",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "CONDITION",
+              "description": "Complete Chabot Math Course Selection",
+              "requires_external_confirmation": true
+            },
+            {
+              "type": "OR",
+              "items": [
+                {
+                  "type": "OR",
+                  "items": [
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH20",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH22",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "AND",
+                      "items": [
+                        {
+                          "type": "OR",
+                          "items": [
+                            {
+                              "type": "COURSE",
+                              "course_id": "chabot:MTH21",
+                              "timing": "before"
+                            },
+                            {
+                              "type": "COURSE",
+                              "course_id": "chabot:MTH31",
+                              "timing": "before"
+                            },
+                            {
+                              "type": "COURSE",
+                              "course_id": "chabot:MTH31S",
+                              "timing": "before"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "OR",
+                          "items": [
+                            {
+                              "type": "COURSE",
+                              "course_id": "chabot:MTH36",
+                              "timing": "before"
+                            },
+                            {
+                              "type": "COURSE",
+                              "course_id": "chabot:MTH36S",
+                              "timing": "before"
+                            },
+                            {
+                              "type": "COURSE",
+                              "course_id": "chabot:MTH37",
+                              "timing": "before"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "CONDITION",
+                      "description": "Appropriate mathematics assessment/placement",
+                      "requires_external_confirmation": true
+                    }
+                  ]
+                },
+                {
+                  "type": "AND",
+                  "items": [
+                    {
+                      "type": "CONDITION",
+                      "description": "Use the open-access linked support section",
+                      "requires_external_confirmation": true
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH201W",
+                      "timing": "same_term"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "summary": "Open access from Fall 2025; complete Math Course Selection. If the stated preparation is not met, enroll in a linked MTH 201W support section.",
+        "advisory": [],
+        "source_ids": [
+          "math",
+          "open_calculus"
+        ],
+        "notes": [
+          "Do not force a remedial/precalculus chain. Section eligibility and linked enrollment require confirmation."
+        ],
+        "source_location": null,
+        "published_course_prerequisite": {
+          "type": "OR",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH20",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH22",
+              "timing": "before"
+            },
+            {
+              "type": "AND",
+              "items": [
+                {
+                  "type": "OR",
+                  "items": [
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH21",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH31",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH31S",
+                      "timing": "before"
+                    }
+                  ]
+                },
+                {
+                  "type": "OR",
+                  "items": [
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH36",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH36S",
+                      "timing": "before"
+                    },
+                    {
+                      "type": "COURSE",
+                      "course_id": "chabot:MTH37",
+                      "timing": "before"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "CONDITION",
+              "description": "Appropriate mathematics assessment/placement",
+              "requires_external_confirmation": true
+            }
+          ]
+        },
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:MTH2": {
+        "course_id": "chabot:MTH2",
+        "code": "MTH 2",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "COURSE",
+          "course_id": "chabot:MTH1",
+          "timing": "before",
+          "minimum_grade": "C"
+        },
+        "summary": "MTH 1 (C or better).",
+        "advisory": [],
+        "source_ids": [
+          "math"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      },
+      "chabot:PHYS4A": {
+        "course_id": "chabot:PHYS4A",
+        "code": "PHYS 4A",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH1",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH2",
+              "timing": "before_or_concurrent"
+            }
+          ]
+        },
+        "summary": "MTH 1 before; MTH 2 before or concurrently.",
+        "advisory": [
+          "PHYS 18 OR high-school physics recommended."
+        ],
+        "source_ids": [
+          "physics"
+        ],
+        "notes": [],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": true
+      },
+      "chabot:PHYS7A": {
+        "course_id": "chabot:PHYS7A",
+        "code": "PHYS 7A",
+        "reviewed_on": "2026-09-24",
+        "status": "documented",
+        "requirement": {
+          "type": "AND",
+          "items": [
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH1",
+              "timing": "before"
+            },
+            {
+              "type": "COURSE",
+              "course_id": "chabot:MTH2",
+              "timing": "before_or_concurrent"
+            }
+          ]
+        },
+        "summary": "MTH 1 before; MTH 2 before or concurrently.",
+        "advisory": [
+          "PHYS 18 OR high-school physics recommended."
+        ],
+        "source_ids": [
+          "PHYS 7A"
+        ],
+        "notes": [
+          "Documented in the cited source; not independently certified against the complete 2026-2027 catalog."
+        ],
+        "source_location": null,
+        "scope": "major_course",
+        "current_year_confirmed": false
+      }
+    },
+    "sources": {
+      "math": {
+        "url": "https://banssprod.clpccd.cc.ca.us/clpccd/2025/cat_mth.htm",
+        "title": "CLASS-Web 2025-2026: mth; Chabot entries only",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2025-2026"
+      },
+      "cs": {
+        "url": "https://banssprod.clpccd.cc.ca.us/clpccd/2025/cat_csci.htm",
+        "title": "CLASS-Web 2025-2026: csci; Chabot entries only",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2025-2026"
+      },
+      "physics": {
+        "url": "https://banssprod.clpccd.cc.ca.us/clpccd/2026/cat_phys.htm",
+        "title": "CLASS-Web 2026-2027: phys; Chabot entries only",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2026-2027"
+      },
+      "chem": {
+        "url": "https://banssprod.clpccd.cc.ca.us/clpccd/2026/cat_chem.htm",
+        "title": "CLASS-Web 2026-2027: chem; Chabot entries only",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2026-2027"
+      },
+      "engr": {
+        "url": "https://banssprod.clpccd.cc.ca.us/clpccd/2026/cat_engr.htm",
+        "title": "CLASS-Web 2026-2027: engr; Chabot entries only",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2026-2027"
+      },
+      "astr": {
+        "url": "https://banssprod.clpccd.cc.ca.us/clpccd/2026/cat_astr.htm",
+        "title": "CLASS-Web 2026-2027: astr; Chabot entries only",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2026-2027"
+      },
+      "catalog2025": {
+        "url": "https://www.chabotcollege.edu/academics/docs/catalogs/2025-2026%20Catalog.pdf",
+        "title": "Chabot College 2025-2026 catalog",
+        "accessed_on": "2026-09-24",
+        "catalog_year": "2025-2026"
+      },
+      "bio": {
+        "url": "https://www.chabotcollege.edu/academics/science-math/life-sciences/course-descriptions.php",
+        "title": "Chabot Life Sciences course descriptions",
+        "accessed_on": "2026-09-24",
+        "catalog_year": null
+      },
+      "open_calculus": {
+        "url": "https://www.chabotcollege.edu/academics/science-math/mathematics/open-access-calculus.php",
+        "title": "Chabot Open Access to Calculus",
+        "accessed_on": "2026-09-24",
+        "catalog_year": null
+      },
+      "noncredit": {
+        "url": "https://www.chabotcollege.edu/academics/noncredit/courses.php",
+        "title": "Chabot noncredit courses: CHEM 201",
+        "accessed_on": "2026-09-24",
+        "catalog_year": null
+      },
+      "PHYS 7A": {
+        "url": "https://chabot.curriqunet.com/DynamicReports/AllFieldsReportByEntity/4995?entityType=Course&reportId=347",
+        "title": "PHYS 7A course outline, effective Fall 2024",
+        "accessed_on": "2026-09-24",
+        "catalog_year": null
+      },
+      "PHYS 7C": {
+        "url": "https://chabot.curriqunet.com/DynamicReports/AllFieldsReportByEntity/4997?entityType=Course&reportId=347",
+        "title": "PHYS 7C course outline, effective Fall 2024",
+        "accessed_on": "2026-09-24",
+        "catalog_year": null
+      },
+      "MTH 8": {
+        "url": "https://chabot.curriqunet.com/DynamicReports/AllFieldsReportByEntity/8476?entityType=Course&reportId=347",
+        "title": "MTH 8 course outline, effective Fall 2024",
+        "accessed_on": "2026-09-24",
+        "catalog_year": null
+      },
+      "user_screenshot_CHEM_1A": {
+        "title": "CHEM 1A prerequisite clarification supplied by user",
+        "uploaded_filename": "69067c48-8ede-4750-a803-86ffc022549e.png",
+        "source_type": "user_supplied_screenshot",
+        "url": null,
+        "catalog_year": null,
+        "accessed_on": null
+      },
+      "user_screenshot_BIOS_21B": {
+        "title": "BIOS 21B prerequisite clarification supplied by user",
+        "uploaded_filename": "42412db0-d96c-4596-a725-bf455d8d8f07.png",
+        "source_type": "user_supplied_screenshot",
+        "url": null,
+        "catalog_year": null,
+        "accessed_on": null
+      },
+      "user_screenshot_BIOS_21C": {
+        "title": "BIOS 21C prerequisite clarification supplied by user",
+        "uploaded_filename": "79415d17-4fc0-4805-b616-2b19f1ad2989.png",
+        "source_type": "user_supplied_screenshot",
+        "url": null,
+        "catalog_year": null,
+        "accessed_on": null
+      }
+    },
+    "unresolved_course_ids": [],
+    "notes": [
+      "Source ASSIST PDF contains articulation, not these prerequisites. Added from the separately cited sources.",
+      "See shared registry for supporting courses, aliases, semantics and external references.",
+      "Receiving-course prerequisites remain unresearched. Do not feed rich prerequisite records directly into graph.js."
+    ],
+    "user_clarified_course_ids": []
+  },
+  "schema_notes": {
+    "schema_origin": "Custom extraction schema; the supplied Claude share link was inaccessible, so compatibility with its project schema is unverified.",
+    "local_ids": "Institution, course, requirement, and group IDs are local identifiers, not official institution or ASSIST identifiers.",
+    "source_pages": "Page numbers are one-based positions in the supplied PDF.",
+    "course_units": "Units belong to the institution listing the course. Source and target units are retained separately; articulation does not make their unit values equal.",
+    "course_operator": "COURSE refers to one canonical course record.",
+    "or_operator": "OR means any one operand satisfies the listed source-course expression. It does not require all alternatives.",
+    "and_operator": "AND represents completion of all listed lower division core requirements. It is the normalized interpretation of the core list, not a prerequisite sequence.",
+    "cross_listed_codes": "The PDF states MTH 8 is the same as CSCI 28. Resolve either Chabot code to the single chabot:MTH8 record; do not count them as two separate required courses.",
+    "no_course_articulated": "A null source_requirement with this status means the agreement lists no Chabot equivalent. The target requirement still exists; null does not mean the requirement is waived, already satisfied, or globally impossible to fulfill.",
+    "dag_direction": "If constructing a graph, connect sending courses through any OR gate to the receiving-course requirement, then connect requirements to the lower_division_core AND group. These are fulfillment relationships, not course prerequisites.",
+    "prerequisites": "Null prerequisite edges mean the PDF does not provide prerequisite data; no prerequisite relationships or course order have been inferred.",
+    "scope": "This dataset includes all nine courses listed in the lower division core. It is not the full 120-unit degree plan and does not establish which courses are required before admission.",
+    "policy_application": "Apply the lab policy when evaluating lab equivalence. The PDF does not separately identify lab components for every listed course."
+  }
+}
